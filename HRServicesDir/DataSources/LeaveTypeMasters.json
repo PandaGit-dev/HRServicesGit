@@ -1,0 +1,96 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "crbd0_leavetypemasters",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "crbd0_leavetypemaster",
+    "Name": "LeaveTypeMasters",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "crbd0_absence_attendance_type_id": "ABSENCE_ATTENDANCE_TYPE_ID",
+      "crbd0_absence_category": "ABSENCE_CATEGORY",
+      "crbd0_leavetypemaster_AsyncOperations": "System Jobs",
+      "crbd0_leavetypemaster_BulkDeleteFailures": "Bulk Delete Failures",
+      "crbd0_leavetypemaster_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "crbd0_leavetypemaster_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "crbd0_leavetypemaster_ProcessSession": "Process Sessions",
+      "crbd0_leavetypemaster_SyncErrors": "Sync Errors",
+      "crbd0_leavetypemasterid": "LeaveTypeMaster",
+      "crbd0_name": "NAME",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "LeaveTypeMasters",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "LeaveTypeMasters (Views)",
+    "Name": "_crbd0_leavetypemaster_views",
+    "RelatedEntityName": "LeaveTypeMasters",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "6ea06819-6816-4ea0-924f-e891dea422e4": "Inactive LeaveTypeMasters",
+      "71ec54d8-7a2e-4d1f-9cda-13afabfc76ec": "LeaveTypeMaster Associated View",
+      "94ea7151-1abd-4260-97bf-b784ea33ba05": "LeaveTypeMaster Advanced Find View",
+      "96b4670c-6fd0-42b4-ad29-00d76ee7e362": "LeaveTypeMaster Lookup View",
+      "d400f148-5319-4135-b15f-1c6ec9d4e875": "Active LeaveTypeMasters"
+    }
+  },
+  {
+    "DisplayName": "Status (LeaveTypeMasters)",
+    "Name": "crbd0_leavetypemaster_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "LeaveTypeMasters"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "LeaveTypeMasters",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (LeaveTypeMasters)",
+    "Name": "crbd0_leavetypemaster_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "LeaveTypeMasters"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "LeaveTypeMasters",
+    "Type": "OptionSetInfo"
+  }
+]

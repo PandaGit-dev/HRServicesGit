@@ -1,4 +1,4 @@
-"'Home Page_2' As screen":
+"'Leave Page' As screen":
     BackgroundImage: =
     ImagePosition: =ImagePosition.Stretch
     OnVisible: =Set(AccountDetailsVis,false); Set(MenuVis,false)
@@ -249,7 +249,7 @@
         Label2_42 As label:
             Font: =Font.'Courier New'
             FontWeight: =FontWeight.Semibold
-            OnSelect: =Navigate('Home Page_2')
+            OnSelect: =Navigate('Leave Page')
             Size: =16
             Text: ="Home"
             Visible: =MenuVis
@@ -337,7 +337,7 @@
             Color: =RGBA(127, 178, 57, 1)
             Height: =40
             Icon: =Icon.Home
-            OnSelect: =Navigate('Home Page_2')
+            OnSelect: =Navigate('Leave Page')
             PaddingBottom: =8
             PaddingLeft: =8
             PaddingRight: =8
@@ -482,9 +482,12 @@
         BorderColor: =RGBA(112, 188, 31, 1)
         ChevronBackground: =RGBA(0, 0, 0, 0)
         ChevronFill: =RGBA(128, 128, 128, 1)
+        ChevronHoverBackground: =
         Fill: =RGBA(241, 244, 249, 1)
         Height: =50
-        Items: =DropDownSample
+        Items: =LeaveTypeMasters
+        PressedFill: =RGBA(112, 188, 31, 1)
+        SelectionFill: =RGBA(112, 188, 31, 1)
         Size: =16
         Width: =500
         X: =63
@@ -555,6 +558,6 @@
         Text: ="Check Eligibility"
         Width: =500
         X: =63
-        Y: =564
+        Y: =555
         ZIndex: =46
 

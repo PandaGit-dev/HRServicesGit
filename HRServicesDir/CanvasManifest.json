@@ -94,7 +94,6 @@
     "FileID": "be93c57f-aad5-4bf6-a199-064720c08687",
     "Id": "be93c57f-aad5-4bf6-a199-064720c08687",
     "InstrumentationKey": "",
-    "LocalDatabaseReferences": "{}",
     "Name": "HR Services",
     "OriginatingVersion": "1.326"
   },
@@ -112,7 +111,7 @@
   "ScreenOrder": [
     "Landing Page",
     "Home Page",
-    "Home Page_2",
+    "Leave Page",
     "Home Page_1"
   ]
 }
