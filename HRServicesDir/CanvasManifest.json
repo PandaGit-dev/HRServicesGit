@@ -110,6 +110,7 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Screen1"
+    "Landing Page",
+    "Home Page"
   ]
 }

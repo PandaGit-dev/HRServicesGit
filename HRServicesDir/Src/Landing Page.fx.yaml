@@ -1,0 +1,21 @@
+"'Landing Page' As screen":
+    BackgroundImage: =
+    ImagePosition: =ImagePosition.Fill
+    OnVisible: =Timer1.AutoStart
+
+    Image1 As image:
+        Height: =1136
+        Image: ='download (2)'
+        ImagePosition: =ImagePosition.Fill
+        Width: =640
+        ZIndex: =1
+
+    Timer1 As timer:
+        AutoStart: =true
+        Duration: =1000
+        Height: =70
+        Width: =280
+        X: =201
+        Y: =234
+        ZIndex: =2
+
