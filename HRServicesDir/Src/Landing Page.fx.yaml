@@ -15,6 +15,7 @@
         Duration: =5000
         Height: =70
         OnTimerEnd: =Navigate('Home Page',ScreenTransition.Fade)
+        Visible: =false
         Width: =280
         X: =201
         Y: =234

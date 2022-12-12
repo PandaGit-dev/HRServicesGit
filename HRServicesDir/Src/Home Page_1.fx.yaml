@@ -7,7 +7,7 @@
         Image: ='download screen'
         ImagePosition: =ImagePosition.Stretch
         Width: =640
-        Y: =462
+        Y: =466
         ZIndex: =1
 
     Rectangle1_3 As rectangle:
@@ -54,12 +54,12 @@
         ZIndex: =7
 
     Image7 As image:
-        Height: =500
+        Height: =361
         Image: =Picture1
         ImagePosition: =ImagePosition.Stretch
-        Width: =546
-        X: =54
-        Y: =516
+        Width: =526
+        X: =63
+        Y: =674
         ZIndex: =10
 
     Label2_30 As label:
@@ -71,8 +71,8 @@
         Visible: |
             =true
         Width: =384
-        X: =159
-        Y: =554
+        X: =168
+        Y: =712
         ZIndex: =11
 
     Group1_1 As group:
@@ -105,65 +105,65 @@
         Font: =Font.'Courier New'
         FontWeight: =FontWeight.Semibold
         OnSelect: =
-        Size: =14
+        Size: =16
         Text: ="Leave"
         Visible: |
             =true
-        Width: =503
-        X: =137
-        Y: =685
+        Width: =384
+        X: =168
+        Y: =763
         ZIndex: =12
 
     Label2_32 As label:
         Font: =Font.'Courier New'
         FontWeight: =FontWeight.Semibold
         OnSelect: =
-        Size: =14
+        Size: =16
         Text: ="Business Trip"
         Visible: |
             =true
-        Width: =503
-        X: =137
-        Y: =726
+        Width: =384
+        X: =168
+        Y: =814
         ZIndex: =13
 
     Label2_33 As label:
         Font: =Font.'Courier New'
         FontWeight: =FontWeight.Semibold
         OnSelect: =
-        Size: =14
+        Size: =16
         Text: ="Personal Loan"
         Visible: |
             =true
-        Width: =503
-        X: =137
-        Y: =766
+        Width: =384
+        X: =168
+        Y: =864
         ZIndex: =14
 
     Label2_34 As label:
         Font: =Font.'Courier New'
         FontWeight: =FontWeight.Semibold
         OnSelect: =
-        Size: =14
+        Size: =16
         Text: ="Identification Letter"
         Visible: |
             =true
-        Width: =503
-        X: =137
-        Y: =806
+        Width: =384
+        X: =168
+        Y: =917
         ZIndex: =15
 
     Label2_35 As label:
         Font: =Font.'Courier New'
         FontWeight: =FontWeight.Semibold
         OnSelect: =
-        Size: =14
+        Size: =16
         Text: ="Transfer"
         Visible: |
             =true
-        Width: =503
-        X: =137
-        Y: =847
+        Width: =384
+        X: =168
+        Y: =968
         ZIndex: =16
 
     Icon2_23 As icon.BackArrow:
@@ -171,15 +171,15 @@
         Height: =40
         Icon: =Icon.Airplane
         OnSelect: =
-        PaddingBottom: =10
-        PaddingLeft: =10
-        PaddingRight: =10
-        PaddingTop: =10
+        PaddingBottom: =8
+        PaddingLeft: =8
+        PaddingRight: =8
+        PaddingTop: =8
         Visible: |
             =true
         Width: =54
-        X: =83
-        Y: =717
+        X: =114
+        Y: =809
         ZIndex: =17
 
     Icon2_45 As icon.BackArrow:
@@ -194,8 +194,8 @@
         Visible: |
             =true
         Width: =54
-        X: =105
-        Y: =550
+        X: =114
+        Y: =708
         ZIndex: =18
 
     Icon2_46 As icon.BackArrow:
@@ -203,15 +203,15 @@
         Height: =40
         Icon: =Icon.Leave
         OnSelect: =
-        PaddingBottom: =10
-        PaddingLeft: =10
-        PaddingRight: =10
-        PaddingTop: =10
+        PaddingBottom: =8
+        PaddingLeft: =8
+        PaddingRight: =8
+        PaddingTop: =8
         Visible: |
             =true
         Width: =54
-        X: =105
-        Y: =617
+        X: =114
+        Y: =758
         ZIndex: =19
 
     Icon2_47 As icon.BackArrow:
@@ -219,15 +219,15 @@
         Height: =40
         Icon: =Icon.Money
         OnSelect: =
-        PaddingBottom: =10
+        PaddingBottom: =8
         PaddingLeft: =10
-        PaddingRight: =10
-        PaddingTop: =10
+        PaddingRight: =8
+        PaddingTop: =8
         Visible: |
             =true
         Width: =54
-        X: =83
-        Y: =757
+        X: =114
+        Y: =859
         ZIndex: =20
 
     Icon2_48 As icon.BackArrow:
@@ -235,15 +235,15 @@
         Height: =40
         Icon: =Icon.Compose
         OnSelect: =
-        PaddingBottom: =10
-        PaddingLeft: =10
-        PaddingRight: =10
-        PaddingTop: =10
+        PaddingBottom: =8
+        PaddingLeft: =8
+        PaddingRight: =8
+        PaddingTop: =8
         Visible: |
             =true
         Width: =54
-        X: =83
-        Y: =799
+        X: =114
+        Y: =912
         ZIndex: =21
 
     Icon2_49 As icon.BackArrow:
@@ -251,15 +251,15 @@
         Height: =40
         Icon: =Icon.Sync
         OnSelect: =
-        PaddingBottom: =10
+        PaddingBottom: =8
         PaddingLeft: =10
-        PaddingRight: =10
-        PaddingTop: =10
+        PaddingRight: =8
+        PaddingTop: =8
         Visible: |
             =true
         Width: =54
-        X: =83
-        Y: =838
+        X: =114
+        Y: =963
         ZIndex: =22
 
     Icon3_36 As icon.HorizontalLine:
@@ -272,8 +272,68 @@
         OnSelect: =
         Visible: |
             =true
-        Width: =532
-        X: =60
-        Y: =378
+        Width: =400
+        X: =129
+        Y: =752
         ZIndex: =24
+
+    Icon3_37 As icon.HorizontalLine:
+        BorderThickness: =1
+        Color: =RGBA(127, 178, 57, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(127, 178, 57, 1)
+        Height: =1
+        Icon: =Icon.HorizontalLine
+        OnSelect: =
+        Visible: |
+            =true
+        Width: =400
+        X: =129
+        Y: =803
+        ZIndex: =25
+
+    Icon3_38 As icon.HorizontalLine:
+        BorderThickness: =1
+        Color: =RGBA(127, 178, 57, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(127, 178, 57, 1)
+        Height: =1
+        Icon: =Icon.HorizontalLine
+        OnSelect: =
+        Visible: |
+            =true
+        Width: =400
+        X: =129
+        Y: =853
+        ZIndex: =26
+
+    Icon3_39 As icon.HorizontalLine:
+        BorderThickness: =1
+        Color: =RGBA(127, 178, 57, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(127, 178, 57, 1)
+        Height: =1
+        Icon: =Icon.HorizontalLine
+        OnSelect: =
+        Visible: |
+            =true
+        Width: =400
+        X: =129
+        Y: =906
+        ZIndex: =27
+
+    Icon3_40 As icon.HorizontalLine:
+        BorderThickness: =1
+        Color: =RGBA(127, 178, 57, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(127, 178, 57, 1)
+        Height: =1
+        Icon: =Icon.HorizontalLine
+        OnSelect: =
+        Visible: |
+            =true
+        Width: =400
+        X: =129
+        Y: =957
+        ZIndex: =28
 

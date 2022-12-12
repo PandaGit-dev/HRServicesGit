@@ -44,36 +44,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Landing Page'.Timer1.AutoStart"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Landing Page'.Timer1.AutoStart",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AutoStart",
-                "module": "Landing Page",
-                "type": "'Landing Page'.Timer1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AutostartShouldBeOff",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Home Page_1'.Label2_30.TabIndex"
                 }
               ],
@@ -97,7 +67,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -127,7 +97,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -157,7 +127,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -187,7 +157,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 4
+          "ruleIndex": 3
         }
       ],
       "tool": {
@@ -210,23 +180,6 @@
                 "level": "Medium",
                 "primaryCategory": "accessibility",
                 "whyFix": "If the focus isn't visible, people who don't use a mouse won't be able to see it when they're interacting with the app."
-              }
-            },
-            {
-              "id": "acc-AutostartShouldBeOff",
-              "messageStrings": {
-                "issue": {
-                  "text": "Turn off autostart"
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Set autostart for video and audio to False."
-                ],
-                "level": "Medium",
-                "primaryCategory": "accessibility",
-                "whyFix": "Autostart of video and audio files can be distracting. Let users choose whether to play or not."
               }
             },
             {
