@@ -3,11 +3,11 @@
     ImagePosition: =ImagePosition.Stretch
 
     Image5 As image:
-        Height: =453
+        Height: =650
         Image: ='download screen'
         ImagePosition: =ImagePosition.Stretch
         Width: =640
-        Y: =682
+        Y: =486
         ZIndex: =1
 
     Rectangle1 As rectangle:

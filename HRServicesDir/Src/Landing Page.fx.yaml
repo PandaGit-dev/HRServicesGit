@@ -12,8 +12,9 @@
 
     Timer1 As timer:
         AutoStart: =true
-        Duration: =1000
+        Duration: =5000
         Height: =70
+        OnTimerEnd: =Navigate('Home Page',ScreenTransition.Fade)
         Width: =280
         X: =201
         Y: =234
