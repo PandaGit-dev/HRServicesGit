@@ -11,12 +11,21 @@
         Y: =486
         ZIndex: =1
 
+    Image10 As image:
+        Height: =456
+        Image: =Picture3
+        ImagePosition: =ImagePosition.Stretch
+        Width: =603
+        X: =15
+        Y: =204
+        ZIndex: =2
+
     Rectangle1_8 As rectangle:
         BorderColor: =RGBA(230, 230, 230, 1)
         Fill: =RGBA(245, 245, 245, 1)
         Height: =95
         Width: =640
-        ZIndex: =2
+        ZIndex: =3
 
     Image2_2 As image:
         Height: =70
@@ -24,7 +33,7 @@
         Width: =130
         X: =12
         Y: =12
-        ZIndex: =3
+        ZIndex: =4
 
     Rectangle1_9 As rectangle:
         BorderColor: =RGBA(230, 230, 230, 1)
@@ -32,7 +41,7 @@
         Height: =31
         Width: =640
         Y: =1063
-        ZIndex: =6
+        ZIndex: =5
 
     Rectangle1_10 As rectangle:
         BorderColor: =RGBA(230, 230, 230, 1)
@@ -40,7 +49,7 @@
         Height: =65
         Width: =640
         Y: =1071
-        ZIndex: =7
+        ZIndex: =6
 
     Image3_2 As image:
         BorderColor: =RGBA(255, 255, 255, 1)
@@ -55,7 +64,7 @@
         Width: =70
         X: =548
         Y: =12
-        ZIndex: =11
+        ZIndex: =10
 
     Group1_1 As group:
         Height: =5
@@ -73,7 +82,7 @@
             Width: =70
             X: =292
             Y: =1035
-            ZIndex: =8
+            ZIndex: =7
 
         Icon1_3 As icon.Hamburger:
             Color: =RGBA(255, 255, 255, 1)
@@ -83,7 +92,7 @@
             Width: =43
             X: =305
             Y: =1046
-            ZIndex: =9
+            ZIndex: =8
 
     Group2_2 As group:
         Height: =5
@@ -100,7 +109,7 @@
             Width: =200
             X: =390
             Y: =51
-            ZIndex: =10
+            ZIndex: =9
 
         Label1_8 As label:
             Height: =31
@@ -110,7 +119,7 @@
             Width: =171
             X: =404
             Y: =64
-            ZIndex: =12
+            ZIndex: =11
 
         Label1_9 As label:
             Height: =18
@@ -121,7 +130,7 @@
             Width: =171
             X: =404
             Y: =105
-            ZIndex: =13
+            ZIndex: =12
 
         Icon3_48 As icon.HorizontalLine:
             BorderThickness: =1
@@ -135,7 +144,7 @@
             Width: =150
             X: =404
             Y: =94
-            ZIndex: =14
+            ZIndex: =13
 
         Label1_10 As label:
             Height: =31
@@ -145,7 +154,7 @@
             Width: =171
             X: =404
             Y: =128
-            ZIndex: =15
+            ZIndex: =14
 
         Label1_11 As label:
             Align: =Align.Right
@@ -159,7 +168,25 @@
             Width: =171
             X: =404
             Y: =154
-            ZIndex: =16
+            ZIndex: =15
+
+    Image9 As image:
+        Height: =74
+        Image: =Picture7
+        ImagePosition: =ImagePosition.Stretch
+        Width: =211
+        X: =12
+        Y: =112
+        ZIndex: =38
+
+    Image9_1 As image:
+        Height: =74
+        Image: =Picture4
+        ImagePosition: =ImagePosition.Stretch
+        Width: =211
+        X: =223
+        Y: =111
+        ZIndex: =39
 
     Menu_2 As group:
         Height: =5
@@ -175,7 +202,7 @@
             Visible: =MenuVis
             Width: =640
             Y: =1063
-            ZIndex: =17
+            ZIndex: =16
 
         Rectangle1_12 As rectangle:
             BorderColor: =RGBA(230, 230, 230, 1)
@@ -184,7 +211,7 @@
             Visible: =MenuVis
             Width: =640
             Y: =1071
-            ZIndex: =18
+            ZIndex: =17
 
         Circle1_4 As circle:
             BorderColor: =RGBA(255, 255, 255, 1)
@@ -196,7 +223,7 @@
             Width: =70
             X: =292
             Y: =1035
-            ZIndex: =19
+            ZIndex: =18
 
         Icon1_4 As icon.Hamburger:
             Color: =RGBA(255, 255, 255, 1)
@@ -207,7 +234,7 @@
             Width: =43
             X: =305
             Y: =1046
-            ZIndex: =20
+            ZIndex: =19
 
         Image7_2 As image:
             Height: =361
@@ -217,7 +244,7 @@
             Width: =526
             X: =63
             Y: =674
-            ZIndex: =21
+            ZIndex: =20
 
         Label2_42 As label:
             Font: =Font.'Courier New'
@@ -229,7 +256,7 @@
             Width: =384
             X: =168
             Y: =712
-            ZIndex: =22
+            ZIndex: =21
 
         Label2_43 As label:
             Font: =Font.'Courier New'
@@ -241,7 +268,7 @@
             Width: =384
             X: =168
             Y: =763
-            ZIndex: =23
+            ZIndex: =22
 
         Label2_44 As label:
             Font: =Font.'Courier New'
@@ -253,7 +280,7 @@
             Width: =384
             X: =168
             Y: =814
-            ZIndex: =24
+            ZIndex: =23
 
         Label2_45 As label:
             Font: =Font.'Courier New'
@@ -265,7 +292,7 @@
             Width: =384
             X: =168
             Y: =864
-            ZIndex: =25
+            ZIndex: =24
 
         Label2_46 As label:
             Font: =Font.'Courier New'
@@ -277,7 +304,7 @@
             Width: =384
             X: =168
             Y: =917
-            ZIndex: =26
+            ZIndex: =25
 
         Label2_47 As label:
             Font: =Font.'Courier New'
@@ -289,7 +316,7 @@
             Width: =384
             X: =168
             Y: =968
-            ZIndex: =27
+            ZIndex: =26
 
         Icon2_25 As icon.BackArrow:
             Color: =RGBA(127, 178, 57, 1)
@@ -304,7 +331,7 @@
             Width: =54
             X: =114
             Y: =809
-            ZIndex: =28
+            ZIndex: =27
 
         Icon2_55 As icon.BackArrow:
             Color: =RGBA(127, 178, 57, 1)
@@ -319,7 +346,7 @@
             Width: =54
             X: =114
             Y: =708
-            ZIndex: =29
+            ZIndex: =28
 
         Icon2_56 As icon.BackArrow:
             Color: =RGBA(127, 178, 57, 1)
@@ -334,7 +361,7 @@
             Width: =54
             X: =114
             Y: =758
-            ZIndex: =30
+            ZIndex: =29
 
         Icon2_57 As icon.BackArrow:
             Color: =RGBA(127, 178, 57, 1)
@@ -349,7 +376,7 @@
             Width: =54
             X: =114
             Y: =859
-            ZIndex: =31
+            ZIndex: =30
 
         Icon2_58 As icon.BackArrow:
             Color: =RGBA(127, 178, 57, 1)
@@ -364,7 +391,7 @@
             Width: =54
             X: =114
             Y: =912
-            ZIndex: =32
+            ZIndex: =31
 
         Icon2_59 As icon.BackArrow:
             Color: =RGBA(127, 178, 57, 1)
@@ -379,7 +406,7 @@
             Width: =54
             X: =114
             Y: =963
-            ZIndex: =33
+            ZIndex: =32
 
         Icon3_49 As icon.HorizontalLine:
             BorderThickness: =1
@@ -393,7 +420,7 @@
             Width: =400
             X: =129
             Y: =752
-            ZIndex: =34
+            ZIndex: =33
 
         Icon3_50 As icon.HorizontalLine:
             BorderThickness: =1
@@ -407,7 +434,7 @@
             Width: =400
             X: =129
             Y: =803
-            ZIndex: =35
+            ZIndex: =34
 
         Icon3_51 As icon.HorizontalLine:
             BorderThickness: =1
@@ -421,7 +448,7 @@
             Width: =400
             X: =129
             Y: =853
-            ZIndex: =36
+            ZIndex: =35
 
         Icon3_52 As icon.HorizontalLine:
             BorderThickness: =1
@@ -435,7 +462,7 @@
             Width: =400
             X: =129
             Y: =906
-            ZIndex: =37
+            ZIndex: =36
 
         Icon3_53 As icon.HorizontalLine:
             BorderThickness: =1
@@ -449,23 +476,85 @@
             Width: =400
             X: =129
             Y: =957
-            ZIndex: =38
+            ZIndex: =37
 
-    Image9 As image:
-        Height: =74
-        Image: =Picture7
-        ImagePosition: =ImagePosition.Stretch
-        Width: =211
-        X: =12
-        Y: =112
+    Dropdown1 As dropdown:
+        BorderColor: =RGBA(112, 188, 31, 1)
+        ChevronBackground: =RGBA(0, 0, 0, 0)
+        ChevronFill: =RGBA(128, 128, 128, 1)
+        Fill: =RGBA(241, 244, 249, 1)
+        Height: =50
+        Items: =DropDownSample
+        Size: =16
+        Width: =500
+        X: =63
+        Y: =299
+        ZIndex: =40
+
+    Label2 As label:
+        Height: =54
+        Size: =21
+        Text: ="Leave Type"
+        Width: =500
+        X: =63
+        Y: =245
         ZIndex: =41
 
-    Image9_1 As image:
-        Height: =74
-        Image: =Picture4
-        ImagePosition: =ImagePosition.Stretch
-        Width: =211
-        X: =223
-        Y: =111
+    Label2_1 As label:
+        Height: =54
+        Size: =21
+        Text: ="Start Date"
+        Width: =235
+        X: =63
+        Y: =376
         ZIndex: =42
+
+    DatePicker1_1 As datepicker:
+        BorderColor: =RGBA(112, 188, 31, 1)
+        Fill: =RGBA(241, 244, 249, 1)
+        Height: =50
+        IconBackground: =
+        IconFill: =RGBA(128, 128, 128, 1)
+        Size: =16
+        Width: =235
+        X: =63
+        Y: =430
+        ZIndex: =43
+
+    DatePicker1_2 As datepicker:
+        BorderColor: =RGBA(112, 188, 31, 1)
+        Fill: =RGBA(241, 244, 249, 1)
+        Height: =50
+        IconBackground: =
+        IconFill: =RGBA(128, 128, 128, 1)
+        Size: =16
+        Width: =229
+        X: =334
+        Y: =430
+        ZIndex: =44
+
+    Label2_2 As label:
+        Height: =54
+        Size: =21
+        Text: ="End Date"
+        Width: =229
+        X: =334
+        Y: =375
+        ZIndex: =45
+
+    Button1_2 As button:
+        BorderColor: =
+        BorderThickness: =0
+        Fill: =RGBA(112, 188, 31, 1)
+        Font: =Font.'Courier New'
+        FontWeight: =FontWeight.Normal
+        Height: =50
+        HoverFill: =RGBA(99, 139, 44, 1)
+        OnSelect: =
+        Size: =18
+        Text: ="Check Eligibility"
+        Width: =500
+        X: =63
+        Y: =564
+        ZIndex: =46
 
