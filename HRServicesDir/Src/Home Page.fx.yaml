@@ -535,11 +535,11 @@
         ZIndex: =46
 
     Label2_23 As label:
-        Align: =Align.Center
         Color: =RGBA(99, 139, 44, 1)
+        FontWeight: =FontWeight.Bold
         Height: =44
         Size: =16
-        Text: ="Leave Requests"
+        Text: ="Lorem ipsum"
         Width: =168
         X: =63
         Y: =839
@@ -554,11 +554,11 @@
         ZIndex: =48
 
     Label2_24 As label:
-        Align: =Align.Center
         Color: =RGBA(99, 139, 44, 1)
+        FontWeight: =FontWeight.Semibold
         Height: =44
         Size: =16
-        Text: ="Leave Requests"
+        Text: ="Lorem ipsum"
         Width: =168
         X: =364
         Y: =836
