@@ -163,7 +163,7 @@
 
     Image9_5 As image:
         Height: =74
-        Image: =Picture7
+        Image: =Picture9
         ImagePosition: =ImagePosition.Stretch
         Width: =211
         X: =12
@@ -172,7 +172,7 @@
 
     Image9_4 As image:
         Height: =74
-        Image: =Picture4
+        Image: =Picture8
         ImagePosition: =ImagePosition.Stretch
         Width: =211
         X: =223

@@ -478,7 +478,7 @@
             Y: =957
             ZIndex: =37
 
-    Dropdown1 As dropdown:
+    LeaveTypeDrp As dropdown:
         BorderColor: =RGBA(112, 188, 31, 1)
         ChevronBackground: =RGBA(0, 0, 0, 0)
         ChevronFill: =RGBA(128, 128, 128, 1)
@@ -486,7 +486,7 @@
         Fill: =RGBA(241, 244, 249, 1)
         Height: =50
         Items: =LeaveTypeMasters
-        OnSelect: =Set(LeaveTypeID,ShowColumns(Filter(LeaveTypeMasters,NAME = Dropdown1.Selected.NAME),"crbd0_absence_attendance_type_id"))
+        OnSelect: =Set(LeaveTypeID,ShowColumns(Filter(LeaveTypeMasters,NAME = LeaveTypeDrp.Selected.NAME),"crbd0_absence_attendance_type_id"))
         PressedFill: =RGBA(112, 188, 31, 1)
         SelectionFill: =RGBA(112, 188, 31, 1)
         Size: =16

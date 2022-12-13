@@ -487,7 +487,7 @@
         Height: =50
         HoverFill: =RGBA(99, 139, 44, 1)
         OnSelect: |-
-            =Patch(LeaveManagements, 'Employee ID' : First(Info).
+            =//Patch(LeaveManagements, {'Employee ID' : First(Info).crbd0_employee_code,'Advance Salary':AdvSalDrp.Selected.Value,Country:countrydrp.Selected.Value,Description:desctext.Text,'Employee Email':User().Email,'Employee Name':User().FullName,'End Date':LeaveEndDate.SelectedDate,EndDateValue:Text(LeaveEndDate.SelectedDate,"dd-mm-yyyy"),'Leave Status': "Pending",'Leave Type':LeaveTypeDrp.SelectedText,'No of Days':DateDiff(LeaveStartDate.SelectedDate,LeaveEndDate.SelectedDate)+1,'Start Date':LeaveStartDate.SelectedDate,StartDateValue: Text(LeaveStartDate.SelectedDate,"dd-mm-yyyy")})
         Size: =18
         Text: ="Apply"
         Width: =500
@@ -566,15 +566,15 @@
             Y: =810
             ZIndex: =52
 
-    Dropdown1_1 As dropdown:
+    countrydrp As dropdown:
         BorderColor: =RGBA(112, 188, 31, 1)
         ChevronBackground: =RGBA(0, 0, 0, 0)
         ChevronFill: =RGBA(128, 128, 128, 1)
         ChevronHoverBackground: =
         Fill: =RGBA(241, 244, 249, 1)
         Height: =50
-        Items: =LeaveTypeMasters
-        OnSelect: =Set(LeaveTypeID,ShowColumns(Filter(LeaveTypeMasters,NAME = Dropdown1_1.Selected.NAME),"crbd0_absence_attendance_type_id"))
+        Items: =Distinct(LeaveManagements,Country)
+        OnSelect: =
         PressedFill: =RGBA(112, 188, 31, 1)
         SelectionFill: =RGBA(112, 188, 31, 1)
         Size: =16
@@ -592,15 +592,15 @@
         Y: =238
         ZIndex: =56
 
-    Dropdown1_2 As dropdown:
+    AdvSalDrp As dropdown:
         BorderColor: =RGBA(112, 188, 31, 1)
         ChevronBackground: =RGBA(0, 0, 0, 0)
         ChevronFill: =RGBA(128, 128, 128, 1)
         ChevronHoverBackground: =
         Fill: =RGBA(241, 244, 249, 1)
         Height: =50
-        Items: =LeaveTypeMasters
-        OnSelect: =Set(LeaveTypeID,ShowColumns(Filter(LeaveTypeMasters,NAME = Dropdown1_2.Selected.NAME),"crbd0_absence_attendance_type_id"))
+        Items: =Distinct(LeaveManagements,'Advance Salary')
+        OnSelect: =
         PressedFill: =RGBA(112, 188, 31, 1)
         SelectionFill: =RGBA(112, 188, 31, 1)
         Size: =16
@@ -612,7 +612,7 @@
     Label2_11 As label:
         Height: =54
         Size: =20
-        Text: ="Adavance Salary"
+        Text: ="Advance Salary"
         Width: =235
         X: =334
         Y: =238
@@ -620,15 +620,15 @@
 
     Label2_12 As label:
         Size: =20
-        Text: ="Country"
+        Text: ="Description"
         Width: =235
         X: =63
         Y: =362
         ZIndex: =59
 
-    TextInput1 As text:
+    desctext As text:
         BorderColor: =RGBA(112, 188, 31, 1)
-        Default: ="Text input"
+        Default: =""
         Fill: =RGBA(241, 244, 249, 1)
         Height: =70
         Mode: =TextMode.MultiLine

@@ -496,9 +496,29 @@
     Label2_6 As label:
         Height: =54
         Size: =21
-        Text: =First(Info).crbd0_reporting_to_name
-        Width: =301
-        X: =305
+        Text: |-
+            =": "&First(Info).crbd0_reporting_to_name
+        Width: =346
+        X: =271
         Y: =694
         ZIndex: =42
+
+    Label2_16 As label:
+        Height: =54
+        Size: =21
+        Text: ="Designation"
+        Width: =246
+        X: =59
+        Y: =756
+        ZIndex: =43
+
+    Label2_17 As label:
+        Height: =54
+        Size: =21
+        Text: |-
+            =": Associate"
+        Width: =346
+        X: =272
+        Y: =756
+        ZIndex: =44
 
