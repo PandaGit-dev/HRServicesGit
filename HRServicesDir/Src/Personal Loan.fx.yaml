@@ -647,7 +647,6 @@
         ZIndex: =64
 
     Label2_84 As label:
-        Color: =RGBA(45, 74, 5, 1)
         FontWeight: =FontWeight.Semibold
         Height: =56
         Size: =20
@@ -673,7 +672,6 @@
         ZIndex: =66
 
     Label2_85 As label:
-        Color: =RGBA(42, 69, 6, 1)
         FontWeight: =FontWeight.Semibold
         Height: =72
         Size: =20
@@ -684,7 +682,6 @@
         ZIndex: =67
 
     Label2_86 As label:
-        Color: =RGBA(45, 74, 5, 1)
         FontWeight: =FontWeight.Semibold
         Height: =56
         Size: =20
@@ -712,7 +709,6 @@
         ZIndex: =69
 
     Label2_87 As label:
-        Color: =RGBA(45, 74, 5, 1)
         FontWeight: =FontWeight.Semibold
         Height: =56
         Size: =20
@@ -738,7 +734,6 @@
         ZIndex: =71
 
     Label2_88 As label:
-        Color: =RGBA(45, 74, 5, 1)
         FontWeight: =FontWeight.Semibold
         Height: =56
         Size: =20
@@ -759,6 +754,7 @@
         ZIndex: =73
 
     Label4 As label:
+        FontWeight: =FontWeight.Semibold
         Height: =55
         Size: =20
         Text: ="11-dec-2022"
