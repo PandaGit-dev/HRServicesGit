@@ -6,11 +6,13 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "ds_leavemanagement",
+    "MaxGetRowsCount": 500,
     "Name": "LeaveManagements",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
       "crbd0_employeeemail": "Employee Email",
       "crbd0_enddatevalue": "EndDateValue",
+      "crbd0_leavetypevalue": "LeaveTypeValue",
       "crbd0_referenceno": "Reference No",
       "crbd0_startdatevalue": "StartDateValue",
       "createdby": "Created By",
