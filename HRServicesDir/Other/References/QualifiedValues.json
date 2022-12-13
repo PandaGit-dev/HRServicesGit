@@ -1,13 +1,6 @@
 {
   "QualifiedValues": [
     {
-      "Kind": "default.cds_crbd0_leavetype_forms",
-      "Namespace": "Leave Types (Forms)",
-      "Values": {
-        "Information": "1722421b-07a0-413e-be9b-e218a92902d0"
-      }
-    },
-    {
       "Kind": "default.cds_crbd0_leavetypemaster_forms",
       "Namespace": "LeaveTypeMasters (Forms)",
       "Values": {
@@ -26,6 +19,13 @@
       "Namespace": "LeaveManagements (Forms)",
       "Values": {
         "Information": "5b23e06a-b3b7-4e6a-b358-91fc60c7c372"
+      }
+    },
+    {
+      "Kind": "default.cds_crbd0_leavetype_forms",
+      "Namespace": "Leave Types (Forms)",
+      "Values": {
+        "Information": "1722421b-07a0-413e-be9b-e218a92902d0"
       }
     }
   ]
