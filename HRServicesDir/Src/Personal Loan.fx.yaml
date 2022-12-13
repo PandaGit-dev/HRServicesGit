@@ -8,15 +8,15 @@
         Image: ='download screen'
         ImagePosition: =ImagePosition.Stretch
         Width: =640
-        Y: =486
+        Y: =458
         ZIndex: =1
 
     Image10_4 As image:
-        Height: =549
+        Height: =325
         Image: =Picture3
         ImagePosition: =ImagePosition.Stretch
         Width: =640
-        Y: =204
+        Y: =142
         ZIndex: =2
 
     Rectangle1_28 As rectangle:
@@ -92,24 +92,6 @@
             X: =305
             Y: =1046
             ZIndex: =8
-
-    Image9_7 As image:
-        Height: =74
-        Image: =Picture7
-        ImagePosition: =ImagePosition.Stretch
-        Width: =211
-        X: =15
-        Y: =772
-        ZIndex: =16
-
-    Image9_6 As image:
-        Height: =74
-        Image: =Picture4
-        ImagePosition: =ImagePosition.Stretch
-        Width: =211
-        X: =281
-        Y: =753
-        ZIndex: =17
 
     Group2_6 As group:
         Height: =5
@@ -190,11 +172,11 @@
     Label2_10 As label:
         FontWeight: =FontWeight.Semibold
         Height: =49
-        Size: =20
+        Size: =18
         Text: ="Salary Package"
         Width: =218
         X: =32
-        Y: =272
+        Y: =166
         ZIndex: =19
 
     Label2_29 As label:
@@ -202,29 +184,9 @@
         Size: =16
         Text: ="(Basic + Housing + Trans)"
         Width: =283
-        X: =229
-        Y: =272
+        X: =218
+        Y: =166
         ZIndex: =20
-
-    Button1_4 As button:
-        BorderColor: =
-        BorderThickness: =0
-        Fill: =RGBA(112, 188, 31, 1)
-        Font: =Font.'Courier New'
-        FontWeight: =FontWeight.Normal
-        Height: =50
-        HoverFill: =RGBA(99, 139, 44, 1)
-        OnSelect: |-
-            =Set(limitValue,GetLeaveBalance.Run(Text(LeaveStartDate_1.SelectedDate,"dd-mm-yyyy"),First(Info).crbd0_assignment_id,Text(LeaveEndDate_1.SelectedDate,"dd-mm-yyyy"),First(LeaveTypeID).crbd0_absence_attendance_type_id).recordvalue);
-            Set(statusleave,Trim(First(FirstN(Split(limitValue,"@"),1)).Result));
-            //Set(remarks,GetLeaveBalance.Run(Text(DateValue1.SelectedDate),First(Info).crbd0_assignment_id,Text(DateValue2.SelectedDate),62).remarks);
-            Set(EMPVis,true); If(Trim(First(FirstN(Split(limitValue,"@"),1)).Result) = "FAILED",Set(proceedvis,true),Set(proceedvis,false))
-        Size: =18
-        Text: ="Check Eligibility"
-        Width: =500
-        X: =79
-        Y: =905
-        ZIndex: =24
 
     Menu_6 As group:
         Height: =5
@@ -580,51 +542,248 @@
             ZIndex: =31
 
     Label2_76 As label:
-        Height: =69
+        FontWeight: =FontWeight.Bold
+        Height: =47
         Size: =20
         Text: ="Personal Loan"
         Width: =347
         X: =189
-        Y: =95
+        Y: =94
         ZIndex: =55
 
     Label2_28 As label:
         FontWeight: =FontWeight.Semibold
         Height: =56
-        Size: =20
+        Size: =18
         Text: ="50% of Salary Components"
         Width: =460
         X: =32
-        Y: =338
+        Y: =215
         ZIndex: =56
 
     Label2_66 As label:
         FontWeight: =FontWeight.Semibold
         Height: =46
-        Size: =20
+        Size: =18
         Text: ="Recurring Deduction"
         Width: =372
         X: =32
-        Y: =413
+        Y: =276
         ZIndex: =57
 
     Label2_77 As label:
         FontWeight: =FontWeight.Semibold
         Height: =51
-        Size: =20
+        Size: =18
         Text: ="Request in Process"
         Width: =358
         X: =32
-        Y: =469
+        Y: =325
         ZIndex: =58
 
     Label2_78 As label:
         FontWeight: =FontWeight.Semibold
         Height: =49
-        Size: =20
-        Text: ="Salary Package"
-        Width: =218
-        X: =32
-        Y: =537
+        Size: =18
+        Text: ="Maximum Eligible Loan Amount"
+        Width: =440
+        X: =29
+        Y: =379
         ZIndex: =59
+
+    Label2_79 As label:
+        Color: =RGBA(25, 135, 8, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =49
+        Size: =16
+        Text: ="0000"
+        Width: =88
+        X: =512
+        Y: =166
+        ZIndex: =60
+
+    Label2_80 As label:
+        Color: =RGBA(25, 135, 8, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =46
+        Size: =16
+        Text: ="0000"
+        Width: =88
+        X: =512
+        Y: =279
+        ZIndex: =61
+
+    Label2_81 As label:
+        Color: =RGBA(25, 135, 8, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =46
+        Size: =16
+        Text: ="0000"
+        Width: =88
+        X: =512
+        Y: =327
+        ZIndex: =62
+
+    Label2_82 As label:
+        Color: =RGBA(25, 135, 8, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =46
+        Size: =16
+        Text: ="0000"
+        Width: =88
+        X: =512
+        Y: =379
+        ZIndex: =63
+
+    Label2_83 As label:
+        Color: =RGBA(25, 135, 8, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =46
+        Size: =16
+        Text: ="0000"
+        Width: =88
+        X: =512
+        Y: =225
+        ZIndex: =64
+
+    Label2_84 As label:
+        Color: =RGBA(45, 74, 5, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =56
+        Size: =20
+        Text: ="Personal Loan Amount"
+        Width: =460
+        X: =29
+        Y: =461
+        ZIndex: =65
+
+    Button1_5 As button:
+        BorderColor: =RGBA(152, 240, 22, 1)
+        BorderThickness: =4
+        Fill: =RGBA(112, 188, 31, 0.43)
+        Font: =Font.'Courier New'
+        FontWeight: =FontWeight.Normal
+        Height: =54
+        HoverFill: =RGBA(99, 139, 44, 1)
+        Size: =18
+        Text: =""
+        Width: =553
+        X: =29
+        Y: =517
+        ZIndex: =66
+
+    Label2_85 As label:
+        Color: =RGBA(42, 69, 6, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =72
+        Size: =20
+        Text: ="Monthly Installment Amount"
+        Width: =358
+        X: =36
+        Y: =585
+        ZIndex: =67
+
+    Label2_86 As label:
+        Color: =RGBA(45, 74, 5, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =56
+        Size: =20
+        Text: ="Loan Reason Category"
+        Width: =460
+        X: =32
+        Y: =660
+        ZIndex: =68
+
+    AdvSalDrp_1 As dropdown:
+        BorderColor: =RGBA(112, 188, 31, 1)
+        ChevronBackground: =RGBA(0, 0, 0, 0)
+        ChevronFill: =RGBA(128, 128, 128, 1)
+        ChevronHoverBackground: =
+        Fill: =RGBA(241, 244, 249, 1)
+        Height: =53
+        Items: =Distinct(LeaveManagements,'Advance Salary')
+        OnSelect: =
+        PressedFill: =RGBA(112, 188, 31, 1)
+        SelectionFill: =RGBA(112, 188, 31, 1)
+        Size: =16
+        Width: =560
+        X: =29
+        Y: =712
+        ZIndex: =69
+
+    Label2_87 As label:
+        Color: =RGBA(45, 74, 5, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =56
+        Size: =20
+        Text: ="Remarks"
+        Width: =460
+        X: =32
+        Y: =768
+        ZIndex: =70
+
+    Button1_6 As button:
+        BorderColor: =RGBA(152, 240, 22, 1)
+        BorderThickness: =4
+        Fill: =RGBA(112, 188, 31, 0.43)
+        Font: =Font.'Courier New'
+        FontWeight: =FontWeight.Normal
+        Height: =60
+        HoverFill: =RGBA(99, 139, 44, 1)
+        Size: =18
+        Text: =""
+        Width: =554
+        X: =36
+        Y: =822
+        ZIndex: =71
+
+    Label2_88 As label:
+        Color: =RGBA(45, 74, 5, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =56
+        Size: =20
+        Text: ="Request Date"
+        Width: =460
+        X: =41
+        Y: =882
+        ZIndex: =72
+
+    Label2_89 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =46
+        Size: =16
+        Text: ="0000"
+        Width: =88
+        X: =492
+        Y: =589
+        ZIndex: =73
+
+    Label4 As label:
+        Height: =55
+        Size: =20
+        Text: ="11-dec-2022"
+        Width: =210
+        X: =394
+        Y: =884
+        ZIndex: =74
+
+    Button1 As button:
+        Fill: =RGBA(255, 0, 0, 1)
+        Height: =50
+        Size: =20
+        Text: ="Cancel"
+        Width: =214
+        X: =63
+        Y: =971
+        ZIndex: =75
+
+    Button1_1 As button:
+        Fill: =RGBA(101, 138, 7, 1)
+        Height: =50
+        Size: =20
+        Text: ="Submit"
+        Width: =214
+        X: =348
+        Y: =971
+        ZIndex: =76
 
