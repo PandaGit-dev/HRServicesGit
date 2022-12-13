@@ -33,7 +33,7 @@
         Width: =582
         X: =36
         Y: =160
-        ZIndex: =5
+        ZIndex: =4
 
     Rectangle1_2 As rectangle:
         BorderColor: =RGBA(230, 230, 230, 1)
@@ -41,7 +41,7 @@
         Height: =31
         Width: =640
         Y: =1063
-        ZIndex: =6
+        ZIndex: =5
 
     Rectangle1_1 As rectangle:
         BorderColor: =RGBA(230, 230, 230, 1)
@@ -49,7 +49,7 @@
         Height: =65
         Width: =640
         Y: =1071
-        ZIndex: =7
+        ZIndex: =6
 
     Image3 As image:
         BorderColor: =RGBA(255, 255, 255, 1)
@@ -64,7 +64,7 @@
         Width: =70
         X: =548
         Y: =12
-        ZIndex: =11
+        ZIndex: =10
 
     Group1 As group:
         Height: =5
@@ -82,7 +82,7 @@
             Width: =70
             X: =292
             Y: =1035
-            ZIndex: =8
+            ZIndex: =7
 
         Icon1 As icon.Hamburger:
             Color: =RGBA(255, 255, 255, 1)
@@ -92,7 +92,25 @@
             Width: =43
             X: =305
             Y: =1046
-            ZIndex: =9
+            ZIndex: =8
+
+    Image11 As image:
+        Height: =155
+        Image: =Picture3
+        ImagePosition: =ImagePosition.Stretch
+        Width: =280
+        X: =41
+        Y: =648
+        ZIndex: =16
+
+    Image11_1 As image:
+        Height: =155
+        Image: =Picture3
+        ImagePosition: =ImagePosition.Stretch
+        Width: =280
+        X: =340
+        Y: =648
+        ZIndex: =17
 
     Group2 As group:
         Height: =5
@@ -109,7 +127,7 @@
             Width: =200
             X: =390
             Y: =51
-            ZIndex: =10
+            ZIndex: =9
 
         Label1 As label:
             Height: =31
@@ -119,7 +137,7 @@
             Width: =171
             X: =404
             Y: =64
-            ZIndex: =12
+            ZIndex: =11
 
         Label1_1 As label:
             Height: =18
@@ -130,7 +148,7 @@
             Width: =171
             X: =404
             Y: =105
-            ZIndex: =13
+            ZIndex: =12
 
         Icon3_41 As icon.HorizontalLine:
             BorderThickness: =1
@@ -144,7 +162,7 @@
             Width: =150
             X: =404
             Y: =94
-            ZIndex: =14
+            ZIndex: =13
 
         Label1_2 As label:
             Height: =31
@@ -154,7 +172,7 @@
             Width: =171
             X: =404
             Y: =128
-            ZIndex: =15
+            ZIndex: =14
 
         Label1_3 As label:
             Align: =Align.Right
@@ -168,16 +186,125 @@
             Width: =171
             X: =404
             Y: =154
-            ZIndex: =16
+            ZIndex: =15
 
-    Image11 As image:
+    Image11_2 As image:
         Height: =155
         Image: =Picture3
         ImagePosition: =ImagePosition.Stretch
         Width: =280
-        X: =41
-        Y: =648
-        ZIndex: =39
+        X: =37
+        Y: =817
+        ZIndex: =18
+
+    Image11_3 As image:
+        Height: =155
+        Image: =Picture3
+        ImagePosition: =ImagePosition.Stretch
+        Width: =280
+        X: =336
+        Y: =817
+        ZIndex: =19
+
+    Label2_18 As label:
+        Color: =RGBA(79, 110, 37, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =44
+        Size: =16
+        Text: ="Leave Requests"
+        Width: =226
+        X: =364
+        Y: =664
+        ZIndex: =20
+
+    Circle2 As circle:
+        Fill: =RGBA(209, 232, 178, 1)
+        Height: =70
+        Width: =70
+        X: =364
+        Y: =710
+        ZIndex: =21
+
+    Label2_22 As label:
+        Color: =RGBA(99, 139, 44, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =44
+        Size: =16
+        Text: ="Leave Entitlement"
+        Width: =242
+        X: =63
+        Y: =664
+        ZIndex: =22
+
+    Circle2_1 As circle:
+        Fill: =RGBA(209, 232, 178, 1)
+        Height: =70
+        Width: =70
+        X: =63
+        Y: =710
+        ZIndex: =23
+
+    Label2_23 As label:
+        Color: =RGBA(99, 139, 44, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =44
+        Size: =16
+        Text: ="Lorem ipsum"
+        Width: =168
+        X: =63
+        Y: =839
+        ZIndex: =24
+
+    Circle2_2 As circle:
+        Fill: =RGBA(209, 232, 178, 1)
+        Height: =70
+        Width: =70
+        X: =63
+        Y: =885
+        ZIndex: =25
+
+    Label2_24 As label:
+        Color: =RGBA(99, 139, 44, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =44
+        Size: =16
+        Text: ="Lorem ipsum"
+        Width: =168
+        X: =364
+        Y: =836
+        ZIndex: =26
+
+    Circle2_3 As circle:
+        Fill: =RGBA(209, 232, 178, 1)
+        Height: =70
+        Width: =70
+        X: =364
+        Y: =882
+        ZIndex: =27
+
+    Label2_25 As label:
+        Align: =Align.Center
+        Color: =RGBA(79, 110, 37, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =72
+        Size: =18
+        Text: =CountRows(Filter(LeaveManagements,'Employee Email' = User().Email,'Leave Status'="Pending"))
+        Width: =70
+        X: =364
+        Y: =708
+        ZIndex: =28
+
+    Label2_26 As label:
+        Align: =Align.Center
+        Color: =RGBA(79, 110, 37, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =72
+        Size: =18
+        Text: =45
+        Width: =70
+        X: =63
+        Y: =708
+        ZIndex: =29
 
     Menu_1 As group:
         Height: =5
@@ -193,7 +320,7 @@
             Visible: =MenuVis
             Width: =640
             Y: =1063
-            ZIndex: =17
+            ZIndex: =30
 
         Rectangle1_7 As rectangle:
             BorderColor: =RGBA(230, 230, 230, 1)
@@ -202,7 +329,7 @@
             Visible: =MenuVis
             Width: =640
             Y: =1071
-            ZIndex: =18
+            ZIndex: =31
 
         Circle1_2 As circle:
             BorderColor: =RGBA(255, 255, 255, 1)
@@ -214,7 +341,7 @@
             Width: =70
             X: =292
             Y: =1035
-            ZIndex: =19
+            ZIndex: =32
 
         Icon1_2 As icon.Hamburger:
             Color: =RGBA(255, 255, 255, 1)
@@ -225,7 +352,7 @@
             Width: =43
             X: =305
             Y: =1046
-            ZIndex: =20
+            ZIndex: =33
 
         Image7_1 As image:
             Height: =361
@@ -235,7 +362,7 @@
             Width: =526
             X: =63
             Y: =674
-            ZIndex: =21
+            ZIndex: =34
 
         Label2_36 As label:
             Font: =Font.'Courier New'
@@ -247,7 +374,7 @@
             Width: =384
             X: =168
             Y: =712
-            ZIndex: =22
+            ZIndex: =35
 
         Label2_37 As label:
             Font: =Font.'Courier New'
@@ -259,7 +386,7 @@
             Width: =384
             X: =168
             Y: =763
-            ZIndex: =23
+            ZIndex: =36
 
         Label2_38 As label:
             Font: =Font.'Courier New'
@@ -271,7 +398,7 @@
             Width: =384
             X: =168
             Y: =814
-            ZIndex: =24
+            ZIndex: =37
 
         Label2_39 As label:
             Font: =Font.'Courier New'
@@ -283,7 +410,7 @@
             Width: =384
             X: =168
             Y: =864
-            ZIndex: =25
+            ZIndex: =38
 
         Label2_40 As label:
             Font: =Font.'Courier New'
@@ -295,7 +422,7 @@
             Width: =384
             X: =168
             Y: =917
-            ZIndex: =26
+            ZIndex: =39
 
         Label2_41 As label:
             Font: =Font.'Courier New'
@@ -307,7 +434,7 @@
             Width: =384
             X: =168
             Y: =968
-            ZIndex: =27
+            ZIndex: =40
 
         Icon2_24 As icon.BackArrow:
             Color: =RGBA(127, 178, 57, 1)
@@ -322,7 +449,7 @@
             Width: =54
             X: =114
             Y: =809
-            ZIndex: =28
+            ZIndex: =41
 
         Icon2_50 As icon.BackArrow:
             Color: =RGBA(127, 178, 57, 1)
@@ -337,7 +464,7 @@
             Width: =54
             X: =114
             Y: =708
-            ZIndex: =29
+            ZIndex: =42
 
         Icon2_51 As icon.BackArrow:
             Color: =RGBA(127, 178, 57, 1)
@@ -352,7 +479,7 @@
             Width: =54
             X: =114
             Y: =758
-            ZIndex: =30
+            ZIndex: =43
 
         Icon2_52 As icon.BackArrow:
             Color: =RGBA(127, 178, 57, 1)
@@ -367,7 +494,7 @@
             Width: =54
             X: =114
             Y: =859
-            ZIndex: =31
+            ZIndex: =44
 
         Icon2_53 As icon.BackArrow:
             Color: =RGBA(127, 178, 57, 1)
@@ -382,7 +509,7 @@
             Width: =54
             X: =114
             Y: =912
-            ZIndex: =32
+            ZIndex: =45
 
         Icon2_54 As icon.BackArrow:
             Color: =RGBA(127, 178, 57, 1)
@@ -397,7 +524,7 @@
             Width: =54
             X: =114
             Y: =963
-            ZIndex: =33
+            ZIndex: =46
 
         Icon3_43 As icon.HorizontalLine:
             BorderThickness: =1
@@ -411,7 +538,7 @@
             Width: =400
             X: =129
             Y: =752
-            ZIndex: =34
+            ZIndex: =47
 
         Icon3_44 As icon.HorizontalLine:
             BorderThickness: =1
@@ -425,7 +552,7 @@
             Width: =400
             X: =129
             Y: =803
-            ZIndex: =35
+            ZIndex: =48
 
         Icon3_45 As icon.HorizontalLine:
             BorderThickness: =1
@@ -439,7 +566,7 @@
             Width: =400
             X: =129
             Y: =853
-            ZIndex: =36
+            ZIndex: =49
 
         Icon3_46 As icon.HorizontalLine:
             BorderThickness: =1
@@ -453,7 +580,7 @@
             Width: =400
             X: =129
             Y: =906
-            ZIndex: =37
+            ZIndex: =50
 
         Icon3_47 As icon.HorizontalLine:
             BorderThickness: =1
@@ -467,132 +594,5 @@
             Width: =400
             X: =129
             Y: =957
-            ZIndex: =38
-
-    Image11_1 As image:
-        Height: =155
-        Image: =Picture3
-        ImagePosition: =ImagePosition.Stretch
-        Width: =280
-        X: =340
-        Y: =648
-        ZIndex: =40
-
-    Image11_2 As image:
-        Height: =155
-        Image: =Picture3
-        ImagePosition: =ImagePosition.Stretch
-        Width: =280
-        X: =37
-        Y: =817
-        ZIndex: =41
-
-    Image11_3 As image:
-        Height: =155
-        Image: =Picture3
-        ImagePosition: =ImagePosition.Stretch
-        Width: =280
-        X: =336
-        Y: =817
-        ZIndex: =42
-
-    Label2_18 As label:
-        Color: =RGBA(79, 110, 37, 1)
-        FontWeight: =FontWeight.Semibold
-        Height: =44
-        Size: =16
-        Text: ="Leave Requests"
-        Width: =226
-        X: =364
-        Y: =664
-        ZIndex: =43
-
-    Circle2 As circle:
-        Fill: =RGBA(209, 232, 178, 1)
-        Height: =70
-        Width: =70
-        X: =364
-        Y: =710
-        ZIndex: =44
-
-    Label2_22 As label:
-        Color: =RGBA(99, 139, 44, 1)
-        FontWeight: =FontWeight.Semibold
-        Height: =44
-        Size: =16
-        Text: ="Leave Entitlement"
-        Width: =242
-        X: =63
-        Y: =664
-        ZIndex: =45
-
-    Circle2_1 As circle:
-        Fill: =RGBA(209, 232, 178, 1)
-        Height: =70
-        Width: =70
-        X: =63
-        Y: =710
-        ZIndex: =46
-
-    Label2_23 As label:
-        Color: =RGBA(99, 139, 44, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =44
-        Size: =16
-        Text: ="Lorem ipsum"
-        Width: =168
-        X: =63
-        Y: =839
-        ZIndex: =47
-
-    Circle2_2 As circle:
-        Fill: =RGBA(209, 232, 178, 1)
-        Height: =70
-        Width: =70
-        X: =63
-        Y: =885
-        ZIndex: =48
-
-    Label2_24 As label:
-        Color: =RGBA(99, 139, 44, 1)
-        FontWeight: =FontWeight.Semibold
-        Height: =44
-        Size: =16
-        Text: ="Lorem ipsum"
-        Width: =168
-        X: =364
-        Y: =836
-        ZIndex: =49
-
-    Circle2_3 As circle:
-        Fill: =RGBA(209, 232, 178, 1)
-        Height: =70
-        Width: =70
-        X: =364
-        Y: =882
-        ZIndex: =50
-
-    Label2_25 As label:
-        Align: =Align.Center
-        Color: =RGBA(79, 110, 37, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =72
-        Size: =18
-        Text: =CountRows(Filter(LeaveManagements,'Employee Email' = User().Email,'Leave Status'="Pending"))
-        Width: =70
-        X: =364
-        Y: =708
-        ZIndex: =51
-
-    Label2_26 As label:
-        Align: =Align.Center
-        Color: =RGBA(79, 110, 37, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =72
-        Size: =18
-        Text: =45
-        Width: =70
-        X: =63
-        Y: =708
-        ZIndex: =52
+            ZIndex: =51
 
