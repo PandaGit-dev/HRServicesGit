@@ -602,20 +602,20 @@
         FontWeight: =FontWeight.Semibold
         Height: =46
         Size: =20
-        Text: ="Salary Package"
+        Text: ="Recurring Deduction"
         Width: =372
         X: =32
-        Y: =411
+        Y: =413
         ZIndex: =57
 
     Label2_77 As label:
         FontWeight: =FontWeight.Semibold
-        Height: =49
+        Height: =51
         Size: =20
-        Text: ="Salary Package"
-        Width: =218
+        Text: ="Request in Process"
+        Width: =358
         X: =32
-        Y: =522
+        Y: =469
         ZIndex: =58
 
     Label2_78 As label:
@@ -624,7 +624,7 @@
         Size: =20
         Text: ="Salary Package"
         Width: =218
-        X: =52
-        Y: =630
+        X: =32
+        Y: =537
         ZIndex: =59
 
