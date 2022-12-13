@@ -2,10 +2,6 @@
   "DatasetName": "default.cds",
   "EntityName": "Leave Types",
   "InstanceUrl": "https://orgae0fec4b.crm4.dynamics.com/",
-  "LocalReferenceDSJson": {
-    "entitySetName": "crbd0_leavetypes",
-    "logicalName": "crbd0_leavetype"
-  },
   "state": "Configured",
   "TableDefinition": {
     "BooleanOptionSetAttribute": "{\"@odata.context\":\"https://orgae0fec4b.crm4.dynamics.com/api/data/v9.0/$metadata#EntityDefinitions('crbd0_leavetype')/Attributes/Microsoft.Dynamics.CRM.BooleanAttributeMetadata(MetadataId,LogicalName,SchemaName,DisplayName,OptionSet())\",\"value\":[]}",

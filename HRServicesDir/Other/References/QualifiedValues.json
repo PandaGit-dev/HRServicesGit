@@ -13,6 +13,13 @@
       "Values": {
         "Information": "66f9f818-33b5-4842-a189-e50f6f021be7"
       }
+    },
+    {
+      "Kind": "default.cds_crbd0_employeeinfo_forms",
+      "Namespace": "EmployeeInfos (Forms)",
+      "Values": {
+        "Information": "e1a1e447-935b-48df-a633-7d5bc51a3016"
+      }
     }
   ]
 }

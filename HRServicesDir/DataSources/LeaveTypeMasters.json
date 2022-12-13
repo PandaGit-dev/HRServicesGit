@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "crbd0_leavetypemaster",
+    "MaxGetRowsCount": 500,
     "Name": "LeaveTypeMasters",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
