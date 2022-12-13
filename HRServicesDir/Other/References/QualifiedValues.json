@@ -20,6 +20,13 @@
       "Values": {
         "Information": "e1a1e447-935b-48df-a633-7d5bc51a3016"
       }
+    },
+    {
+      "Kind": "default.cds_ds_leavemanagement_forms",
+      "Namespace": "LeaveManagements (Forms)",
+      "Values": {
+        "Information": "5b23e06a-b3b7-4e6a-b358-91fc60c7c372"
+      }
     }
   ]
 }

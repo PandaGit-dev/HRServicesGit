@@ -1,7 +1,7 @@
 "'Leave Page' As screen":
     BackgroundImage: =
     ImagePosition: =ImagePosition.Stretch
-    OnVisible: =Set(AccountDetailsVis,false); Set(MenuVis,false)
+    OnVisible: =Set(AccountDetailsVis,false); Set(MenuVis,false); Set(EMPVis,false); Set(proceedvis,false)
 
     Image5_2 As image:
         Height: =650
@@ -497,7 +497,7 @@
 
     Label2 As label:
         Height: =54
-        Size: =21
+        Size: =20
         Text: ="Leave Type"
         Width: =500
         X: =63
@@ -506,7 +506,7 @@
 
     Label2_1 As label:
         Height: =54
-        Size: =21
+        Size: =20
         Text: ="Start Date"
         Width: =235
         X: =63
@@ -539,7 +539,7 @@
 
     Label2_2 As label:
         Height: =54
-        Size: =21
+        Size: =20
         Text: ="End Date"
         Width: =229
         X: =334
@@ -556,12 +556,93 @@
         HoverFill: =RGBA(99, 139, 44, 1)
         OnSelect: |-
             =Set(limitValue,GetLeaveBalance.Run(Text(LeaveStartDate.SelectedDate,"dd-mm-yyyy"),First(Info).crbd0_assignment_id,Text(LeaveEndDate.SelectedDate,"dd-mm-yyyy"),First(LeaveTypeID).crbd0_absence_attendance_type_id).recordvalue);
-            Set(statusleave,Trim(First(FirstN(Split(limitValue,"@"),1)).Result))
+            Set(statusleave,Trim(First(FirstN(Split(limitValue,"@"),1)).Result));
             //Set(remarks,GetLeaveBalance.Run(Text(DateValue1.SelectedDate),First(Info).crbd0_assignment_id,Text(DateValue2.SelectedDate),62).remarks);
+            Set(EMPVis,true); If(Trim(First(FirstN(Split(limitValue,"@"),1)).Result) = "FAILED",Set(proceedvis,true),Set(proceedvis,false))
         Size: =18
         Text: ="Check Eligibility"
         Width: =500
         X: =63
         Y: =555
         ZIndex: =46
+
+    Button1_4 As button:
+        BorderColor: =
+        BorderThickness: =0
+        Fill: =RGBA(112, 188, 31, 1)
+        Font: =Font.'Courier New'
+        FontWeight: =FontWeight.Normal
+        Height: =50
+        HoverFill: =RGBA(99, 139, 44, 1)
+        OnSelect: =Navigate('Leave Page_1')
+        Size: =18
+        Text: ="Proceed"
+        Visible: =proceedvis
+        Width: =500
+        X: =63
+        Y: =935
+        ZIndex: =53
+
+    "'Eligibility Messgae Popup' As group":
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =53
+
+        Image10_1 As image:
+            Height: =348
+            Image: =Picture3
+            ImagePosition: =ImagePosition.Stretch
+            Visible: =EMPVis
+            Width: =603
+            X: =15
+            Y: =660
+            ZIndex: =47
+
+        Label2_7 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Height: =54
+            Size: =20
+            Text: ="Leave Eligibility"
+            Visible: =EMPVis
+            Width: =534
+            X: =48
+            Y: =686
+            ZIndex: =49
+
+        Label2_8 As label:
+            Align: =Align.Center
+            Color: =If(Trim(First(FirstN(Split(limitValue,"@"),1)).Result) = "FAILED",Red,Black)
+            FontWeight: =FontWeight.Bold
+            Height: =54
+            Size: =20
+            Text: =Trim(First(FirstN(Split(limitValue,"@"),1)).Result)
+            Visible: =EMPVis
+            Width: =534
+            X: =48
+            Y: =756
+            ZIndex: =50
+
+        Image8 As image:
+            Height: =28
+            Image: ='cancel icon p'
+            OnSelect: =Set(EMPVis,false)
+            Visible: =EMPVis
+            Width: =28
+            X: =557
+            Y: =686
+            ZIndex: =51
+
+        Label2_9 As label:
+            Align: =Align.Center
+            Height: =172
+            Size: =15
+            Text: =Trim(Last(FirstN(Split(limitValue,"@"),2)).Result)
+            Visible: =EMPVis
+            Width: =534
+            X: =49
+            Y: =810
+            ZIndex: =52
 

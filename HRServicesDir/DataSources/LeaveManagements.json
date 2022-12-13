@@ -1,0 +1,197 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "ds_leavemanagements",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "ds_leavemanagement",
+    "Name": "LeaveManagements",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "crbd0_employeeemail": "Employee Email",
+      "crbd0_enddatevalue": "EndDateValue",
+      "crbd0_referenceno": "Reference No",
+      "crbd0_startdatevalue": "StartDateValue",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "ds_advancesalary": "Advance Salary",
+      "ds_approvalremarks": "Approval Remarks",
+      "ds_attachment": "Attachment",
+      "ds_country": "Country",
+      "ds_description": "Description",
+      "ds_employeeid": "Employee ID",
+      "ds_employeename": "Employee Name",
+      "ds_enddate": "End Date",
+      "ds_leavemanagement_AsyncOperations": "System Jobs",
+      "ds_leavemanagement_BulkDeleteFailures": "Bulk Delete Failures",
+      "ds_leavemanagement_DuplicateBaseRecord": "Duplicate Records (ds_leavemanagement_DuplicateBaseRecord)",
+      "ds_leavemanagement_DuplicateMatchingRecord": "Duplicate Records (ds_leavemanagement_DuplicateMatchingRecord)",
+      "ds_leavemanagement_FileAttachments": "FileAttachments",
+      "ds_leavemanagement_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "ds_leavemanagement_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "ds_leavemanagement_ProcessSession": "Process Sessions",
+      "ds_leavemanagement_SyncErrors": "Sync Errors",
+      "ds_leavemanagementid": "LeaveManagement",
+      "ds_leavestatus": "Leave Status",
+      "ds_leavetype": "Leave Type",
+      "ds_noofdays": "No of Days",
+      "ds_startdate": "Start Date",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "LeaveManagements",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "LeaveManagements (Views)",
+    "Name": "_ds_leavemanagement_views",
+    "RelatedEntityName": "LeaveManagements",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "6552f96b-1c51-436a-84c9-d803a5aee9a0": "LeaveManagement Lookup View",
+      "736b5a7a-fe5e-426d-a486-ac3684b387d7": "LeaveManagement Advanced Find View",
+      "88179a8f-3762-4822-b7b1-52a22ef6262a": "Inactive LeaveManagements",
+      "a5de3b14-55eb-44d0-b6f7-eff753a16e87": "Active LeaveManagements",
+      "ca792d84-8233-4bc6-b8be-4617c832bfbe": "LeaveManagement Associated View"
+    }
+  },
+  {
+    "DisplayName": "Advance Salary (LeaveManagements)",
+    "Name": "ds_leavemanagement_ds_advancesalary",
+    "OptionSetInfoNameMapping": {
+      "121910000": "Yes",
+      "121910001": "No"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ds_advancesalary",
+        "OptionSetReferenceEntityName": "LeaveManagements"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "ds_advancesalary",
+    "RelatedEntityName": "LeaveManagements",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Country (LeaveManagements)",
+    "Name": "ds_leavemanagement_ds_country",
+    "OptionSetInfoNameMapping": {
+      "121910000": "Saudi Arabia",
+      "121910001": "Egypt"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ds_country",
+        "OptionSetReferenceEntityName": "LeaveManagements"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "ds_country",
+    "RelatedEntityName": "LeaveManagements",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Leave Type (LeaveManagements)",
+    "Name": "ds_leavemanagement_ds_leavetype",
+    "OptionSetInfoNameMapping": {
+      "121910000": "Annual Leave",
+      "121910001": "Sick Leave",
+      "551940001": "Absent Leave",
+      "551940002": "Bereavement Leave",
+      "551940003": "Child Birth Leave",
+      "551940004": "Duty Sick Leave",
+      "551940005": "Emergency Leave (551940005)",
+      "551940006": "Examination Leave",
+      "551940007": "Hajj Leave",
+      "551940008": "Marriage Leave",
+      "551940009": "Maternity Leave",
+      "551940010": "Unpaid Leave (551940010)",
+      "551940011": "Absence With Penalty Leave",
+      "551940012": "Absence Without Penalty Leave",
+      "551940013": "Condolences Leave",
+      "551940014": "Emergency Leave (551940014)",
+      "551940015": "Lieu Leave",
+      "551940016": "Military Service Leave",
+      "551940017": "Paternity Leave",
+      "551940018": "Pilgrimage Leave",
+      "551940019": "Sick Leave Work Related Leave",
+      "551940020": "Study Leave",
+      "551940021": "Unpaid Leave (551940021)",
+      "551940022": "Wedding Leave",
+      "551940023": "Bereavement Leave For Husband",
+      "551940024": "Governmental Sick Leave",
+      "551940025": "Covid 19 Quarantine Leave"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ds_leavetype",
+        "OptionSetReferenceEntityName": "LeaveManagements"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "ds_leavetype",
+    "RelatedEntityName": "LeaveManagements",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (LeaveManagements)",
+    "Name": "ds_leavemanagement_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "LeaveManagements"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "LeaveManagements",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (LeaveManagements)",
+    "Name": "ds_leavemanagement_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "LeaveManagements"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "LeaveManagements",
+    "Type": "OptionSetInfo"
+  }
+]
