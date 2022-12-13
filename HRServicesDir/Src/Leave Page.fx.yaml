@@ -486,6 +486,7 @@
         Fill: =RGBA(241, 244, 249, 1)
         Height: =50
         Items: =LeaveTypeMasters
+        OnSelect: =Set(LeaveTypeID,ShowColumns(Filter(LeaveTypeMasters,NAME = Dropdown1.Selected.NAME),"crbd0_absence_attendance_type_id"))
         PressedFill: =RGBA(112, 188, 31, 1)
         SelectionFill: =RGBA(112, 188, 31, 1)
         Size: =16
@@ -512,7 +513,7 @@
         Y: =376
         ZIndex: =42
 
-    DatePicker1_1 As datepicker:
+    LeaveStartDate As datepicker:
         BorderColor: =RGBA(112, 188, 31, 1)
         Fill: =RGBA(241, 244, 249, 1)
         Height: =50
@@ -524,7 +525,7 @@
         Y: =430
         ZIndex: =43
 
-    DatePicker1_2 As datepicker:
+    LeaveEndDate As datepicker:
         BorderColor: =RGBA(112, 188, 31, 1)
         Fill: =RGBA(241, 244, 249, 1)
         Height: =50
@@ -553,7 +554,10 @@
         FontWeight: =FontWeight.Normal
         Height: =50
         HoverFill: =RGBA(99, 139, 44, 1)
-        OnSelect: =
+        OnSelect: |-
+            =Set(limitValue,GetLeaveBalance.Run(Text(LeaveStartDate.SelectedDate,"dd-mm-yyyy"),First(Info).crbd0_assignment_id,Text(LeaveEndDate.SelectedDate,"dd-mm-yyyy"),First(LeaveTypeID).crbd0_absence_attendance_type_id).recordvalue);
+            Set(statusleave,Trim(First(FirstN(Split(limitValue,"@"),1)).Result))
+            //Set(remarks,GetLeaveBalance.Run(Text(DateValue1.SelectedDate),First(Info).crbd0_assignment_id,Text(DateValue2.SelectedDate),62).remarks);
         Size: =18
         Text: ="Check Eligibility"
         Width: =500
