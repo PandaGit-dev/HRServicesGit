@@ -277,7 +277,7 @@
             =Set(limitValue,GetLeaveBalance.Run(Text(LeaveStartDate.SelectedDate,"dd-mm-yyyy"),First(Info).crbd0_assignment_id,Text(LeaveEndDate.SelectedDate,"dd-mm-yyyy"),First(LeaveTypeID).crbd0_absence_attendance_type_id).recordvalue);
             Set(statusleave,Trim(First(FirstN(Split(limitValue,"@"),1)).Result));
             //Set(remarks,GetLeaveBalance.Run(Text(DateValue1.SelectedDate),First(Info).crbd0_assignment_id,Text(DateValue2.SelectedDate),62).remarks);
-            Set(EMPVis,true); If(Trim(First(FirstN(Split(limitValue,"@"),1)).Result) = "FAILED",Set(proceedvis,true),Set(proceedvis,false))
+            Set(EMPVis,true); If(Trim(First(FirstN(Split(limitValue,"@"),1)).Result) = "FAILED",Set(proceedvis,false),Set(proceedvis,true))
         Size: =18
         Text: ="Check Eligibility"
         Width: =500
@@ -640,7 +640,7 @@
             Visible: =EMPVis
             Width: =534
             X: =48
-            Y: =781
+            Y: =775
             ZIndex: =30
 
         Image8 As image:
@@ -655,13 +655,13 @@
 
         Label2_9 As label:
             Align: =Align.Center
-            Height: =172
+            Height: =139
             Size: =15
             Text: =Trim(Last(FirstN(Split(limitValue,"@"),2)).Result)
             Visible: =EMPVis
             Width: =534
             X: =49
-            Y: =835
+            Y: =829
             ZIndex: =32
 
     Image9_6 As image:
@@ -678,8 +678,26 @@
         Height: =40
         Icon: =Icon.BackArrow
         OnSelect: =Back()
+        Visible: =false
         Width: =40
         X: =35
         Y: =102
         ZIndex: =56
+
+    Button1_4 As button:
+        BorderColor: =
+        BorderThickness: =0
+        Fill: =RGBA(112, 188, 31, 1)
+        Font: =Font.'Courier New'
+        FontWeight: =FontWeight.Normal
+        Height: =39
+        HoverFill: =RGBA(99, 139, 44, 1)
+        OnSelect: =Navigate('Leave Page 2')
+        Size: =18
+        Text: ="Proceed"
+        Visible: =proceedvis
+        Width: =500
+        X: =63
+        Y: =968
+        ZIndex: =57
 

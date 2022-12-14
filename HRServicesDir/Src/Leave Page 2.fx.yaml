@@ -17,7 +17,7 @@
         ImagePosition: =ImagePosition.Stretch
         Width: =603
         X: =15
-        Y: =204
+        Y: =213
         ZIndex: =2
 
     Rectangle1_18 As rectangle:
@@ -99,8 +99,8 @@
         Image: =Picture7
         ImagePosition: =ImagePosition.Stretch
         Width: =211
-        X: =12
-        Y: =112
+        X: =7
+        Y: =145
         ZIndex: =16
 
     Image9_2 As image:
@@ -108,8 +108,8 @@
         Image: =Picture4
         ImagePosition: =ImagePosition.Stretch
         Width: =211
-        X: =223
-        Y: =111
+        X: =216
+        Y: =145
         ZIndex: =17
 
     Group2_4 As group:
@@ -196,13 +196,12 @@
         FontWeight: =FontWeight.Normal
         Height: =50
         HoverFill: =RGBA(99, 139, 44, 1)
-        OnSelect: |-
-            =Patch(LeaveManagements, {'Employee ID' : First(Info).crbd0_employee_code,'Advance Salary':AdvSalDrp.Selected.Value,Country:countrydrp_1.Selected.Value,Description:desctext.Text,'Employee Email':User().Email,'Employee Name':User().FullName,'End Date':LeaveEndDate.SelectedDate,EndDateValue:Text(LeaveEndDate.SelectedDate,"dd-mm-yyyy"),'Leave Status': "Pending",'Leave Type':LeaveTypeDrp.Selected.NAME,'No of Days':DateDiff(LeaveStartDate.SelectedDate,LeaveEndDate.SelectedDate)+1,'Start Date':LeaveStartDate.SelectedDate,StartDateValue: Text(LeaveStartDate.SelectedDate,"dd-mm-yyyy")})
+        OnSelect: =Navigate('Leave History Page')
         Size: =18
         Text: ="Apply"
         Width: =500
         X: =63
-        Y: =630
+        Y: =638
         ZIndex: =18
 
     Timer2_1 As timer:
@@ -251,7 +250,7 @@
         BorderColor: =RGBA(112, 188, 31, 1)
         Default: =""
         Fill: =RGBA(241, 244, 249, 1)
-        Height: =70
+        Height: =81
         Mode: =TextMode.MultiLine
         Size: =16
         Width: =506
@@ -281,7 +280,7 @@
         Tooltip: =
         Width: =506
         X: =63
-        Y: =492
+        Y: =508
         ZIndex: =31
 
     Menu_4 As group:
@@ -636,4 +635,33 @@
             X: =49
             Y: =810
             ZIndex: =23
+
+    Image9_7 As image:
+        Height: =74
+        Image: =Picture10
+        ImagePosition: =ImagePosition.Stretch
+        Width: =211
+        X: =424
+        Y: =145
+        ZIndex: =54
+
+    Label3_1 As label:
+        Align: =Align.Center
+        Size: =18
+        Text: ="Leave Management"
+        Width: =390
+        X: =134
+        Y: =102
+        ZIndex: =55
+
+    Icon2_2 As icon.BackArrow:
+        Color: =RGBA(112, 188, 31, 1)
+        Height: =40
+        Icon: =Icon.BackArrow
+        OnSelect: =Back()
+        Visible: =false
+        Width: =40
+        X: =35
+        Y: =102
+        ZIndex: =56
 

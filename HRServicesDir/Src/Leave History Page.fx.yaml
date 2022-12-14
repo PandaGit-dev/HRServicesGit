@@ -166,8 +166,8 @@
         Image: =Picture9
         ImagePosition: =ImagePosition.Stretch
         Width: =211
-        X: =12
-        Y: =112
+        X: =7
+        Y: =145
         ZIndex: =38
 
     Image9_4 As image:
@@ -175,8 +175,8 @@
         Image: =Picture8
         ImagePosition: =ImagePosition.Stretch
         Width: =211
-        X: =223
-        Y: =111
+        X: =216
+        Y: =145
         ZIndex: =39
 
     Menu_5 As group:
@@ -541,14 +541,14 @@
             ZIndex: =52
 
     "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
-        Height: =802
+        Height: =777
         Items: =SortByColumns(Filter(LeaveManagements,'Employee Email' = User().Email),"createdon",Descending)
         Layout: =Layout.Vertical
         TemplatePadding: =0
         TemplateSize: =Min(160, Self.Height - 60)
         Width: =595
         X: =23
-        Y: =201
+        Y: =231
         ZIndex: =54
 
         Title1 As label:
@@ -740,7 +740,7 @@
             PaddingRight: =0
             PaddingTop: =0
             Size: =16
-            Text: =ThisItem.ds_leavetype
+            Text: =ThisItem.'Leave Type'
             VerticalAlign: =VerticalAlign.Top
             Width: =152
             X: =366
@@ -756,4 +756,13 @@
             X: =528
             Y: =8
             ZIndex: =15
+
+    Image9_8 As image:
+        Height: =74
+        Image: =Picture10
+        ImagePosition: =ImagePosition.Stretch
+        Width: =211
+        X: =424
+        Y: =145
+        ZIndex: =55
 
