@@ -666,6 +666,7 @@
         "'Cancel Button' As button":
             Fill: =RGBA(225, 0, 0, 1)
             Height: =44
+            HoverFill: =ColorFade(RGBA(217, 37, 37, 100), -20%)
             Size: =20
             Text: ="Cancel"
             Width: =205
@@ -676,6 +677,7 @@
         "'Submit Button' As button":
             Fill: =RGBA(112, 188, 31, 1)
             Height: =44
+            HoverFill: =ColorFade(RGBA(135, 212, 53, 100), -20%)
             Size: =20
             Text: ="Submit"
             Width: =205
@@ -719,8 +721,9 @@
             ZIndex: =57
 
         "'Upload Button' As button":
-            Fill: =RGBA(19, 71, 23, 1)
+            Fill: =RGBA(24, 84, 29, 1)
             Height: =41
+            HoverFill: =ColorFade(RGBA(28, 97, 34, 100), -20%)
             Size: =20
             Text: ="Upload"
             Width: =156
