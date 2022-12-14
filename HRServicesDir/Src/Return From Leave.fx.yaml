@@ -529,17 +529,6 @@
         Y: =105
         ZIndex: =47
 
-    Label3 As label:
-        Align: =Align.Center
-        FontWeight: =FontWeight.Semibold
-        Height: =60
-        Size: =20
-        Text: ="Return From Leave"
-        Width: =390
-        X: =134
-        Y: =96
-        ZIndex: =48
-
     Dropdown1 As dropdown:
         BorderColor: =RGBA(112, 188, 31, 1)
         ChevronBackground: =RGBA(0, 0, 0, 0)
