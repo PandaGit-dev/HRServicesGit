@@ -232,12 +232,12 @@
         Y: =756
         ZIndex: =21
 
-    Menu_3 As group:
+    Menu_1 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
-        ZIndex: =39
+        ZIndex: =47
 
         Rectangle1_16 As rectangle:
             BorderColor: =RGBA(230, 230, 230, 1)
@@ -281,25 +281,25 @@
             ZIndex: =25
 
         Image7_3 As image:
-            Height: =361
+            Height: =438
             Image: =Picture1
             ImagePosition: =ImagePosition.Stretch
             Visible: =MenuVis
             Width: =526
             X: =63
-            Y: =674
+            Y: =596
             ZIndex: =26
 
         Label2_48 As label:
             Font: =Font.'Courier New'
             FontWeight: =FontWeight.Semibold
-            OnSelect: =Navigate('About Me Page')
+            OnSelect: =Navigate('Home Page')
             Size: =16
             Text: ="Home"
             Visible: =MenuVis
             Width: =384
             X: =168
-            Y: =712
+            Y: =632
             ZIndex: =27
 
         Label2_49 As label:
@@ -307,11 +307,11 @@
             FontWeight: =FontWeight.Semibold
             OnSelect: =
             Size: =16
-            Text: ="Leave"
+            Text: ="Leave Management"
             Visible: =MenuVis
             Width: =384
             X: =168
-            Y: =763
+            Y: =679
             ZIndex: =28
 
         Label2_50 As label:
@@ -323,7 +323,7 @@
             Visible: =MenuVis
             Width: =384
             X: =168
-            Y: =814
+            Y: =730
             ZIndex: =29
 
         Label2_51 As label:
@@ -335,7 +335,7 @@
             Visible: =MenuVis
             Width: =384
             X: =168
-            Y: =864
+            Y: =780
             ZIndex: =30
 
         Label2_52 As label:
@@ -347,7 +347,7 @@
             Visible: =MenuVis
             Width: =384
             X: =168
-            Y: =917
+            Y: =833
             ZIndex: =31
 
         Label2_53 As label:
@@ -355,11 +355,11 @@
             FontWeight: =FontWeight.Semibold
             OnSelect: =
             Size: =16
-            Text: ="Transfer"
+            Text: ="Return From Leave"
             Visible: =MenuVis
             Width: =384
             X: =168
-            Y: =968
+            Y: =884
             ZIndex: =32
 
         Icon2_26 As icon.BackArrow:
@@ -374,14 +374,14 @@
             Visible: =MenuVis
             Width: =54
             X: =114
-            Y: =809
+            Y: =729
             ZIndex: =33
 
         Icon2_60 As icon.BackArrow:
             Color: =RGBA(127, 178, 57, 1)
             Height: =40
             Icon: =Icon.Home
-            OnSelect: =Navigate('About Me Page')
+            OnSelect: =Navigate('Home Page')
             PaddingBottom: =8
             PaddingLeft: =8
             PaddingRight: =8
@@ -389,7 +389,7 @@
             Visible: =MenuVis
             Width: =54
             X: =114
-            Y: =708
+            Y: =628
             ZIndex: =34
 
         Icon2_61 As icon.BackArrow:
@@ -404,7 +404,7 @@
             Visible: =MenuVis
             Width: =54
             X: =114
-            Y: =758
+            Y: =678
             ZIndex: =35
 
         Icon2_62 As icon.BackArrow:
@@ -419,7 +419,7 @@
             Visible: =MenuVis
             Width: =54
             X: =114
-            Y: =859
+            Y: =779
             ZIndex: =36
 
         Icon2_63 As icon.BackArrow:
@@ -434,13 +434,13 @@
             Visible: =MenuVis
             Width: =54
             X: =114
-            Y: =912
+            Y: =832
             ZIndex: =37
 
         Icon2_64 As icon.BackArrow:
             Color: =RGBA(127, 178, 57, 1)
             Height: =40
-            Icon: =Icon.Sync
+            Icon: =Icon.ClearDrawing
             OnSelect: =
             PaddingBottom: =8
             PaddingLeft: =10
@@ -449,7 +449,7 @@
             Visible: =MenuVis
             Width: =54
             X: =114
-            Y: =963
+            Y: =883
             ZIndex: =38
 
         Icon3_55 As icon.HorizontalLine:
@@ -463,7 +463,7 @@
             Visible: =MenuVis
             Width: =400
             X: =129
-            Y: =752
+            Y: =672
             ZIndex: =39
 
         Icon3_56 As icon.HorizontalLine:
@@ -477,7 +477,7 @@
             Visible: =MenuVis
             Width: =400
             X: =129
-            Y: =803
+            Y: =723
             ZIndex: =40
 
         Icon3_57 As icon.HorizontalLine:
@@ -491,7 +491,7 @@
             Visible: =MenuVis
             Width: =400
             X: =129
-            Y: =853
+            Y: =773
             ZIndex: =41
 
         Icon3_58 As icon.HorizontalLine:
@@ -505,7 +505,7 @@
             Visible: =MenuVis
             Width: =400
             X: =129
-            Y: =906
+            Y: =826
             ZIndex: =42
 
         Icon3_59 As icon.HorizontalLine:
@@ -519,6 +519,47 @@
             Visible: =MenuVis
             Width: =400
             X: =129
-            Y: =957
+            Y: =877
             ZIndex: =43
+
+        Label2_124 As label:
+            Font: =Font.'Courier New'
+            FontWeight: =FontWeight.Semibold
+            OnSelect: =
+            Size: =16
+            Text: ="Resignation"
+            Visible: =MenuVis
+            Width: =384
+            X: =168
+            Y: =935
+            ZIndex: =44
+
+        Icon2_97 As icon.BackArrow:
+            Color: =RGBA(127, 178, 57, 1)
+            Height: =40
+            Icon: =Icon.Error
+            OnSelect: =
+            PaddingBottom: =8
+            PaddingLeft: =10
+            PaddingRight: =8
+            PaddingTop: =8
+            Visible: =MenuVis
+            Width: =54
+            X: =114
+            Y: =934
+            ZIndex: =45
+
+        Icon3_98 As icon.HorizontalLine:
+            BorderThickness: =1
+            Color: =RGBA(127, 178, 57, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(127, 178, 57, 1)
+            Height: =1
+            Icon: =Icon.HorizontalLine
+            OnSelect: =
+            Visible: =MenuVis
+            Width: =400
+            X: =129
+            Y: =928
+            ZIndex: =46
 
