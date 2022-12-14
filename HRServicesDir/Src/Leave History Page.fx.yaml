@@ -740,7 +740,7 @@
             PaddingRight: =0
             PaddingTop: =0
             Size: =16
-            Text: =ThisItem.'Leave Type'
+            Text: =ThisItem.ds_leavetype
             VerticalAlign: =VerticalAlign.Top
             Width: =152
             X: =366

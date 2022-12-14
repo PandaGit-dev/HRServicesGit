@@ -292,7 +292,7 @@
         ChevronHoverBackground: =
         Fill: =RGBA(241, 244, 249, 1)
         Height: =50
-        Items: =Distinct(LeaveManagements,Country)
+        Items: =["Saudi Arabia", "Egypt"]
         OnSelect: =
         PressedFill: =RGBA(112, 188, 31, 1)
         SelectionFill: =RGBA(112, 188, 31, 1)

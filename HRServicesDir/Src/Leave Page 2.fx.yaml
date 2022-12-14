@@ -197,7 +197,7 @@
         Height: =50
         HoverFill: =RGBA(99, 139, 44, 1)
         OnSelect: |-
-            =//Patch(LeaveManagements, {'Employee ID' : First(Info).crbd0_employee_code,'Advance Salary':AdvSalDrp.Selected.Value,Country:countrydrp.Selected.Value,Description:desctext.Text,'Employee Email':User().Email,'Employee Name':User().FullName,'End Date':LeaveEndDate.SelectedDate,EndDateValue:Text(LeaveEndDate.SelectedDate,"dd-mm-yyyy"),'Leave Status': "Pending",'Leave Type':LeaveTypeDrp.SelectedText,'No of Days':DateDiff(LeaveStartDate.SelectedDate,LeaveEndDate.SelectedDate)+1,'Start Date':LeaveStartDate.SelectedDate,StartDateValue: Text(LeaveStartDate.SelectedDate,"dd-mm-yyyy")})
+            =Patch(LeaveManagements, {'Employee ID' : First(Info).crbd0_employee_code,'Advance Salary':AdvSalDrp.Selected.Value,Country:countrydrp_1.Selected.Value,Description:desctext.Text,'Employee Email':User().Email,'Employee Name':User().FullName,'End Date':LeaveEndDate.SelectedDate,EndDateValue:Text(LeaveEndDate.SelectedDate,"dd-mm-yyyy"),'Leave Status': "Pending",'Leave Type':LeaveTypeDrp.Selected.NAME,'No of Days':DateDiff(LeaveStartDate.SelectedDate,LeaveEndDate.SelectedDate)+1,'Start Date':LeaveStartDate.SelectedDate,StartDateValue: Text(LeaveStartDate.SelectedDate,"dd-mm-yyyy")})
         Size: =18
         Text: ="Apply"
         Width: =500
@@ -220,7 +220,7 @@
         ChevronHoverBackground: =
         Fill: =RGBA(241, 244, 249, 1)
         Height: =53
-        Items: =Distinct(LeaveManagements,'Advance Salary')
+        Items: =["Yes","No"]
         OnSelect: =
         PressedFill: =RGBA(112, 188, 31, 1)
         SelectionFill: =RGBA(112, 188, 31, 1)
