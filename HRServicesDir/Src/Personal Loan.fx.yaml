@@ -8,7 +8,7 @@
         Image: ='download screen'
         ImagePosition: =ImagePosition.Stretch
         Width: =640
-        Y: =458
+        Y: =478
         ZIndex: =1
 
     Image10_4 As image:
@@ -656,21 +656,6 @@
         Y: =461
         ZIndex: =65
 
-    Button1_5 As button:
-        BorderColor: =RGBA(152, 240, 22, 1)
-        BorderThickness: =4
-        Fill: =RGBA(112, 188, 31, 0.43)
-        Font: =Font.'Courier New'
-        FontWeight: =FontWeight.Normal
-        Height: =54
-        HoverFill: =RGBA(99, 139, 44, 1)
-        Size: =18
-        Text: =""
-        Width: =553
-        X: =29
-        Y: =517
-        ZIndex: =66
-
     Label2_85 As label:
         FontWeight: =FontWeight.Semibold
         Height: =72
@@ -697,15 +682,15 @@
         ChevronFill: =RGBA(128, 128, 128, 1)
         ChevronHoverBackground: =
         Fill: =RGBA(241, 244, 249, 1)
-        Height: =53
+        Height: =54
         Items: =Distinct(LeaveManagements,'Advance Salary')
         OnSelect: =
         PressedFill: =RGBA(112, 188, 31, 1)
         SelectionFill: =RGBA(112, 188, 31, 1)
         Size: =16
-        Width: =560
+        Width: =571
         X: =29
-        Y: =712
+        Y: =711
         ZIndex: =69
 
     Label2_87 As label:
@@ -717,21 +702,6 @@
         X: =32
         Y: =768
         ZIndex: =70
-
-    Button1_6 As button:
-        BorderColor: =RGBA(152, 240, 22, 1)
-        BorderThickness: =4
-        Fill: =RGBA(112, 188, 31, 0.43)
-        Font: =Font.'Courier New'
-        FontWeight: =FontWeight.Normal
-        Height: =60
-        HoverFill: =RGBA(99, 139, 44, 1)
-        Size: =18
-        Text: =""
-        Width: =554
-        X: =36
-        Y: =822
-        ZIndex: =71
 
     Label2_88 As label:
         FontWeight: =FontWeight.Semibold
@@ -763,23 +733,47 @@
         Y: =884
         ZIndex: =74
 
-    Button1 As button:
-        Fill: =RGBA(255, 0, 0, 1)
+    CancelBtn As button:
+        Fill: =RGBA(225, 0, 0, 1)
         Height: =50
         Size: =20
         Text: ="Cancel"
         Width: =214
-        X: =63
-        Y: =971
+        X: =36
+        Y: =980
         ZIndex: =75
 
-    Button1_1 As button:
-        Fill: =RGBA(101, 138, 7, 1)
+    SubmitBtn As button:
+        Fill: =RGBA(112, 188, 31, 1)
         Height: =50
         Size: =20
         Text: ="Submit"
         Width: =214
-        X: =348
-        Y: =971
+        X: =383
+        Y: =980
         ZIndex: =76
+
+    Label9 As label:
+        BorderColor: =RGBA(112, 188, 31, 1)
+        BorderThickness: =3
+        Fill: =RGBA(112, 188, 31, 0.38)
+        Height: =52
+        Size: =20
+        Text: =""
+        Width: =560
+        X: =36
+        Y: =514
+        ZIndex: =77
+
+    Label9_1 As label:
+        BorderColor: =RGBA(112, 188, 31, 1)
+        BorderThickness: =3
+        Fill: =RGBA(112, 188, 31, 0.38)
+        Height: =48
+        Size: =20
+        Text: =""
+        Width: =572
+        X: =32
+        Y: =824
+        ZIndex: =78
 
