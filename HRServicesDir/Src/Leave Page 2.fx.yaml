@@ -252,6 +252,10 @@
         Fill: =RGBA(241, 244, 249, 1)
         Height: =81
         Mode: =TextMode.MultiLine
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
         Size: =16
         Width: =506
         X: =63
