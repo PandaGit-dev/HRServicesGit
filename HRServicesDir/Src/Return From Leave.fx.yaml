@@ -12,12 +12,12 @@
         ZIndex: =1
 
     Image10_7 As image:
-        Height: =504
+        Height: =252
         Image: =Picture3
         ImagePosition: =ImagePosition.Stretch
-        Width: =603
+        Width: =625
         X: =15
-        Y: =204
+        Y: =156
         ZIndex: =2
 
     Rectangle1_33 As rectangle:
@@ -64,7 +64,7 @@
         Width: =70
         X: =548
         Y: =12
-        ZIndex: =10
+        ZIndex: =8
 
     Group1_6 As group:
         Height: =5
@@ -82,7 +82,7 @@
             Width: =70
             X: =292
             Y: =1035
-            ZIndex: =7
+            ZIndex: =52
 
         Icon1_14 As icon.Hamburger:
             Color: =RGBA(255, 255, 255, 1)
@@ -92,7 +92,49 @@
             Width: =43
             X: =305
             Y: =1046
-            ZIndex: =8
+            ZIndex: =53
+
+    Label2_90 As label:
+        Height: =28
+        Size: =20
+        Text: ="Leave "
+        Width: =242
+        X: =63
+        Y: =173
+        ZIndex: =14
+
+    Label2_92 As label:
+        Height: =31
+        Size: =20
+        Text: ="Start Date"
+        Width: =235
+        X: =57
+        Y: =410
+        ZIndex: =15
+
+    LeaveStartDate_1 As datepicker:
+        BorderColor: =RGBA(112, 188, 31, 1)
+        Fill: =RGBA(241, 244, 249, 1)
+        Height: =50
+        IconBackground: =
+        IconFill: =RGBA(128, 128, 128, 1)
+        Size: =16
+        Width: =235
+        X: =60
+        Y: =449
+        ZIndex: =16
+
+    LeaveEndDate_1 As datepicker:
+        BorderColor: =RGBA(112, 188, 31, 1)
+        Fill: =RGBA(241, 244, 249, 1)
+        Height: =50
+        IconBackground: =
+        IconFill: =RGBA(128, 128, 128, 1)
+        Size: =16
+        Width: =235
+        X: =367
+        Y: =449
+        ZIndex: =17
 
     Group2_7 As group:
         Height: =5
@@ -109,7 +151,7 @@
             Width: =200
             X: =390
             Y: =51
-            ZIndex: =9
+            ZIndex: =7
 
         Label1_28 As label:
             Height: =31
@@ -119,7 +161,7 @@
             Width: =171
             X: =404
             Y: =64
-            ZIndex: =11
+            ZIndex: =9
 
         Label1_29 As label:
             Height: =18
@@ -130,7 +172,7 @@
             Width: =171
             X: =404
             Y: =105
-            ZIndex: =12
+            ZIndex: =10
 
         Icon3_78 As icon.HorizontalLine:
             BorderThickness: =1
@@ -144,7 +186,7 @@
             Width: =150
             X: =404
             Y: =94
-            ZIndex: =13
+            ZIndex: =11
 
         Label1_30 As label:
             Height: =31
@@ -154,7 +196,7 @@
             Width: =171
             X: =404
             Y: =128
-            ZIndex: =14
+            ZIndex: =12
 
         Label1_31 As label:
             Align: =Align.Right
@@ -168,121 +210,25 @@
             Width: =171
             X: =404
             Y: =154
-            ZIndex: =15
-
-    LeaveTypeDrp_1 As dropdown:
-        BorderColor: =RGBA(112, 188, 31, 1)
-        ChevronBackground: =RGBA(0, 0, 0, 0)
-        ChevronFill: =RGBA(128, 128, 128, 1)
-        ChevronHoverBackground: =
-        Fill: =RGBA(241, 244, 249, 1)
-        Height: =50
-        Items: =LeaveTypeMasters
-        OnSelect: =Set(LeaveTypeID,ShowColumns(Filter(LeaveTypeMasters,NAME = LeaveTypeDrp_1.Selected.NAME),"crbd0_absence_attendance_type_id"))
-        PressedFill: =RGBA(112, 188, 31, 1)
-        SelectionFill: =RGBA(112, 188, 31, 1)
-        Size: =16
-        Width: =500
-        X: =63
-        Y: =299
-        ZIndex: =18
-
-    Label2_90 As label:
-        Height: =54
-        Size: =20
-        Text: ="Leave Type"
-        Width: =500
-        X: =63
-        Y: =245
-        ZIndex: =19
-
-    Label2_92 As label:
-        Height: =54
-        Size: =20
-        Text: ="Start Date"
-        Width: =235
-        X: =63
-        Y: =372
-        ZIndex: =20
-
-    LeaveStartDate_1 As datepicker:
-        BorderColor: =RGBA(112, 188, 31, 1)
-        Fill: =RGBA(241, 244, 249, 1)
-        Height: =50
-        IconBackground: =
-        IconFill: =RGBA(128, 128, 128, 1)
-        Size: =16
-        Width: =235
-        X: =63
-        Y: =426
-        ZIndex: =21
-
-    LeaveEndDate_1 As datepicker:
-        BorderColor: =RGBA(112, 188, 31, 1)
-        Fill: =RGBA(241, 244, 249, 1)
-        Height: =50
-        IconBackground: =
-        IconFill: =RGBA(128, 128, 128, 1)
-        Size: =16
-        Width: =229
-        X: =334
-        Y: =426
-        ZIndex: =22
+            ZIndex: =13
 
     Label2_91 As label:
-        Height: =54
+        Height: =30
         Size: =20
         Text: ="End Date"
-        Width: =229
-        X: =334
-        Y: =371
-        ZIndex: =23
-
-    Button1_4 As button:
-        BorderColor: =
-        BorderThickness: =0
-        Fill: =RGBA(112, 188, 31, 1)
-        Font: =Font.'Courier New'
-        FontWeight: =FontWeight.Normal
-        Height: =50
-        HoverFill: =RGBA(99, 139, 44, 1)
-        OnSelect: |-
-            =Set(limitValue,GetLeaveBalance.Run(Text(LeaveStartDate_1.SelectedDate,"dd-mm-yyyy"),First(Info).crbd0_assignment_id,Text(LeaveEndDate_1.SelectedDate,"dd-mm-yyyy"),First(LeaveTypeID).crbd0_absence_attendance_type_id).recordvalue);
-            Set(statusleave,Trim(First(FirstN(Split(limitValue,"@"),1)).Result));
-            //Set(remarks,GetLeaveBalance.Run(Text(DateValue1.SelectedDate),First(Info).crbd0_assignment_id,Text(DateValue2.SelectedDate),62).remarks);
-            Set(EMPVis,true); If(Trim(First(FirstN(Split(limitValue,"@"),1)).Result) = "FAILED",Set(proceedvis,true),Set(proceedvis,false))
-        Size: =18
-        Text: ="Check Eligibility"
-        Width: =500
-        X: =63
-        Y: =623
-        ZIndex: =24
-
-    countrydrp_2 As dropdown:
-        BorderColor: =RGBA(112, 188, 31, 1)
-        ChevronBackground: =RGBA(0, 0, 0, 0)
-        ChevronFill: =RGBA(128, 128, 128, 1)
-        ChevronHoverBackground: =
-        Fill: =RGBA(241, 244, 249, 1)
-        Height: =50
-        Items: =Distinct(LeaveManagements,Country)
-        OnSelect: =
-        PressedFill: =RGBA(112, 188, 31, 1)
-        SelectionFill: =RGBA(112, 188, 31, 1)
-        Size: =16
-        Width: =500
-        X: =63
-        Y: =552
-        ZIndex: =25
+        Width: =235
+        X: =367
+        Y: =408
+        ZIndex: =18
 
     Label2_93 As label:
-        Height: =54
+        Height: =32
         Size: =20
-        Text: ="Country"
+        Text: ="Resume"
         Width: =235
         X: =63
-        Y: =498
-        ZIndex: =26
+        Y: =278
+        ZIndex: =19
 
     Menu_7 As group:
         Height: =5
@@ -298,7 +244,7 @@
             Visible: =MenuVis
             Width: =640
             Y: =1063
-            ZIndex: =33
+            ZIndex: =25
 
         Rectangle1_37 As rectangle:
             BorderColor: =RGBA(230, 230, 230, 1)
@@ -307,7 +253,7 @@
             Visible: =MenuVis
             Width: =640
             Y: =1071
-            ZIndex: =34
+            ZIndex: =26
 
         Circle1_14 As circle:
             BorderColor: =RGBA(255, 255, 255, 1)
@@ -319,7 +265,7 @@
             Width: =70
             X: =292
             Y: =1035
-            ZIndex: =35
+            ZIndex: =27
 
         Icon1_15 As icon.Hamburger:
             Color: =RGBA(255, 255, 255, 1)
@@ -330,7 +276,7 @@
             Width: =43
             X: =305
             Y: =1046
-            ZIndex: =36
+            ZIndex: =28
 
         Image7_7 As image:
             Height: =361
@@ -340,7 +286,7 @@
             Width: =526
             X: =63
             Y: =674
-            ZIndex: =37
+            ZIndex: =29
 
         Label2_95 As label:
             Font: =Font.'Courier New'
@@ -352,7 +298,7 @@
             Width: =384
             X: =168
             Y: =712
-            ZIndex: =38
+            ZIndex: =30
 
         Label2_96 As label:
             Font: =Font.'Courier New'
@@ -364,7 +310,7 @@
             Width: =384
             X: =168
             Y: =763
-            ZIndex: =39
+            ZIndex: =31
 
         Label2_98 As label:
             Font: =Font.'Courier New'
@@ -376,7 +322,7 @@
             Width: =384
             X: =168
             Y: =814
-            ZIndex: =40
+            ZIndex: =32
 
         Label2_100 As label:
             Font: =Font.'Courier New'
@@ -388,7 +334,7 @@
             Width: =384
             X: =168
             Y: =864
-            ZIndex: =41
+            ZIndex: =33
 
         Label2_101 As label:
             Font: =Font.'Courier New'
@@ -400,7 +346,7 @@
             Width: =384
             X: =168
             Y: =917
-            ZIndex: =42
+            ZIndex: =34
 
         Label2_102 As label:
             Font: =Font.'Courier New'
@@ -412,7 +358,7 @@
             Width: =384
             X: =168
             Y: =968
-            ZIndex: =43
+            ZIndex: =35
 
         Icon2_30 As icon.BackArrow:
             Color: =RGBA(127, 178, 57, 1)
@@ -427,7 +373,7 @@
             Width: =54
             X: =114
             Y: =809
-            ZIndex: =44
+            ZIndex: =36
 
         Icon2_80 As icon.BackArrow:
             Color: =RGBA(127, 178, 57, 1)
@@ -442,7 +388,7 @@
             Width: =54
             X: =114
             Y: =708
-            ZIndex: =45
+            ZIndex: =37
 
         Icon2_81 As icon.BackArrow:
             Color: =RGBA(127, 178, 57, 1)
@@ -457,7 +403,7 @@
             Width: =54
             X: =114
             Y: =758
-            ZIndex: =46
+            ZIndex: =38
 
         Icon2_82 As icon.BackArrow:
             Color: =RGBA(127, 178, 57, 1)
@@ -472,7 +418,7 @@
             Width: =54
             X: =114
             Y: =859
-            ZIndex: =47
+            ZIndex: =39
 
         Icon2_83 As icon.BackArrow:
             Color: =RGBA(127, 178, 57, 1)
@@ -487,7 +433,7 @@
             Width: =54
             X: =114
             Y: =912
-            ZIndex: =48
+            ZIndex: =40
 
         Icon2_84 As icon.BackArrow:
             Color: =RGBA(127, 178, 57, 1)
@@ -502,7 +448,7 @@
             Width: =54
             X: =114
             Y: =963
-            ZIndex: =49
+            ZIndex: =41
 
         Icon3_79 As icon.HorizontalLine:
             BorderThickness: =1
@@ -516,7 +462,7 @@
             Width: =400
             X: =129
             Y: =752
-            ZIndex: =50
+            ZIndex: =42
 
         Icon3_80 As icon.HorizontalLine:
             BorderThickness: =1
@@ -530,7 +476,7 @@
             Width: =400
             X: =129
             Y: =803
-            ZIndex: =51
+            ZIndex: =43
 
         Icon3_81 As icon.HorizontalLine:
             BorderThickness: =1
@@ -544,7 +490,7 @@
             Width: =400
             X: =129
             Y: =853
-            ZIndex: =52
+            ZIndex: =44
 
         Icon3_82 As icon.HorizontalLine:
             BorderThickness: =1
@@ -558,7 +504,7 @@
             Width: =400
             X: =129
             Y: =906
-            ZIndex: =53
+            ZIndex: =45
 
         Icon3_83 As icon.HorizontalLine:
             BorderThickness: =1
@@ -572,7 +518,69 @@
             Width: =400
             X: =129
             Y: =957
-            ZIndex: =54
+            ZIndex: =47
+
+    "'Cancel Button' As button":
+        Fill: =RGBA(225, 0, 0, 1)
+        Height: =44
+        Size: =20
+        Text: ="Cancel"
+        Width: =205
+        X: =52
+        Y: =992
+        ZIndex: =46
+
+    Icon2 As icon.BackArrow:
+        Color: =RGBA(112, 188, 31, 1)
+        Height: =49
+        Icon: =Icon.BackArrow
+        Width: =51
+        X: =35
+        Y: =105
+        ZIndex: =48
+
+    Label3 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Semibold
+        Height: =60
+        Size: =20
+        Text: ="Return From Leave"
+        Width: =390
+        X: =134
+        Y: =96
+        ZIndex: =49
+
+    Dropdown1 As dropdown:
+        BorderColor: =RGBA(112, 188, 31, 1)
+        ChevronBackground: =RGBA(0, 0, 0, 0)
+        ChevronFill: =RGBA(128, 128, 128, 1)
+        ChevronHoverBackground: =ColorFade(Self.BorderColor, 15%)
+        Default: =""
+        Height: =46
+        Items: =DropDownSample
+        PressedFill: =RGBA(112, 188, 31, 1)
+        SelectionFill: =RGBA(112, 188, 31, 1)
+        Size: =21
+        Width: =539
+        X: =63
+        Y: =212
+        ZIndex: =50
+
+    Dropdown1_1 As dropdown:
+        BorderColor: =RGBA(112, 188, 31, 1)
+        ChevronBackground: =RGBA(0, 0, 0, 0)
+        ChevronFill: =RGBA(128, 128, 128, 1)
+        ChevronHoverBackground: =ColorFade(Self.BorderColor, 15%)
+        Default: =""
+        Height: =46
+        Items: =DropDownSample
+        PressedFill: =RGBA(112, 188, 31, 1)
+        SelectionFill: =RGBA(112, 188, 31, 1)
+        Size: =21
+        Width: =539
+        X: =63
+        Y: =320
+        ZIndex: =51
 
     "'Eligibility Messgae Popup_4' As group":
         Height: =5
@@ -589,7 +597,7 @@
             Width: =603
             X: =15
             Y: =685
-            ZIndex: =27
+            ZIndex: =20
 
         Label2_94 As label:
             Align: =Align.Center
@@ -601,7 +609,7 @@
             Width: =534
             X: =48
             Y: =711
-            ZIndex: =28
+            ZIndex: =21
 
         Label2_97 As label:
             Align: =Align.Center
@@ -614,7 +622,7 @@
             Width: =534
             X: =48
             Y: =781
-            ZIndex: =29
+            ZIndex: =22
 
         Image8_4 As image:
             Height: =28
@@ -624,7 +632,7 @@
             Width: =28
             X: =557
             Y: =711
-            ZIndex: =30
+            ZIndex: =23
 
         Label2_99 As label:
             Align: =Align.Center
@@ -635,25 +643,81 @@
             Width: =534
             X: =49
             Y: =835
-            ZIndex: =31
+            ZIndex: =24
 
-    Button2 As button:
-        Fill: =RGBA(225, 0, 0, 1)
-        Height: =56
-        Size: =24
-        Text: ="Cancel"
-        Width: =229
-        X: =63
-        Y: =968
+    "'Submit Button' As button":
+        Fill: =RGBA(112, 188, 31, 1)
+        Height: =44
+        Size: =20
+        Text: ="Submit"
+        Width: =205
+        X: =390
+        Y: =992
+        ZIndex: =54
+
+    Label5 As label:
+        Height: =34
+        Size: =20
+        Text: ="Resumption Date"
+        Width: =560
+        X: =52
+        Y: =522
         ZIndex: =55
 
-    Button2_1 As button:
-        Fill: =RGBA(112, 188, 31, 1)
-        Height: =56
-        Size: =24
-        Text: ="Submit"
-        Width: =223
-        X: =362
-        Y: =968
+    ResumptionDate As datepicker:
+        BorderColor: =RGBA(112, 188, 31, 1)
+        Fill: =RGBA(241, 244, 249, 1)
+        Height: =48
+        IconBackground: =
+        IconFill: =RGBA(128, 128, 128, 1)
+        Size: =16
+        Width: =545
+        X: =57
+        Y: =571
         ZIndex: =56
+
+    Label6 As label:
+        Height: =29
+        Size: =20
+        Text: ="Remarks"
+        Width: =560
+        X: =57
+        Y: =645
+        ZIndex: =57
+
+    "'Remarks Input' As text":
+        Default: =""
+        Height: =100
+        Size: =21
+        Width: =542
+        X: =60
+        Y: =681
+        ZIndex: =58
+
+    Label7 As label:
+        Height: =39
+        Size: =20
+        Text: ="Attachments "
+        Width: =560
+        X: =57
+        Y: =795
+        ZIndex: =59
+
+    Label8 As label:
+        Height: =49
+        Text: ="To help approvers understand the request, you can attach supporting documents, images, or links to this action"
+        Width: =582
+        X: =58
+        Y: =835
+        ZIndex: =60
+
+    "'Upload Button' As button":
+        Fill: =RGBA(19, 71, 23, 1)
+        Height: =41
+        Size: =20
+        Text: ="Upload"
+        Width: =156
+        X: =63
+        Y: =893
+        ZIndex: =61
 

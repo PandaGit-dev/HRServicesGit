@@ -3374,19 +3374,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Return From Leave'.LeaveTypeDrp_1.AccessibleLabel"
+                  "fullyQualifiedName": "'Return From Leave'.Dropdown1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Return From Leave'.LeaveTypeDrp_1.AccessibleLabel",
+                  "fullyQualifiedName": "'Return From Leave'.Dropdown1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Return From Leave",
-                "type": "'Return From Leave'.LeaveTypeDrp_1"
+                "type": "'Return From Leave'.Dropdown1"
               }
             }
           ],
@@ -3464,19 +3464,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Return From Leave'.countrydrp_2.AccessibleLabel"
+                  "fullyQualifiedName": "'Return From Leave'.Dropdown1_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Return From Leave'.countrydrp_2.AccessibleLabel",
+                  "fullyQualifiedName": "'Return From Leave'.Dropdown1_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Return From Leave",
-                "type": "'Return From Leave'.countrydrp_2"
+                "type": "'Return From Leave'.Dropdown1_1"
               }
             }
           ],
@@ -3908,6 +3908,66 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Return From Leave'.ResumptionDate.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Return From Leave'.ResumptionDate.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Return From Leave",
+                "type": "'Return From Leave'.ResumptionDate"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Return From Leave'.'Remarks Input'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Return From Leave'.'Remarks Input'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Return From Leave",
+                "type": "'Return From Leave'.'Remarks Input'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
         },
         {
           "locations": [
