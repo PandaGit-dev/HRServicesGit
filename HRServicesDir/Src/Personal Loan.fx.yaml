@@ -758,7 +758,7 @@
     Label9 As label:
         BorderColor: =RGBA(112, 188, 31, 1)
         BorderThickness: =3
-        Fill: =RGBA(241, 244, 249, 1)
+        Fill: =RGBA(112, 188, 31, 0.38)
         Height: =52
         Size: =20
         Text: =""
@@ -770,7 +770,7 @@
     Label9_1 As label:
         BorderColor: =RGBA(112, 188, 31, 1)
         BorderThickness: =3
-        Fill: =RGBA(241, 244, 249, 1)
+        Fill: =RGBA(112, 188, 31, 0.38)
         Height: =48
         Size: =20
         Text: =""
