@@ -82,7 +82,7 @@
             Width: =70
             X: =292
             Y: =1035
-            ZIndex: =52
+            ZIndex: =60
 
         Icon1_14 As icon.Hamburger:
             Color: =RGBA(255, 255, 255, 1)
@@ -92,7 +92,7 @@
             Width: =43
             X: =305
             Y: =1046
-            ZIndex: =53
+            ZIndex: =61
 
     Label2_90 As label:
         Height: =28
@@ -582,6 +582,25 @@
         Y: =320
         ZIndex: =51
 
+    "'Submit Button' As button":
+        Fill: =RGBA(112, 188, 31, 1)
+        Height: =44
+        Size: =20
+        Text: ="Submit"
+        Width: =205
+        X: =390
+        Y: =992
+        ZIndex: =52
+
+    Label5 As label:
+        Height: =34
+        Size: =20
+        Text: ="Resumption Date"
+        Width: =560
+        X: =52
+        Y: =522
+        ZIndex: =53
+
     "'Eligibility Messgae Popup_4' As group":
         Height: =5
         Width: =5
@@ -645,25 +664,6 @@
             Y: =835
             ZIndex: =24
 
-    "'Submit Button' As button":
-        Fill: =RGBA(112, 188, 31, 1)
-        Height: =44
-        Size: =20
-        Text: ="Submit"
-        Width: =205
-        X: =390
-        Y: =992
-        ZIndex: =54
-
-    Label5 As label:
-        Height: =34
-        Size: =20
-        Text: ="Resumption Date"
-        Width: =560
-        X: =52
-        Y: =522
-        ZIndex: =55
-
     ResumptionDate As datepicker:
         BorderColor: =RGBA(112, 188, 31, 1)
         Fill: =RGBA(241, 244, 249, 1)
@@ -674,7 +674,7 @@
         Width: =545
         X: =57
         Y: =571
-        ZIndex: =56
+        ZIndex: =54
 
     Label6 As label:
         Height: =29
@@ -683,7 +683,7 @@
         Width: =560
         X: =57
         Y: =645
-        ZIndex: =57
+        ZIndex: =55
 
     "'Remarks Input' As text":
         Default: =""
@@ -692,7 +692,7 @@
         Width: =542
         X: =60
         Y: =681
-        ZIndex: =58
+        ZIndex: =56
 
     Label7 As label:
         Height: =39
@@ -701,7 +701,7 @@
         Width: =560
         X: =57
         Y: =795
-        ZIndex: =59
+        ZIndex: =57
 
     Label8 As label:
         Height: =49
@@ -709,7 +709,7 @@
         Width: =582
         X: =58
         Y: =835
-        ZIndex: =60
+        ZIndex: =58
 
     "'Upload Button' As button":
         Fill: =RGBA(19, 71, 23, 1)
@@ -719,5 +719,5 @@
         Width: =156
         X: =63
         Y: =893
-        ZIndex: =61
+        ZIndex: =59
 
