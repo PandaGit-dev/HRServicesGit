@@ -535,6 +535,7 @@
         ChevronFill: =RGBA(128, 128, 128, 1)
         ChevronHoverBackground: =ColorFade(Self.BorderColor, 15%)
         Default: =""
+        Fill: =RGBA(241, 244, 249, 1)
         Height: =46
         Items: =DropDownSample
         PressedFill: =RGBA(112, 188, 31, 1)
@@ -551,6 +552,7 @@
         ChevronFill: =RGBA(128, 128, 128, 1)
         ChevronHoverBackground: =ColorFade(Self.BorderColor, 15%)
         Default: =""
+        Fill: =RGBA(241, 244, 249, 1)
         Height: =46
         Items: =DropDownSample
         PressedFill: =RGBA(112, 188, 31, 1)

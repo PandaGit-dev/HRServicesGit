@@ -645,6 +645,7 @@
         Height: =74
         Image: =Picture10
         ImagePosition: =ImagePosition.Stretch
+        OnSelect: =Navigate('Leave Approvals')
         Width: =211
         X: =424
         Y: =145
@@ -663,8 +664,7 @@
         Color: =RGBA(112, 188, 31, 1)
         Height: =40
         Icon: =Icon.BackArrow
-        OnSelect: =Back()
-        Visible: =false
+        OnSelect: =Navigate('Leave Page')
         Width: =40
         X: =35
         Y: =102
