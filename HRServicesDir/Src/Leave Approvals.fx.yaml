@@ -667,20 +667,14 @@
             Y: =78
             ZIndex: =11
 
-        Button1_5 As button:
-            BorderColor: =
-            BorderThickness: =0
-            Fill: =RGBA(112, 188, 31, 1)
-            Font: =Font.'Courier New'
-            FontWeight: =FontWeight.Normal
-            Height: =50
-            HoverFill: =RGBA(99, 139, 44, 1)
-            OnSelect: =
-            Size: =18
-            Text: ="See Details"
-            Width: =150
-            X: =408
-            Y: =38
+        Icon2_4 As icon.BackArrow:
+            Color: =RGBA(112, 188, 31, 1)
+            Height: =40
+            Icon: =Icon.ExpandView
+            OnSelect: =Navigate('Leave Approvals_1')
+            Width: =40
+            X: =500
+            Y: =39
             ZIndex: =12
 
     Image9_11 As image:
@@ -701,14 +695,4 @@
         X: =134
         Y: =102
         ZIndex: =56
-
-    Icon2_4 As icon.BackArrow:
-        Color: =RGBA(112, 188, 31, 1)
-        Height: =40
-        Icon: =Icon.BackArrow
-        OnSelect: =Navigate('Leave Page')
-        Width: =40
-        X: =35
-        Y: =102
-        ZIndex: =57
 

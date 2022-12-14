@@ -550,3 +550,66 @@
         Y: =213
         ZIndex: =58
 
+    Label2_140 As label:
+        Height: =54
+        Size: =20
+        Text: ="Leave Type"
+        Width: =500
+        X: =63
+        Y: =254
+        ZIndex: =59
+
+    Label2_141 As label:
+        Height: =54
+        Size: =20
+        Text: ="Start Date"
+        Width: =235
+        X: =63
+        Y: =380
+        ZIndex: =60
+
+    Label2_142 As label:
+        Height: =54
+        Size: =20
+        Text: ="End Date"
+        Width: =229
+        X: =334
+        Y: =380
+        ZIndex: =61
+
+    Label9_2 As label:
+        BorderColor: =RGBA(112, 188, 31, 1)
+        BorderThickness: =2
+        Fill: =RGBA(241, 244, 249, 1)
+        Height: =50
+        Size: =20
+        Text: =""
+        Width: =500
+        X: =63
+        Y: =308
+        ZIndex: =62
+
+    Label9_3 As label:
+        BorderColor: =RGBA(112, 188, 31, 1)
+        BorderThickness: =2
+        Fill: =RGBA(241, 244, 249, 1)
+        Height: =50
+        Size: =20
+        Text: =""
+        Width: =235
+        X: =63
+        Y: =436
+        ZIndex: =63
+
+    Label9_4 As label:
+        BorderColor: =RGBA(112, 188, 31, 1)
+        BorderThickness: =2
+        Fill: =RGBA(241, 244, 249, 1)
+        Height: =50
+        Size: =20
+        Text: =""
+        Width: =229
+        X: =334
+        Y: =436
+        ZIndex: =64
+
