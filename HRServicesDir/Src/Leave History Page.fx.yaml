@@ -165,6 +165,7 @@
         Height: =74
         Image: =Picture9
         ImagePosition: =ImagePosition.Stretch
+        OnSelect: =Navigate('Leave Page')
         Width: =211
         X: =7
         Y: =145

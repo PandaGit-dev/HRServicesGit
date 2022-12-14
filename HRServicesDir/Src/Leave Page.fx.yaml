@@ -192,6 +192,7 @@
         Height: =74
         Image: =Picture4
         ImagePosition: =ImagePosition.Stretch
+        OnSelect: =Navigate('Leave History Page')
         Width: =211
         X: =216
         Y: =145
@@ -678,7 +679,6 @@
         Height: =40
         Icon: =Icon.BackArrow
         OnSelect: =Back()
-        Visible: =false
         Width: =40
         X: =35
         Y: =102
