@@ -254,7 +254,7 @@
     "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         Fill: =RGBA(255, 255, 255, 0.75)
         Height: =777
-        Items: =SortByColumns(Filter(LeaveManagements,'Employee Email' = User().Email),"createdon",Descending)
+        Items: =SortByColumns(Filter(LeaveManagements,'Employee Email' = "sshaikh@panda.com.sa"),"createdon",Descending)
         Layout: =Layout.Vertical
         TemplatePadding: =0
         TemplateSize: =Min(160, Self.Height - 60)

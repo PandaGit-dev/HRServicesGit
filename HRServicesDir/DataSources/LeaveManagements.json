@@ -19,6 +19,7 @@
       "crbd0_referenceno": "Reference No",
       "crbd0_reportingto": "Reporting To",
       "crbd0_startdatevalue": "StartDateValue",
+      "crbd0_user_name": "User_name",
       "createdby": "Created By",
       "createdon": "Created On",
       "createdonbehalfby": "Created By (Delegate)",
