@@ -226,7 +226,7 @@
         Height: =54
         Size: =21
         Text: |-
-            =": "&First(Info).crbd0_reporting_to_name
+            =": "&First(Info).crbd0_job_name
         Width: =359
         X: =259
         Y: =763
