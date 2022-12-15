@@ -197,7 +197,9 @@
         FontWeight: =FontWeight.Normal
         Height: =50
         HoverFill: =RGBA(99, 139, 44, 1)
-        OnSelect: =Navigate('Leave History Page')
+        OnSelect: |-
+            =Navigate('Leave History Page');
+            Patch(LeaveManagements,{'Employee ID':First(Info).crbd0_employee_code,'Employee Email': First(Info).crbd0_email_address,Country:countrydrp_1.Selected.Value,'Advance Salary':AdvSalDrp.Selected.Value,Description:desctext.Text,'End Date':LeaveEndDate.SelectedDate,'Start Date':LeaveStartDate.SelectedDate,StartDateValue:Text(LeaveStartDate.SelectedDate,"dd-mm-yyyy"),EndDateValue:Text(LeaveEndDate.SelectedDate,"dd-mm-yyyy"),LeaveTypeValue:LeaveTypeDrp.Selected.NAME,'Leave Status':"Pending"})
         Size: =18
         Text: ="Apply"
         Width: =500
