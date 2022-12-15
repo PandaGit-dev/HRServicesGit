@@ -15,6 +15,7 @@
       "crbd0_employeeemail": "Employee Email",
       "crbd0_enddatevalue": "EndDateValue",
       "crbd0_leavetype": "Leave Type",
+      "crbd0_leavetypeid": "LeaveTypeID",
       "crbd0_leavetypevalue": "LeaveTypeValue",
       "crbd0_referenceno": "Reference No",
       "crbd0_reportingto": "Reporting To",
