@@ -301,6 +301,7 @@
         Height: =72
         Size: =18
         Text: =45
+        Visible: =false
         Width: =70
         X: =63
         Y: =708

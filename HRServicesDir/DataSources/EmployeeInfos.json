@@ -10,6 +10,7 @@
     "Name": "EmployeeInfos",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
+      "crbd0_approver": "Approver",
       "crbd0_assignment_id": "assignment_id",
       "crbd0_business_group_id": "business_group_id",
       "crbd0_email_address": "EMAIL_ADDRESS",
@@ -34,6 +35,7 @@
       "crbd0_position_title": "POSITION_TITLE",
       "crbd0_reporting_to_name": "REPORTING_TO_NAME",
       "crbd0_sponsor_name": "SPONSOR_NAME",
+      "crbd0_transactionid": "TransactionID",
       "crbd0_user_name": "USER_NAME",
       "createdby": "Created By",
       "createdon": "Created On",

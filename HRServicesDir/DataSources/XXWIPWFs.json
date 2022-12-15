@@ -1,26 +1,29 @@
 [
   {
     "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
-    "EntitySetName": "crbd0_leavetypemasters",
+    "EntitySetName": "crbd0_xxwipwfs",
     "IsHidden": false,
     "IsSampleData": false,
     "IsWritable": true,
-    "LogicalName": "crbd0_leavetypemaster",
+    "LogicalName": "crbd0_xxwipwf",
     "MaxGetRowsCount": 500,
-    "Name": "LeaveTypeMasters",
+    "Name": "XXWIPWFs",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
-      "crbd0_absence_attendance_type_id": "ABSENCE_ATTENDANCE_TYPE_ID",
-      "crbd0_absence_category": "ABSENCE_CATEGORY",
-      "crbd0_businessgroup": "BusinessGroup",
-      "crbd0_leavetypemaster_AsyncOperations": "System Jobs",
-      "crbd0_leavetypemaster_BulkDeleteFailures": "Bulk Delete Failures",
-      "crbd0_leavetypemaster_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
-      "crbd0_leavetypemaster_PrincipalObjectAttributeAccesses": "Field Sharing",
-      "crbd0_leavetypemaster_ProcessSession": "Process Sessions",
-      "crbd0_leavetypemaster_SyncErrors": "Sync Errors",
-      "crbd0_leavetypemasterid": "LeaveTypeMaster",
-      "crbd0_name": "NAME",
+      "crbd0_email_address": "EMAIL_ADDRESS",
+      "crbd0_full_name": "FULL_NAME",
+      "crbd0_item_key": "ITEM_KEY",
+      "crbd0_l_request_id": "L_REQUEST_ID",
+      "crbd0_name": "Name",
+      "crbd0_subject": "SUBJECT",
+      "crbd0_user_name": "USER_NAME",
+      "crbd0_xxwipwf_AsyncOperations": "System Jobs",
+      "crbd0_xxwipwf_BulkDeleteFailures": "Bulk Delete Failures",
+      "crbd0_xxwipwf_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "crbd0_xxwipwf_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "crbd0_xxwipwf_ProcessSession": "Process Sessions",
+      "crbd0_xxwipwf_SyncErrors": "Sync Errors",
+      "crbd0_xxwipwfid": "XXWIPWF",
       "createdby": "Created By",
       "createdon": "Created On",
       "createdonbehalfby": "Created By (Delegate)",
@@ -38,26 +41,26 @@
       "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
       "versionnumber": "Version Number"
     },
-    "PreferredName": "LeaveTypeMasters",
+    "PreferredName": "XXWIPWFs",
     "Type": "NativeCDSDataSourceInfo"
   },
   {
-    "DisplayName": "LeaveTypeMasters (Views)",
-    "Name": "_crbd0_leavetypemaster_views",
-    "RelatedEntityName": "LeaveTypeMasters",
+    "DisplayName": "XXWIPWFs (Views)",
+    "Name": "_crbd0_xxwipwf_views",
+    "RelatedEntityName": "XXWIPWFs",
     "TrimmedViewName": true,
     "Type": "ViewInfo",
     "ViewInfoNameMapping": {
-      "6ea06819-6816-4ea0-924f-e891dea422e4": "Inactive LeaveTypeMasters",
-      "71ec54d8-7a2e-4d1f-9cda-13afabfc76ec": "LeaveTypeMaster Associated View",
-      "94ea7151-1abd-4260-97bf-b784ea33ba05": "LeaveTypeMaster Advanced Find View",
-      "96b4670c-6fd0-42b4-ad29-00d76ee7e362": "LeaveTypeMaster Lookup View",
-      "d400f148-5319-4135-b15f-1c6ec9d4e875": "Active LeaveTypeMasters"
+      "13659902-715d-4bb9-8807-5368cf52b671": "Inactive XXWIPWFs",
+      "157db6d9-ceea-4765-ac22-5d71961eff90": "XXWIPWF Advanced Find View",
+      "4a8993da-2fae-4ae9-871f-bc14513d2be2": "XXWIPWF Associated View",
+      "5699a4dd-c19f-4e19-9410-93d71afa4813": "Active XXWIPWFs",
+      "aa84ed59-0b62-4018-8304-8f14de0b205a": "XXWIPWF Lookup View"
     }
   },
   {
-    "DisplayName": "Status (LeaveTypeMasters)",
-    "Name": "crbd0_leavetypemaster_statecode",
+    "DisplayName": "Status (XXWIPWFs)",
+    "Name": "crbd0_xxwipwf_statecode",
     "OptionSetInfoNameMapping": {
       "0": "Active",
       "1": "Inactive"
@@ -67,17 +70,17 @@
     "OptionSetReference": {
       "OptionSetReferenceItem0": {
         "OptionSetReferenceColumnName": "statecode",
-        "OptionSetReferenceEntityName": "LeaveTypeMasters"
+        "OptionSetReferenceEntityName": "XXWIPWFs"
       }
     },
     "OptionSetTypeKey": "StateType",
     "RelatedColumnInvariantName": "statecode",
-    "RelatedEntityName": "LeaveTypeMasters",
+    "RelatedEntityName": "XXWIPWFs",
     "Type": "OptionSetInfo"
   },
   {
-    "DisplayName": "Status Reason (LeaveTypeMasters)",
-    "Name": "crbd0_leavetypemaster_statuscode",
+    "DisplayName": "Status Reason (XXWIPWFs)",
+    "Name": "crbd0_xxwipwf_statuscode",
     "OptionSetInfoNameMapping": {
       "1": "Active",
       "2": "Inactive"
@@ -87,12 +90,12 @@
     "OptionSetReference": {
       "OptionSetReferenceItem0": {
         "OptionSetReferenceColumnName": "statuscode",
-        "OptionSetReferenceEntityName": "LeaveTypeMasters"
+        "OptionSetReferenceEntityName": "XXWIPWFs"
       }
     },
     "OptionSetTypeKey": "StatusType",
     "RelatedColumnInvariantName": "statuscode",
-    "RelatedEntityName": "LeaveTypeMasters",
+    "RelatedEntityName": "XXWIPWFs",
     "Type": "OptionSetInfo"
   }
 ]

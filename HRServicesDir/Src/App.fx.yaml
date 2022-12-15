@@ -1,4 +1,5 @@
 App As appinfo:
     BackEnabled: =false
-    OnStart: =ClearCollect(Info,ShowColumns(Filter(EmployeeInfos,EMAIL_ADDRESS="sshaikh@panda.com.sa"),"crbd0_employee_name","crbd0_employee_code","crbd0_email_address","crbd0_assignment_id","crbd0_business_group_id","crbd0_payroll_id","crbd0_person_id","crbd0_plan_id","crbd0_reporting_to_name","crbd0_employee_type","crbd0_job_name","crbd0_user_name"));
+    OnStart: |
+        =ClearCollect(Info,ShowColumns(Filter(EmployeeInfos,EMAIL_ADDRESS="sshaikh@panda.com.sa"),"crbd0_employee_name","crbd0_employee_code","crbd0_email_address","crbd0_assignment_id","crbd0_business_group_id","crbd0_payroll_id","crbd0_person_id","crbd0_plan_id","crbd0_reporting_to_name","crbd0_employee_type","crbd0_job_name","crbd0_user_name"));
 

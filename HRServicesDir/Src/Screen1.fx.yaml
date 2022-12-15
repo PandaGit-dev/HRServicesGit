@@ -1,0 +1,57 @@
+Screen1 As screen:
+
+    DataTable1 As dataTable.datatable:
+        BorderStyle: =BorderStyle.Solid
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        HeadingSize: =21
+        Height: =1096
+        Items: =XXWIPWFs
+        Size: =21
+        Width: =640
+        X: =0
+        Y: =40
+        ZIndex: =1
+
+        Name_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Name"
+            FieldName: ="crbd0_name"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =1
+            Text: =ThisItem.Name
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+        EMAIL_ADDRESS_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="EMAIL_ADDRESS"
+            FieldName: ="crbd0_email_address"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.EMAIL_ADDRESS
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =2
+
+        L_REQUEST_ID_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="L_REQUEST_ID"
+            FieldName: ="crbd0_l_request_id"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: =ThisItem.L_REQUEST_ID
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =3
+

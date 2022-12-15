@@ -11,6 +11,7 @@
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
       "crbd0_advancesalary": "Advance Salary",
+      "crbd0_approver": "Approver",
       "crbd0_country": "Country",
       "crbd0_employeeemail": "Employee Email",
       "crbd0_enddatevalue": "EndDateValue",
@@ -20,6 +21,7 @@
       "crbd0_referenceno": "Reference No",
       "crbd0_reportingto": "Reporting To",
       "crbd0_startdatevalue": "StartDateValue",
+      "crbd0_transactionid": "TransactionID",
       "crbd0_user_name": "User_name",
       "createdby": "Created By",
       "createdon": "Created On",
