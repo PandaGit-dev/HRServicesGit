@@ -550,66 +550,325 @@
         Y: =213
         ZIndex: =58
 
-    Label2_140 As label:
-        Height: =54
-        Size: =20
-        Text: ="Leave Type"
-        Width: =500
-        X: =63
-        Y: =254
+    Form2 As form:
+        DataSource: =Filter(LeaveManagements,'Reference No'=Gallery1_1.Selected.L_REQUEST_ID)
+        Height: =672
+        Width: =570
+        X: =48
+        Y: =240
         ZIndex: =59
 
-    Label2_141 As label:
-        Height: =54
+        "'Employee Name_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ds_employeename"
+            Default: =ThisItem.'Employee Name'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@LeaveManagements],DataSourceInfo.DisplayName,"ds_employeename")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@LeaveManagements], DataSourceInfo.MaxLength, "ds_employeename")
+            Required: =false
+            Update: =DataCardValue3.Text
+            Width: =570
+            X: =0
+            Y: =1
+            ZIndex: =1
+
+            DataCardKey3 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue3 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey3.Y + DataCardKey3.Height + 5
+                ZIndex: =2
+
+            ErrorMessage2 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue3.Y + DataCardValue3.Height
+                ZIndex: =3
+
+            StarVisible2 As label:
+                Align: =Align.Center
+                Height: =DataCardKey3.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey3.Y
+                ZIndex: =4
+
+        "'Leave Type_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="crbd0_leavetype"
+            Default: =ThisItem.'Leave Type'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@LeaveManagements],DataSourceInfo.DisplayName,"crbd0_leavetype")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@LeaveManagements], DataSourceInfo.MaxLength, "crbd0_leavetype")
+            Required: =false
+            Update: =DataCardValue4.Text
+            Width: =570
+            X: =0
+            Y: =2
+            ZIndex: =1
+
+            DataCardKey4 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue4 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey4.Y + DataCardKey4.Height + 5
+                ZIndex: =2
+
+            ErrorMessage3 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue4.Y + DataCardValue4.Height
+                ZIndex: =3
+
+            StarVisible3 As label:
+                Align: =Align.Center
+                Height: =DataCardKey4.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey4.Y
+                ZIndex: =4
+
+        "'No of Days_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ds_noofdays"
+            Default: =ThisItem.'No of Days'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@LeaveManagements],DataSourceInfo.DisplayName,"ds_noofdays")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@LeaveManagements], DataSourceInfo.MaxLength, "ds_noofdays")
+            Required: =false
+            Update: =DataCardValue5.Text
+            Width: =570
+            X: =0
+            Y: =3
+            ZIndex: =1
+
+            DataCardKey5 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue5 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey5.Y + DataCardKey5.Height + 5
+                ZIndex: =2
+
+            ErrorMessage4 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue5.Y + DataCardValue5.Height
+                ZIndex: =3
+
+            StarVisible4 As label:
+                Align: =Align.Center
+                Height: =DataCardKey5.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey5.Y
+                ZIndex: =4
+
+        "'Employee ID_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ds_employeeid"
+            Default: =ThisItem.'Employee ID'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@LeaveManagements],DataSourceInfo.DisplayName,"ds_employeeid")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@LeaveManagements], DataSourceInfo.MaxLength, "ds_employeeid")
+            Required: =true
+            Update: =DataCardValue1.Text
+            Width: =570
+            X: =0
+            Y: =0
+            ZIndex: =60
+
+            DataCardKey1 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue1 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey1.Y + DataCardKey1.Height + 5
+                ZIndex: =2
+
+            ErrorMessage1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue1.Y + DataCardValue1.Height
+                ZIndex: =3
+
+            StarVisible1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey1.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey1.Y
+                ZIndex: =4
+
+    "'Cancel Button_2' As button":
+        Fill: =RGBA(225, 0, 0, 1)
+        Height: =44
+        HoverFill: =ColorFade(RGBA(217, 37, 37, 100), -20%)
         Size: =20
-        Text: ="Start Date"
-        Width: =235
-        X: =63
-        Y: =380
+        Text: ="Reject"
+        Width: =205
+        X: =49
+        Y: =928
         ZIndex: =60
 
-    Label2_142 As label:
-        Height: =54
+    "'Submit Button_2' As button":
+        Fill: =RGBA(112, 188, 31, 1)
+        Height: =44
+        HoverFill: =ColorFade(RGBA(135, 212, 53, 100), -20%)
         Size: =20
-        Text: ="End Date"
-        Width: =229
-        X: =334
-        Y: =380
+        Text: ="Approve"
+        Width: =205
+        X: =387
+        Y: =928
         ZIndex: =61
-
-    Label9_2 As label:
-        BorderColor: =RGBA(112, 188, 31, 1)
-        BorderThickness: =2
-        Fill: =RGBA(241, 244, 249, 1)
-        Height: =50
-        Size: =20
-        Text: =
-        Width: =500
-        X: =63
-        Y: =308
-        ZIndex: =62
-
-    Label9_3 As label:
-        BorderColor: =RGBA(112, 188, 31, 1)
-        BorderThickness: =2
-        Fill: =RGBA(241, 244, 249, 1)
-        Height: =50
-        Size: =20
-        Text: =""
-        Width: =235
-        X: =63
-        Y: =436
-        ZIndex: =63
-
-    Label9_4 As label:
-        BorderColor: =RGBA(112, 188, 31, 1)
-        BorderThickness: =2
-        Fill: =RGBA(241, 244, 249, 1)
-        Height: =50
-        Size: =20
-        Text: =""
-        Width: =229
-        X: =334
-        Y: =436
-        ZIndex: =64
 
