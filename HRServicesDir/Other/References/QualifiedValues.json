@@ -27,6 +27,11 @@
       "Values": {
         "Information": "1722421b-07a0-413e-be9b-e218a92902d0"
       }
+    },
+    {
+      "Kind": "default.cds_msdyn_dataflow_forms",
+      "Namespace": "Dataflows (Forms)",
+      "Values": {}
     }
   ]
 }
