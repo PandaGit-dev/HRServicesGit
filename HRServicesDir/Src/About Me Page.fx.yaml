@@ -204,13 +204,13 @@
         ZIndex: =18
 
     Label2_6 As label:
-        Height: =54
+        Height: =69
         Size: =21
         Text: |-
             =": "&First(Info).crbd0_reporting_to_name
-        Width: =346
-        X: =271
-        Y: =694
+        Width: =357
+        X: =259
+        Y: =689
         ZIndex: =19
 
     Label2_16 As label:
@@ -219,17 +219,17 @@
         Text: ="Designation"
         Width: =246
         X: =59
-        Y: =756
+        Y: =763
         ZIndex: =20
 
     Label2_17 As label:
         Height: =54
         Size: =21
         Text: |-
-            =": Associate"
-        Width: =346
-        X: =272
-        Y: =756
+            =": "&First(Info).crbd0_reporting_to_name
+        Width: =359
+        X: =259
+        Y: =763
         ZIndex: =21
 
     Menu_1 As group:

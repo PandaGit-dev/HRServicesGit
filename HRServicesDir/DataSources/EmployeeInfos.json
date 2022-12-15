@@ -34,6 +34,7 @@
       "crbd0_position_title": "POSITION_TITLE",
       "crbd0_reporting_to_name": "REPORTING_TO_NAME",
       "crbd0_sponsor_name": "SPONSOR_NAME",
+      "crbd0_user_name": "USER_NAME",
       "createdby": "Created By",
       "createdon": "Created On",
       "createdonbehalfby": "Created By (Delegate)",
