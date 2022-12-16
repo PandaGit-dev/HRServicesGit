@@ -22,6 +22,13 @@
       }
     },
     {
+      "Kind": "default.cds_crbd0_xxwipwf_forms",
+      "Namespace": "XXWIPWFs (Forms)",
+      "Values": {
+        "Information": "9555c667-1b67-4ea8-b471-f74f8fc52de9"
+      }
+    },
+    {
       "Kind": "default.cds_crbd0_leavetype_forms",
       "Namespace": "Leave Types (Forms)",
       "Values": {
@@ -32,13 +39,6 @@
       "Kind": "default.cds_msdyn_dataflow_forms",
       "Namespace": "Dataflows (Forms)",
       "Values": {}
-    },
-    {
-      "Kind": "default.cds_crbd0_xxwipwf_forms",
-      "Namespace": "XXWIPWFs (Forms)",
-      "Values": {
-        "Information": "9555c667-1b67-4ea8-b471-f74f8fc52de9"
-      }
     }
   ]
 }

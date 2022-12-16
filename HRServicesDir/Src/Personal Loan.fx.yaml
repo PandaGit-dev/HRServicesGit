@@ -12,11 +12,11 @@
         ZIndex: =1
 
     Image10_4 As image:
-        Height: =325
+        Height: =264
         Image: =Picture3
         ImagePosition: =ImagePosition.Stretch
         Width: =640
-        Y: =142
+        Y: =214
         ZIndex: =2
 
     Rectangle1_28 As rectangle:
@@ -176,7 +176,7 @@
         Text: ="Salary Package"
         Width: =218
         X: =32
-        Y: =166
+        Y: =230
         ZIndex: =19
 
     Label2_29 As label:
@@ -184,8 +184,8 @@
         Size: =16
         Text: ="(Basic + Housing + Trans)"
         Width: =283
-        X: =218
-        Y: =166
+        X: =216
+        Y: =231
         ZIndex: =20
 
     "'Eligibility Messgae Popup_3' As group":
@@ -251,16 +251,6 @@
             Y: =835
             ZIndex: =31
 
-    Label2_76 As label:
-        FontWeight: =FontWeight.Bold
-        Height: =47
-        Size: =20
-        Text: ="Personal Loan"
-        Width: =347
-        X: =189
-        Y: =94
-        ZIndex: =55
-
     Label2_28 As label:
         FontWeight: =FontWeight.Semibold
         Height: =56
@@ -268,7 +258,7 @@
         Text: ="50% of Salary Components"
         Width: =460
         X: =32
-        Y: =215
+        Y: =274
         ZIndex: =56
 
     Label2_66 As label:
@@ -278,7 +268,7 @@
         Text: ="Recurring Deduction"
         Width: =372
         X: =32
-        Y: =276
+        Y: =327
         ZIndex: =57
 
     Label2_77 As label:
@@ -288,7 +278,7 @@
         Text: ="Request in Process"
         Width: =358
         X: =32
-        Y: =325
+        Y: =368
         ZIndex: =58
 
     Label2_78 As label:
@@ -298,7 +288,7 @@
         Text: ="Maximum Eligible Loan Amount"
         Width: =440
         X: =29
-        Y: =379
+        Y: =415
         ZIndex: =59
 
     Label2_79 As label:
@@ -308,8 +298,8 @@
         Size: =16
         Text: ="0000"
         Width: =88
-        X: =512
-        Y: =166
+        X: =508
+        Y: =231
         ZIndex: =60
 
     Label2_80 As label:
@@ -319,8 +309,8 @@
         Size: =16
         Text: ="0000"
         Width: =88
-        X: =512
-        Y: =279
+        X: =508
+        Y: =331
         ZIndex: =61
 
     Label2_81 As label:
@@ -330,8 +320,8 @@
         Size: =16
         Text: ="0000"
         Width: =88
-        X: =512
-        Y: =327
+        X: =509
+        Y: =375
         ZIndex: =62
 
     Label2_82 As label:
@@ -341,8 +331,8 @@
         Size: =16
         Text: ="0000"
         Width: =88
-        X: =512
-        Y: =379
+        X: =509
+        Y: =419
         ZIndex: =63
 
     Label2_83 As label:
@@ -352,8 +342,8 @@
         Size: =16
         Text: ="0000"
         Width: =88
-        X: =512
-        Y: =225
+        X: =508
+        Y: =292
         ZIndex: =64
 
     Label2_84 As label:
@@ -363,27 +353,27 @@
         Text: ="Personal Loan Amount"
         Width: =460
         X: =29
-        Y: =461
+        Y: =478
         ZIndex: =65
 
     Label2_85 As label:
         FontWeight: =FontWeight.Semibold
-        Height: =72
+        Height: =63
         Size: =20
         Text: ="Monthly Installment Amount"
-        Width: =358
-        X: =36
-        Y: =585
+        Width: =345
+        X: =32
+        Y: =611
         ZIndex: =67
 
     Label2_86 As label:
         FontWeight: =FontWeight.Semibold
-        Height: =56
+        Height: =48
         Size: =20
         Text: ="Loan Reason Category"
         Width: =460
-        X: =32
-        Y: =660
+        X: =29
+        Y: =685
         ZIndex: =68
 
     AdvSalDrp_1 As dropdown:
@@ -392,35 +382,34 @@
         ChevronFill: =RGBA(128, 128, 128, 1)
         ChevronHoverBackground: =
         Fill: =RGBA(241, 244, 249, 1)
-        Height: =54
+        Height: =58
         Items: =Distinct(LeaveManagements,'Advance Salary')
         OnSelect: =
         PressedFill: =RGBA(112, 188, 31, 1)
         SelectionFill: =RGBA(112, 188, 31, 1)
         Size: =16
-        Width: =571
-        X: =29
-        Y: =711
+        Width: =566
+        X: =34
+        Y: =729
         ZIndex: =69
 
     Label2_87 As label:
         FontWeight: =FontWeight.Semibold
-        Height: =56
+        Height: =20
         Size: =20
         Text: ="Remarks"
-        Width: =460
-        X: =32
-        Y: =768
+        Width: =444
+        X: =29
+        Y: =819
         ZIndex: =70
 
     Label2_88 As label:
         FontWeight: =FontWeight.Semibold
-        Height: =56
         Size: =20
         Text: ="Request Date"
-        Width: =460
-        X: =41
-        Y: =882
+        Width: =209
+        X: =29
+        Y: =915
         ZIndex: =72
 
     Label2_89 As label:
@@ -430,17 +419,16 @@
         Text: ="0000"
         Width: =88
         X: =492
-        Y: =589
+        Y: =616
         ZIndex: =73
 
     Label4 As label:
         FontWeight: =FontWeight.Semibold
-        Height: =55
         Size: =20
         Text: ="11-dec-2022"
-        Width: =210
-        X: =394
-        Y: =884
+        Width: =209
+        X: =390
+        Y: =919
         ZIndex: =74
 
     CancelBtn As button:
@@ -459,7 +447,7 @@
         Height: =50
         HoverFill: =ColorFade(RGBA(135, 212, 53, 100), -20%)
         Size: =20
-        Text: ="Submit"
+        Text: ="Next"
         Width: =214
         X: =383
         Y: =980
@@ -472,22 +460,30 @@
         Height: =52
         Size: =20
         Text: =""
-        Width: =560
-        X: =36
-        Y: =514
+        Width: =564
+        X: =32
+        Y: =541
         ZIndex: =77
 
     Label9_1 As label:
         BorderColor: =RGBA(112, 188, 31, 1)
         BorderThickness: =3
         Fill: =RGBA(112, 188, 31, 0.38)
-        Height: =48
+        Height: =45
         Size: =20
         Text: =""
-        Width: =572
+        Width: =568
         X: =32
-        Y: =824
+        Y: =852
         ZIndex: =78
+
+    Image12 As image:
+        Height: =61
+        Image: ='Personal Loan(Green)'
+        Width: =208
+        X: =29
+        Y: =132
+        ZIndex: =104
 
     Menu_6 As group:
         Height: =5
@@ -819,4 +815,12 @@
             X: =129
             Y: =928
             ZIndex: =103
+
+    Image12_1 As image:
+        Height: =54
+        Image: ='History(White)'
+        Width: =198
+        X: =250
+        Y: =139
+        ZIndex: =105
 
