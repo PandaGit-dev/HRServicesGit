@@ -88,22 +88,22 @@ Resignation_1 As screen:
     Label2_193 As label:
         Height: =31
         Size: =20
-        Text: ="Start Date"
+        Text: ="Reason"
         Width: =235
-        X: =45
-        Y: =427
+        X: =50
+        Y: =407
         ZIndex: =15
 
     LeaveStartDate_4 As datepicker:
         BorderColor: =RGBA(112, 188, 31, 1)
         Fill: =RGBA(241, 244, 249, 1)
-        Height: =50
+        Height: =56
         IconBackground: =
         IconFill: =RGBA(128, 128, 128, 1)
         Size: =16
-        Width: =235
-        X: =48
-        Y: =467
+        Width: =558
+        X: =49
+        Y: =230
         ZIndex: =16
 
     Group2_14 As group:
@@ -182,22 +182,13 @@ Resignation_1 As screen:
             Y: =154
             ZIndex: =13
 
-    Label2_192 As label:
-        Height: =27
-        Size: =20
-        Text: ="End Date"
-        Width: =213
-        X: =392
-        Y: =427
-        ZIndex: =18
-
     Label2_191 As label:
         Height: =32
         Size: =20
-        Text: ="Resume"
+        Text: ="Last Working Day "
         Width: =235
-        X: =45
-        Y: =319
+        X: =50
+        Y: =301
         ZIndex: =19
 
     Dropdown1_2 As dropdown:
@@ -207,23 +198,23 @@ Resignation_1 As screen:
         ChevronHoverBackground: =ColorFade(Self.BorderColor, 15%)
         Default: =""
         Fill: =RGBA(241, 244, 249, 1)
-        Height: =46
+        Height: =45
         Items: =DropDownSample
         PressedFill: =RGBA(112, 188, 31, 1)
         SelectionFill: =RGBA(112, 188, 31, 1)
         Size: =21
-        Width: =557
-        X: =48
-        Y: =245
+        Width: =553
+        X: =52
+        Y: =447
         ZIndex: =49
 
     Label5_1 As label:
         Height: =34
         Size: =20
-        Text: ="Resumption Date"
+        Text: ="Comments"
         Width: =560
-        X: =45
-        Y: =537
+        X: =49
+        Y: =505
         ZIndex: =51
 
     "'Eligibility Messgae Popup_11' As group":
@@ -289,18 +280,6 @@ Resignation_1 As screen:
             Y: =835
             ZIndex: =24
 
-    ResumptionDate_1 As datepicker:
-        BorderColor: =RGBA(112, 188, 31, 1)
-        Fill: =RGBA(241, 244, 249, 1)
-        Height: =44
-        IconBackground: =
-        IconFill: =RGBA(128, 128, 128, 1)
-        Size: =16
-        Width: =557
-        X: =48
-        Y: =578
-        ZIndex: =59
-
     Group3_1 As group:
         Height: =5
         Width: =5
@@ -335,47 +314,18 @@ Resignation_1 As screen:
             Size: =20
             Text: ="Remarks"
             Width: =560
-            X: =52
-            Y: =640
+            X: =48
+            Y: =712
             ZIndex: =54
 
         "'Remarks Input_1' As text":
             Default: =""
-            Height: =83
+            Height: =68
             Size: =21
             Width: =555
             X: =50
-            Y: =685
+            Y: =752
             ZIndex: =55
-
-        Label7_2 As label:
-            Height: =39
-            Size: =20
-            Text: ="Attachments "
-            Width: =560
-            X: =45
-            Y: =782
-            ZIndex: =56
-
-        Label8_2 As label:
-            Height: =49
-            Size: =15
-            Text: ="To help approvers understand the request, you can attach supporting documents, images, or links to this action"
-            Width: =582
-            X: =40
-            Y: =827
-            ZIndex: =57
-
-        "'Upload Button_2' As button":
-            Fill: =RGBA(24, 84, 29, 1)
-            Height: =41
-            HoverFill: =ColorFade(RGBA(28, 97, 34, 100), -20%)
-            Size: =20
-            Text: ="Upload"
-            Width: =156
-            X: =50
-            Y: =894
-            ZIndex: =58
 
     Image15_1 As image:
         Height: =59
@@ -728,38 +678,81 @@ Resignation_1 As screen:
     LeaveStartDate_5 As datepicker:
         BorderColor: =RGBA(112, 188, 31, 1)
         Fill: =RGBA(241, 244, 249, 1)
-        Height: =50
+        Height: =59
         IconBackground: =
         IconFill: =RGBA(128, 128, 128, 1)
         Size: =16
-        Width: =218
-        X: =389
-        Y: =466
+        Width: =556
+        X: =49
+        Y: =343
         ZIndex: =89
-
-    Dropdown1_3 As dropdown:
-        BorderColor: =RGBA(112, 188, 31, 1)
-        ChevronBackground: =RGBA(0, 0, 0, 0)
-        ChevronFill: =RGBA(128, 128, 128, 1)
-        ChevronHoverBackground: =ColorFade(Self.BorderColor, 15%)
-        Default: =""
-        Fill: =RGBA(241, 244, 249, 1)
-        Height: =46
-        Items: =DropDownSample
-        PressedFill: =RGBA(112, 188, 31, 1)
-        SelectionFill: =RGBA(112, 188, 31, 1)
-        Size: =21
-        Width: =557
-        X: =50
-        Y: =357
-        ZIndex: =90
 
     Label2_190 As label:
         Height: =32
         Size: =20
         Text: ="Notification Date "
         Width: =235
-        X: =48
-        Y: =203
+        X: =50
+        Y: =183
         ZIndex: =91
+
+    Label6_2 As label:
+        Size: =20
+        Text: ="Type"
+        Width: =560
+        X: =49
+        Y: =834
+        ZIndex: =92
+
+    "'Remarks Input_2' As text":
+        Default: =""
+        Height: =59
+        Size: =21
+        Width: =555
+        X: =52
+        Y: =883
+        ZIndex: =93
+
+    Label6_3 As label:
+        Height: =34
+        Size: =20
+        Text: ="Context"
+        Width: =233
+        X: =49
+        Y: =623
+        ZIndex: =94
+
+    Dropdown1_4 As dropdown:
+        BorderColor: =RGBA(112, 188, 31, 1)
+        ChevronBackground: =RGBA(0, 0, 0, 0)
+        ChevronFill: =RGBA(128, 128, 128, 1)
+        ChevronHoverBackground: =ColorFade(Self.BorderColor, 15%)
+        Default: =""
+        Fill: =RGBA(241, 244, 249, 1)
+        Items: =DropDownSample
+        PressedFill: =RGBA(112, 188, 31, 1)
+        SelectionFill: =RGBA(112, 188, 31, 1)
+        Size: =21
+        Width: =255
+        X: =52
+        Y: =664
+        ZIndex: =95
+
+    Label6_4 As label:
+        Height: =34
+        Size: =20
+        Text: ="Panda KSA"
+        Width: =233
+        X: =324
+        Y: =669
+        ZIndex: =96
+
+    "'Remarks Input_3' As text":
+        Default: =""
+        Height: =71
+        Size: =21
+        Width: =555
+        X: =50
+        Y: =539
+        ZIndex: =97
 
