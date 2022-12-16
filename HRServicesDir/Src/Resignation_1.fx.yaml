@@ -305,6 +305,7 @@ Resignation_1 As screen:
             Fill: =RGBA(112, 188, 31, 1)
             Height: =44
             HoverFill: =ColorFade(RGBA(135, 212, 53, 100), -20%)
+            OnSelect: =Navigate('Resignation Preview')
             Size: =20
             Text: ="Next"
             Width: =205

@@ -424,7 +424,7 @@
         Height: =50
         HoverFill: =ColorFade(RGBA(135, 212, 53, 100), -20%)
         Size: =20
-        Text: ="Next"
+        Text: ="Submit"
         Width: =214
         X: =383
         Y: =980
