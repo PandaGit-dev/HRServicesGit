@@ -1,4 +1,4 @@
-"'Return From Leave_1' As screen":
+Resignation_1 As screen:
     BackgroundImage: =
     ImagePosition: =ImagePosition.Stretch
     OnVisible: =Set(AccountDetailsVis,false); Set(MenuVis,false); Set(EMPVis,false); Set(proceedvis,false)
@@ -379,7 +379,7 @@
 
     Image15_1 As image:
         Height: =59
-        Image: ='Return(Green)'
+        Image: ='Resignation(Green)'
         Width: =280
         X: =40
         Y: =114
@@ -757,7 +757,7 @@
     Label2_190 As label:
         Height: =32
         Size: =20
-        Text: ="Leave"
+        Text: ="Notification Date "
         Width: =235
         X: =48
         Y: =203
