@@ -1,24 +1,32 @@
-"'Personal Loan History' As screen":
+"'Resignation Preview' As screen":
     BackgroundImage: =
     ImagePosition: =ImagePosition.Stretch
-    OnVisible: =Set(AccountDetailsVis,false); Set(MenuVis,false); Set(EMPVis,false)
+    OnVisible: =Set(AccountDetailsVis,false); Set(MenuVis,false); Set(EMPVis,false); Set(proceedvis,false)
 
-    Image5_11 As image:
+    Image5_16 As image:
         Height: =650
         Image: ='download screen'
         ImagePosition: =ImagePosition.Stretch
         Width: =640
-        Y: =486
+        Y: =478
         ZIndex: =1
 
-    Rectangle1_53 As rectangle:
+    Image10_20 As image:
+        Height: =560
+        Image: =Picture3
+        ImagePosition: =ImagePosition.Stretch
+        Width: =640
+        Y: =151
+        ZIndex: =2
+
+    Rectangle1_78 As rectangle:
         BorderColor: =RGBA(230, 230, 230, 1)
         Fill: =RGBA(245, 245, 245, 1)
         Height: =95
         Width: =640
         ZIndex: =3
 
-    Image2_11 As image:
+    Image2_16 As image:
         Height: =70
         Image: ='Panda Logo'
         Width: =130
@@ -26,7 +34,7 @@
         Y: =12
         ZIndex: =4
 
-    Rectangle1_54 As rectangle:
+    Rectangle1_79 As rectangle:
         BorderColor: =RGBA(230, 230, 230, 1)
         Fill: =RGBA(112, 188, 31, 1)
         Height: =31
@@ -34,7 +42,7 @@
         Y: =1063
         ZIndex: =5
 
-    Rectangle1_56 As rectangle:
+    Rectangle1_81 As rectangle:
         BorderColor: =RGBA(230, 230, 230, 1)
         Fill: =RGBA(1, 74, 42, 1)
         Height: =65
@@ -42,7 +50,7 @@
         Y: =1071
         ZIndex: =6
 
-    Image3_11 As image:
+    Image3_16 As image:
         BorderColor: =RGBA(255, 255, 255, 1)
         BorderThickness: =3
         Height: =70
@@ -57,14 +65,14 @@
         Y: =12
         ZIndex: =10
 
-    Group1_10 As group:
+    Group1_15 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
         ZIndex: =11
 
-        Circle1_21 As circle:
+        Circle1_31 As circle:
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderThickness: =4
             Fill: =RGBA(112, 188, 31, 1)
@@ -75,7 +83,7 @@
             Y: =1035
             ZIndex: =7
 
-        Icon1_23 As icon.Hamburger:
+        Icon1_35 As icon.Hamburger:
             Color: =RGBA(255, 255, 255, 1)
             Height: =48
             Icon: =Icon.Hamburger
@@ -85,14 +93,14 @@
             Y: =1046
             ZIndex: =8
 
-    Group2_11 As group:
+    Group2_16 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
         ZIndex: =17
 
-        Image6_11 As image:
+        Image6_16 As image:
             Height: =150
             Image: =Picture3
             ImagePosition: =ImagePosition.Stretch
@@ -102,7 +110,7 @@
             Y: =51
             ZIndex: =9
 
-        Label1_44 As label:
+        Label1_64 As label:
             Height: =31
             Size: =9
             Text: =User().FullName
@@ -112,7 +120,7 @@
             Y: =64
             ZIndex: =11
 
-        Label1_45 As label:
+        Label1_65 As label:
             Height: =18
             Italic: =true
             Size: =9
@@ -123,7 +131,7 @@
             Y: =105
             ZIndex: =12
 
-        Icon3_111 As icon.HorizontalLine:
+        Icon3_146 As icon.HorizontalLine:
             BorderThickness: =1
             Color: =RGBA(230, 230, 230, 1)
             DisplayMode: =DisplayMode.View
@@ -137,7 +145,7 @@
             Y: =94
             ZIndex: =13
 
-        Label1_46 As label:
+        Label1_66 As label:
             Height: =31
             Size: =9
             Text: =User().FullName
@@ -147,7 +155,7 @@
             Y: =128
             ZIndex: =14
 
-        Label1_47 As label:
+        Label1_67 As label:
             Align: =Align.Right
             Color: =RGBA(127, 178, 57, 1)
             Height: =31
@@ -161,41 +169,43 @@
             Y: =154
             ZIndex: =15
 
-    Image9_13 As image:
-        Height: =59
-        Image: ='History(Green)'
-        ImagePosition: =ImagePosition.Stretch
-        Width: =198
-        X: =277
-        Y: =159
-        ZIndex: =39
+    Label2_215 As label:
+        FontWeight: =FontWeight.Semibold
+        Height: =49
+        Size: =18
+        Text: ="Salary Package"
+        Width: =218
+        X: =32
+        Y: =202
+        ZIndex: =19
 
-    Timer2_5 As timer:
-        Height: =70
-        Visible: =false
-        Width: =280
-        X: =308
-        Y: =204
-        ZIndex: =53
+    Label2_216 As label:
+        Height: =49
+        Size: =16
+        Text: ="(Basic + Housing + Trans)"
+        Width: =283
+        X: =216
+        Y: =201
+        ZIndex: =20
 
-    "'Eligibility Messgae Popup_8' As group":
+    "'Eligibility Messgae Popup_13' As group":
         Height: =5
         Width: =5
         X: =40
         Y: =40
         ZIndex: =53
 
-        Image10_15 As image:
+        Image10_21 As image:
             Height: =348
             Image: =Picture3
             ImagePosition: =ImagePosition.Stretch
             Visible: =EMPVis
             Width: =603
             X: =15
-            Y: =660
-            ZIndex: =47
+            Y: =685
+            ZIndex: =27
 
-        Label2_141 As label:
+        Label2_233 As label:
             Align: =Align.Center
             FontWeight: =FontWeight.Bold
             Height: =54
@@ -204,10 +214,10 @@
             Visible: =EMPVis
             Width: =534
             X: =48
-            Y: =686
-            ZIndex: =49
+            Y: =711
+            ZIndex: =28
 
-        Label2_143 As label:
+        Label2_236 As label:
             Align: =Align.Center
             Color: =If(Trim(First(FirstN(Split(limitValue,"@"),1)).Result) = "FAILED",Red,Black)
             FontWeight: =FontWeight.Bold
@@ -217,20 +227,20 @@
             Visible: =EMPVis
             Width: =534
             X: =48
-            Y: =756
-            ZIndex: =50
+            Y: =781
+            ZIndex: =29
 
-        Image8_8 As image:
+        Image8_13 As image:
             Height: =28
             Image: ='cancel icon p'
             OnSelect: =Set(EMPVis,false)
             Visible: =EMPVis
             Width: =28
             X: =557
-            Y: =686
-            ZIndex: =51
+            Y: =711
+            ZIndex: =30
 
-        Label2_145 As label:
+        Label2_239 As label:
             Align: =Align.Center
             Height: =172
             Size: =15
@@ -238,174 +248,214 @@
             Visible: =EMPVis
             Width: =534
             X: =49
-            Y: =810
-            ZIndex: =52
+            Y: =835
+            ZIndex: =31
 
-    "Gallery1_2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
-        Fill: =RGBA(255, 255, 255, 0.75)
-        Height: =721
-        Items: =SortByColumns(Filter(LeaveManagements,'Employee Email' = "sshaikh@panda.com.sa"),"createdon",Descending)
-        Layout: =Layout.Vertical
-        TemplatePadding: =0
-        TemplateSize: =Min(160, Self.Height - 60)
-        Width: =595
-        X: =33
-        Y: =261
-        ZIndex: =54
+    Label2_218 As label:
+        FontWeight: =FontWeight.Semibold
+        Height: =45
+        Size: =18
+        Text: ="50% of Salary Components"
+        Width: =460
+        X: =32
+        Y: =251
+        ZIndex: =56
 
-        Title1_4 As label:
-            FontWeight: =FontWeight.Normal
-            Height: =25
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =16
-            Text: |-
-                =": "&ThisItem.'Reference No'
-            VerticalAlign: =VerticalAlign.Top
-            Width: =181
-            X: =164
-            Y: =13
-            ZIndex: =2
+    Label2_220 As label:
+        FontWeight: =FontWeight.Semibold
+        Size: =18
+        Text: ="Recurring Deduction"
+        Width: =372
+        X: =32
+        Y: =296
+        ZIndex: =57
 
-        Subtitle1_11 As label:
-            FontWeight: =FontWeight.Semibold
-            Height: =25
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =16
-            Text: ="Request Date "
-            VerticalAlign: =VerticalAlign.Top
-            Width: =152
-            X: =12
-            Y: =46
-            ZIndex: =3
+    Label2_222 As label:
+        FontWeight: =FontWeight.Semibold
+        Height: =51
+        Size: =18
+        Text: ="Request in Process"
+        Width: =358
+        X: =32
+        Y: =336
+        ZIndex: =58
 
-        Separator3_2 As rectangle:
-            Fill: =RGBA(127, 178, 57, 1)
-            Height: =1
-            OnSelect: =Select(Parent)
-            Width: =536
-            X: =12
-            Y: =153
-            ZIndex: =5
+    Label2_224 As label:
+        FontWeight: =FontWeight.Semibold
+        Height: =49
+        Size: =18
+        Text: ="Maximum Eligible Loan Amount"
+        Width: =440
+        X: =29
+        Y: =382
+        ZIndex: =59
 
-        Title1_3 As label:
-            Height: =25
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =16
-            Text: ="Reference No"
-            VerticalAlign: =VerticalAlign.Top
-            Width: =152
-            X: =12
-            Y: =13
-            ZIndex: =8
+    Label2_217 As label:
+        Color: =RGBA(24, 84, 29, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =49
+        Size: =16
+        Text: ="0000"
+        Width: =88
+        X: =508
+        Y: =202
+        ZIndex: =60
 
-        Subtitle1_12 As label:
-            Color: =RGBA(24, 84, 29, 1)
-            Height: =25
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =16
-            Text: |-
-                =": "&DateValue(ThisItem.'Start Date')
-            VerticalAlign: =VerticalAlign.Top
-            Width: =152
-            X: =164
-            Y: =46
-            ZIndex: =9
+    Label2_221 As label:
+        Color: =RGBA(24, 84, 29, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =46
+        Size: =16
+        Text: ="0000"
+        Width: =88
+        X: =508
+        Y: =303
+        ZIndex: =61
 
-        Title1_5 As label:
-            Align: =Align.Center
-            Fill: =If(ThisItem.'Leave Status' = "Pending",Orange,ThisItem.'Leave Status' = "Rejected",Red,RGBA(127, 178, 57, 1))
-            OnSelect: =Select(Parent)
-            PaddingBottom: =10
-            PaddingLeft: =10
-            PaddingRight: =10
-            PaddingTop: =10
-            Size: =16
-            Text: =ThisItem.'Leave Status'
-            VerticalAlign: =VerticalAlign.Top
-            Width: =160
-            X: =362
-            Y: =54
-            ZIndex: =12
+    Label2_223 As label:
+        Color: =RGBA(24, 84, 29, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =46
+        Size: =16
+        Text: ="0000"
+        Width: =88
+        X: =509
+        Y: =344
+        ZIndex: =62
 
-        Subtitle1_8 As label:
-            Align: =Align.Center
-            FontWeight: =FontWeight.Semibold
-            Height: =30
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =16
-            Text: ="Status"
-            VerticalAlign: =VerticalAlign.Top
-            Width: =152
-            X: =366
-            Y: =24
-            ZIndex: =13
+    Label2_225 As label:
+        Color: =RGBA(24, 84, 29, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =46
+        Size: =16
+        Text: ="0000"
+        Width: =88
+        X: =509
+        Y: =387
+        ZIndex: =63
 
-        "Icon1_18 As icon.'3DPrinting'":
-            Color: =RGBA(109, 49, 162, 1)
-            Height: =24
-            Icon: =Icon.Information
-            OnSelect: =If(Infovis = false, Set(Infovis,true), Set(Infovis,false))
-            Width: =24
-            X: =528
-            Y: =8
-            ZIndex: =15
+    Label2_219 As label:
+        Color: =RGBA(24, 84, 29, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =46
+        Size: =16
+        Text: ="0000"
+        Width: =88
+        X: =508
+        Y: =257
+        ZIndex: =64
 
-    Image9_14 As image:
-        Height: =74
-        Image: ='Personal(White)'
-        ImagePosition: =ImagePosition.Stretch
-        OnSelect: =Navigate('Personal Loan')
-        Width: =211
-        X: =33
-        Y: =145
-        ZIndex: =83
+    Label2_226 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Semibold
+        Height: =56
+        Size: =20
+        Text: ="Personal Loan Preview"
+        Width: =460
+        X: =94
+        Y: =105
+        ZIndex: =65
 
-    Menu_8 As group:
+    Label2_228 As label:
+        Color: =RGBA(24, 84, 29, 1)
+        Height: =33
+        Size: =18
+        Text: ="Monthly Installment Amount"
+        Width: =354
+        X: =34
+        Y: =514
+        ZIndex: =67
+
+    Label2_232 As label:
+        Color: =RGBA(24, 84, 29, 1)
+        Height: =34
+        Size: =18
+        Text: ="Loan Reason Category"
+        Width: =276
+        X: =36
+        Y: =551
+        ZIndex: =68
+
+    Label2_237 As label:
+        Color: =RGBA(24, 84, 29, 1)
+        Height: =31
+        Size: =18
+        Text: ="Remarks"
+        Width: =347
+        X: =36
+        Y: =592
+        ZIndex: =70
+
+    Label2_229 As label:
+        Color: =RGBA(24, 84, 29, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =30
+        Size: =18
+        Text: ="School Tuition Fee"
+        Width: =232
+        X: =367
+        Y: =556
+        ZIndex: =73
+
+    Label4_2 As label:
+        Color: =RGBA(24, 84, 29, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =41
+        Size: =18
+        Text: ="11-dec-2022"
+        Width: =153
+        X: =436
+        Y: =628
+        ZIndex: =74
+
+    CancelBtn_2 As button:
+        Fill: =RGBA(225, 0, 0, 1)
+        Height: =50
+        HoverFill: =ColorFade(RGBA(217, 37, 37, 100), -20%)
+        Size: =20
+        Text: ="Cancel"
+        Width: =214
+        X: =36
+        Y: =980
+        ZIndex: =75
+
+    SubmitBtn_2 As button:
+        Fill: =RGBA(112, 188, 31, 1)
+        Height: =50
+        HoverFill: =ColorFade(RGBA(135, 212, 53, 100), -20%)
+        Size: =20
+        Text: ="Next"
+        Width: =214
+        X: =383
+        Y: =980
+        ZIndex: =76
+
+    Menu_15 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
-        ZIndex: =83
+        ZIndex: =104
 
-        Rectangle1_55 As rectangle:
+        Rectangle1_80 As rectangle:
             BorderColor: =RGBA(230, 230, 230, 1)
             Fill: =RGBA(112, 188, 31, 1)
             Height: =31
             Visible: =MenuVis
             Width: =640
             Y: =1063
-            ZIndex: =58
+            ZIndex: =79
 
-        Rectangle1_57 As rectangle:
+        Rectangle1_82 As rectangle:
             BorderColor: =RGBA(230, 230, 230, 1)
             Fill: =RGBA(1, 74, 42, 1)
             Height: =65
             Visible: =MenuVis
             Width: =640
             Y: =1071
-            ZIndex: =59
+            ZIndex: =80
 
-        Circle1_22 As circle:
+        Circle1_32 As circle:
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderThickness: =4
             Fill: =RGBA(112, 188, 31, 1)
@@ -415,9 +465,9 @@
             Width: =70
             X: =292
             Y: =1035
-            ZIndex: =60
+            ZIndex: =81
 
-        Icon1_24 As icon.Hamburger:
+        Icon1_36 As icon.Hamburger:
             Color: =RGBA(255, 255, 255, 1)
             Height: =48
             Icon: =Icon.Cancel
@@ -426,9 +476,9 @@
             Width: =43
             X: =305
             Y: =1046
-            ZIndex: =61
+            ZIndex: =82
 
-        Image7_11 As image:
+        Image7_16 As image:
             Height: =438
             Image: =Picture1
             ImagePosition: =ImagePosition.Stretch
@@ -436,9 +486,9 @@
             Width: =526
             X: =63
             Y: =596
-            ZIndex: =62
+            ZIndex: =83
 
-        Label2_76 As label:
+        Label2_230 As label:
             Font: =Font.'Courier New'
             FontWeight: =FontWeight.Semibold
             OnSelect: =Navigate('Home Page')
@@ -448,9 +498,9 @@
             Width: =384
             X: =168
             Y: =632
-            ZIndex: =63
+            ZIndex: =84
 
-        Label2_140 As label:
+        Label2_231 As label:
             Font: =Font.'Courier New'
             FontWeight: =FontWeight.Semibold
             OnSelect: =
@@ -460,9 +510,9 @@
             Width: =384
             X: =168
             Y: =679
-            ZIndex: =64
+            ZIndex: =85
 
-        Label2_142 As label:
+        Label2_234 As label:
             Font: =Font.'Courier New'
             FontWeight: =FontWeight.Semibold
             OnSelect: =
@@ -472,9 +522,9 @@
             Width: =384
             X: =168
             Y: =730
-            ZIndex: =65
+            ZIndex: =86
 
-        Label2_144 As label:
+        Label2_235 As label:
             Font: =Font.'Courier New'
             FontWeight: =FontWeight.Semibold
             OnSelect: =
@@ -484,9 +534,9 @@
             Width: =384
             X: =168
             Y: =780
-            ZIndex: =66
+            ZIndex: =87
 
-        Label2_146 As label:
+        Label2_238 As label:
             Font: =Font.'Courier New'
             FontWeight: =FontWeight.Semibold
             OnSelect: =
@@ -496,9 +546,9 @@
             Width: =384
             X: =168
             Y: =833
-            ZIndex: =67
+            ZIndex: =88
 
-        Label2_147 As label:
+        Label2_241 As label:
             Font: =Font.'Courier New'
             FontWeight: =FontWeight.Semibold
             OnSelect: =
@@ -508,9 +558,9 @@
             Width: =384
             X: =168
             Y: =884
-            ZIndex: =68
+            ZIndex: =89
 
-        Icon2_34 As icon.BackArrow:
+        Icon2_39 As icon.BackArrow:
             Color: =RGBA(127, 178, 57, 1)
             Height: =40
             Icon: =Icon.Airplane
@@ -523,9 +573,9 @@
             Width: =54
             X: =114
             Y: =729
-            ZIndex: =69
+            ZIndex: =90
 
-        Icon2_109 As icon.BackArrow:
+        Icon2_139 As icon.BackArrow:
             Color: =RGBA(127, 178, 57, 1)
             Height: =40
             Icon: =Icon.Home
@@ -538,9 +588,9 @@
             Width: =54
             X: =114
             Y: =628
-            ZIndex: =70
+            ZIndex: =91
 
-        Icon2_110 As icon.BackArrow:
+        Icon2_140 As icon.BackArrow:
             Color: =RGBA(127, 178, 57, 1)
             Height: =40
             Icon: =Icon.Leave
@@ -553,9 +603,9 @@
             Width: =54
             X: =114
             Y: =678
-            ZIndex: =71
+            ZIndex: =92
 
-        Icon2_111 As icon.BackArrow:
+        Icon2_141 As icon.BackArrow:
             Color: =RGBA(127, 178, 57, 1)
             Height: =40
             Icon: =Icon.Money
@@ -568,9 +618,9 @@
             Width: =54
             X: =114
             Y: =779
-            ZIndex: =72
+            ZIndex: =93
 
-        Icon2_112 As icon.BackArrow:
+        Icon2_142 As icon.BackArrow:
             Color: =RGBA(127, 178, 57, 1)
             Height: =40
             Icon: =Icon.Compose
@@ -583,9 +633,9 @@
             Width: =54
             X: =114
             Y: =832
-            ZIndex: =73
+            ZIndex: =94
 
-        Icon2_113 As icon.BackArrow:
+        Icon2_143 As icon.BackArrow:
             Color: =RGBA(127, 178, 57, 1)
             Height: =40
             Icon: =Icon.ClearDrawing
@@ -598,9 +648,9 @@
             Width: =54
             X: =114
             Y: =883
-            ZIndex: =74
+            ZIndex: =95
 
-        Icon3_112 As icon.HorizontalLine:
+        Icon3_147 As icon.HorizontalLine:
             BorderThickness: =1
             Color: =RGBA(127, 178, 57, 1)
             DisplayMode: =DisplayMode.View
@@ -612,9 +662,9 @@
             Width: =400
             X: =129
             Y: =672
-            ZIndex: =75
+            ZIndex: =96
 
-        Icon3_113 As icon.HorizontalLine:
+        Icon3_148 As icon.HorizontalLine:
             BorderThickness: =1
             Color: =RGBA(127, 178, 57, 1)
             DisplayMode: =DisplayMode.View
@@ -626,9 +676,9 @@
             Width: =400
             X: =129
             Y: =723
-            ZIndex: =76
+            ZIndex: =97
 
-        Icon3_114 As icon.HorizontalLine:
+        Icon3_149 As icon.HorizontalLine:
             BorderThickness: =1
             Color: =RGBA(127, 178, 57, 1)
             DisplayMode: =DisplayMode.View
@@ -640,9 +690,9 @@
             Width: =400
             X: =129
             Y: =773
-            ZIndex: =77
+            ZIndex: =98
 
-        Icon3_115 As icon.HorizontalLine:
+        Icon3_150 As icon.HorizontalLine:
             BorderThickness: =1
             Color: =RGBA(127, 178, 57, 1)
             DisplayMode: =DisplayMode.View
@@ -654,9 +704,9 @@
             Width: =400
             X: =129
             Y: =826
-            ZIndex: =78
+            ZIndex: =99
 
-        Icon3_116 As icon.HorizontalLine:
+        Icon3_151 As icon.HorizontalLine:
             BorderThickness: =1
             Color: =RGBA(127, 178, 57, 1)
             DisplayMode: =DisplayMode.View
@@ -668,9 +718,9 @@
             Width: =400
             X: =129
             Y: =877
-            ZIndex: =79
+            ZIndex: =100
 
-        Label2_148 As label:
+        Label2_243 As label:
             Font: =Font.'Courier New'
             FontWeight: =FontWeight.Semibold
             OnSelect: =
@@ -680,9 +730,9 @@
             Width: =384
             X: =168
             Y: =935
-            ZIndex: =80
+            ZIndex: =101
 
-        Icon2_114 As icon.BackArrow:
+        Icon2_144 As icon.BackArrow:
             Color: =RGBA(127, 178, 57, 1)
             Height: =40
             Icon: =Icon.Error
@@ -695,9 +745,9 @@
             Width: =54
             X: =114
             Y: =934
-            ZIndex: =81
+            ZIndex: =102
 
-        Icon3_117 As icon.HorizontalLine:
+        Icon3_152 As icon.HorizontalLine:
             BorderThickness: =1
             Color: =RGBA(127, 178, 57, 1)
             DisplayMode: =DisplayMode.View
@@ -709,14 +759,95 @@
             Width: =400
             X: =129
             Y: =928
-            ZIndex: =82
+            ZIndex: =103
 
-    Icon3 As icon.Reload:
-        Color: =RGBA(0, 0, 0, 1)
-        Height: =59
-        Icon: =Icon.Reload
-        Width: =43
-        X: =561
-        Y: =152
-        ZIndex: =84
+    Image14_1 As image:
+        Height: =32
+        Image: =Line
+        Width: =586
+        X: =32
+        Y: =440
+        ZIndex: =105
+
+    Label2_240 As label:
+        Color: =RGBA(24, 84, 29, 1)
+        Height: =37
+        Size: =18
+        Text: ="Personal Loan Preview"
+        Width: =312
+        X: =36
+        Y: =472
+        ZIndex: =106
+
+    Label2_242 As label:
+        Color: =RGBA(24, 84, 29, 1)
+        Height: =31
+        Size: =18
+        Text: ="Request Date"
+        Width: =347
+        X: =36
+        Y: =626
+        ZIndex: =107
+
+    Label2_227 As label:
+        Color: =RGBA(24, 84, 29, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =46
+        Size: =16
+        Text: ="0000"
+        Width: =88
+        X: =511
+        Y: =463
+        ZIndex: =108
+
+    Label2_214 As label:
+        Color: =RGBA(24, 84, 29, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =46
+        Size: =16
+        Text: ="0000"
+        Width: =88
+        X: =509
+        Y: =507
+        ZIndex: =109
+
+    Label2_213 As label:
+        Color: =RGBA(24, 84, 29, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =39
+        Size: =18
+        Text: ="School Tuition Fee"
+        Width: =232
+        X: =367
+        Y: =589
+        ZIndex: =110
+
+    Label7_2 As label:
+        Color: =RGBA(24, 84, 29, 1)
+        Height: =39
+        Size: =20
+        Text: ="Attachments "
+        Width: =560
+        X: =29
+        Y: =719
+        ZIndex: =111
+
+    Label8_2 As label:
+        Height: =66
+        Size: =15
+        Text: ="To help approvers understand the request, you can attach supporting documents, images, or links to this action"
+        Width: =582
+        X: =25
+        Y: =767
+        ZIndex: =112
+
+    "'Upload Button_2' As button":
+        Fill: =RGBA(24, 84, 29, 1)
+        HoverFill: =ColorFade(RGBA(28, 97, 34, 100), -20%)
+        Size: =20
+        Text: ="Upload"
+        Width: =176
+        X: =29
+        Y: =847
+        ZIndex: =113
 
