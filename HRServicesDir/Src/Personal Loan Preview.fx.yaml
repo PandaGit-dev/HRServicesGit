@@ -12,7 +12,7 @@
         ZIndex: =1
 
     Image10_16 As image:
-        Height: =664
+        Height: =560
         Image: =Picture3
         ImagePosition: =ImagePosition.Stretch
         Width: =640
@@ -398,12 +398,14 @@
         ZIndex: =73
 
     Label4_1 As label:
+        Color: =RGBA(25, 135, 8, 1)
         FontWeight: =FontWeight.Semibold
-        Size: =20
+        Height: =41
+        Size: =18
         Text: ="11-dec-2022"
-        Width: =209
-        X: =390
-        Y: =919
+        Width: =153
+        X: =436
+        Y: =628
         ZIndex: =74
 
     CancelBtn_1 As button:
