@@ -12,7 +12,7 @@
         ZIndex: =1
 
     Image10_20 As image:
-        Height: =560
+        Height: =481
         Image: =Picture3
         ImagePosition: =ImagePosition.Stretch
         Width: =640
@@ -169,25 +169,6 @@
             Y: =154
             ZIndex: =15
 
-    Label2_215 As label:
-        FontWeight: =FontWeight.Semibold
-        Height: =49
-        Size: =18
-        Text: ="Salary Package"
-        Width: =218
-        X: =32
-        Y: =202
-        ZIndex: =19
-
-    Label2_216 As label:
-        Height: =49
-        Size: =16
-        Text: ="(Basic + Housing + Trans)"
-        Width: =283
-        X: =216
-        Y: =201
-        ZIndex: =20
-
     "'Eligibility Messgae Popup_13' As group":
         Height: =5
         Width: =5
@@ -251,150 +232,27 @@
             Y: =835
             ZIndex: =31
 
-    Label2_218 As label:
-        FontWeight: =FontWeight.Semibold
-        Height: =45
-        Size: =18
-        Text: ="50% of Salary Components"
-        Width: =460
-        X: =32
-        Y: =251
-        ZIndex: =56
-
-    Label2_220 As label:
-        FontWeight: =FontWeight.Semibold
-        Size: =18
-        Text: ="Recurring Deduction"
-        Width: =372
-        X: =32
-        Y: =296
-        ZIndex: =57
-
-    Label2_222 As label:
-        FontWeight: =FontWeight.Semibold
-        Height: =51
-        Size: =18
-        Text: ="Request in Process"
-        Width: =358
-        X: =32
-        Y: =336
-        ZIndex: =58
-
-    Label2_224 As label:
-        FontWeight: =FontWeight.Semibold
-        Height: =49
-        Size: =18
-        Text: ="Maximum Eligible Loan Amount"
-        Width: =440
-        X: =29
-        Y: =382
-        ZIndex: =59
-
-    Label2_217 As label:
-        Color: =RGBA(24, 84, 29, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =49
-        Size: =16
-        Text: ="0000"
-        Width: =88
-        X: =508
-        Y: =202
-        ZIndex: =60
-
-    Label2_221 As label:
-        Color: =RGBA(24, 84, 29, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =46
-        Size: =16
-        Text: ="0000"
-        Width: =88
-        X: =508
-        Y: =303
-        ZIndex: =61
-
-    Label2_223 As label:
-        Color: =RGBA(24, 84, 29, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =46
-        Size: =16
-        Text: ="0000"
-        Width: =88
-        X: =509
-        Y: =344
-        ZIndex: =62
-
-    Label2_225 As label:
-        Color: =RGBA(24, 84, 29, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =46
-        Size: =16
-        Text: ="0000"
-        Width: =88
-        X: =509
-        Y: =387
-        ZIndex: =63
-
-    Label2_219 As label:
-        Color: =RGBA(24, 84, 29, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =46
-        Size: =16
-        Text: ="0000"
-        Width: =88
-        X: =508
-        Y: =257
-        ZIndex: =64
-
     Label2_226 As label:
         Align: =Align.Center
         FontWeight: =FontWeight.Semibold
         Height: =56
         Size: =20
-        Text: ="Personal Loan Preview"
+        Text: ="Resignation Preview"
         Width: =460
         X: =94
         Y: =105
         ZIndex: =65
 
-    Label2_228 As label:
-        Color: =RGBA(24, 84, 29, 1)
-        Height: =33
-        Size: =18
-        Text: ="Monthly Installment Amount"
-        Width: =354
-        X: =34
-        Y: =514
-        ZIndex: =67
-
-    Label2_232 As label:
-        Color: =RGBA(24, 84, 29, 1)
-        Height: =34
-        Size: =18
-        Text: ="Loan Reason Category"
-        Width: =276
-        X: =36
-        Y: =551
-        ZIndex: =68
-
-    Label2_237 As label:
-        Color: =RGBA(24, 84, 29, 1)
-        Height: =31
-        Size: =18
-        Text: ="Remarks"
-        Width: =347
-        X: =36
-        Y: =592
-        ZIndex: =70
-
     Label2_229 As label:
+        Align: =Align.Right
         Color: =RGBA(24, 84, 29, 1)
         FontWeight: =FontWeight.Bold
-        Height: =30
+        Height: =37
         Size: =18
-        Text: ="School Tuition Fee"
-        Width: =232
-        X: =367
-        Y: =556
+        Text: ="Better Opportunity"
+        Width: =259
+        X: =348
+        Y: =316
         ZIndex: =73
 
     Label4_2 As label:
@@ -404,8 +262,8 @@
         Size: =18
         Text: ="11-dec-2022"
         Width: =153
-        X: =436
-        Y: =628
+        X: =454
+        Y: =201
         ZIndex: =74
 
     CancelBtn_2 As button:
@@ -761,65 +619,16 @@
             Y: =928
             ZIndex: =103
 
-    Image14_1 As image:
-        Height: =32
-        Image: =Line
-        Width: =586
-        X: =32
-        Y: =440
-        ZIndex: =105
-
-    Label2_240 As label:
-        Color: =RGBA(24, 84, 29, 1)
-        Height: =37
-        Size: =18
-        Text: ="Personal Loan Preview"
-        Width: =312
-        X: =36
-        Y: =472
-        ZIndex: =106
-
-    Label2_242 As label:
-        Color: =RGBA(24, 84, 29, 1)
-        Height: =31
-        Size: =18
-        Text: ="Request Date"
-        Width: =347
-        X: =36
-        Y: =626
-        ZIndex: =107
-
-    Label2_227 As label:
-        Color: =RGBA(24, 84, 29, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =46
-        Size: =16
-        Text: ="0000"
-        Width: =88
-        X: =511
-        Y: =463
-        ZIndex: =108
-
-    Label2_214 As label:
-        Color: =RGBA(24, 84, 29, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =46
-        Size: =16
-        Text: ="0000"
-        Width: =88
-        X: =509
-        Y: =507
-        ZIndex: =109
-
     Label2_213 As label:
+        Align: =Align.Right
         Color: =RGBA(24, 84, 29, 1)
         FontWeight: =FontWeight.Bold
         Height: =39
         Size: =18
-        Text: ="School Tuition Fee"
+        Text: ="SA "
         Width: =232
-        X: =367
-        Y: =589
+        X: =373
+        Y: =443
         ZIndex: =110
 
     Label7_2 As label:
@@ -850,4 +659,109 @@
         X: =29
         Y: =847
         ZIndex: =113
+
+    Label2_214 As label:
+        Color: =RGBA(24, 84, 29, 1)
+        Height: =37
+        Size: =20
+        Text: ="Reason"
+        Width: =235
+        X: =49
+        Y: =316
+        ZIndex: =114
+
+    Label2_215 As label:
+        Color: =RGBA(24, 84, 29, 1)
+        Height: =44
+        Size: =20
+        Text: ="Last Working Date "
+        Width: =275
+        X: =48
+        Y: =250
+        ZIndex: =115
+
+    Label2_216 As label:
+        Color: =RGBA(24, 84, 29, 1)
+        Height: =50
+        Size: =20
+        Text: ="Notification Date "
+        Width: =235
+        X: =48
+        Y: =185
+        ZIndex: =117
+
+    Label6_5 As label:
+        Color: =RGBA(24, 84, 29, 1)
+        Height: =34
+        Size: =20
+        Text: ="Context"
+        Width: =233
+        X: =48
+        Y: =443
+        ZIndex: =118
+
+    Label6_6 As label:
+        Color: =RGBA(24, 84, 29, 1)
+        Height: =37
+        Size: =20
+        Text: ="Remarks"
+        Width: =220
+        X: =49
+        Y: =507
+        ZIndex: =119
+
+    Label2_217 As label:
+        Color: =RGBA(24, 84, 29, 1)
+        Height: =37
+        Size: =20
+        Text: ="Comments"
+        Width: =235
+        X: =49
+        Y: =378
+        ZIndex: =120
+
+    Label6_7 As label:
+        Color: =RGBA(24, 84, 29, 1)
+        Height: =37
+        Size: =20
+        Text: ="Type"
+        Width: =220
+        X: =48
+        Y: =567
+        ZIndex: =121
+
+    Label4_3 As label:
+        Color: =RGBA(24, 84, 29, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =41
+        Size: =18
+        Text: ="11-dec-2022"
+        Width: =153
+        X: =454
+        Y: =255
+        ZIndex: =122
+
+    Label2_232 As label:
+        Align: =Align.Right
+        Color: =RGBA(24, 84, 29, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =37
+        Size: =18
+        Text: ="Better Opportunity"
+        Width: =259
+        X: =353
+        Y: =378
+        ZIndex: =123
+
+    Label2_237 As label:
+        Align: =Align.Right
+        Color: =RGBA(24, 84, 29, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =37
+        Size: =18
+        Text: ="Resignation"
+        Width: =259
+        X: =338
+        Y: =565
+        ZIndex: =124
 
