@@ -291,7 +291,7 @@
         ZIndex: =59
 
     Label2_151 As label:
-        Color: =RGBA(25, 135, 8, 1)
+        Color: =RGBA(24, 84, 29, 1)
         FontWeight: =FontWeight.Bold
         Height: =49
         Size: =16
@@ -302,7 +302,7 @@
         ZIndex: =60
 
     Label2_155 As label:
-        Color: =RGBA(25, 135, 8, 1)
+        Color: =RGBA(24, 84, 29, 1)
         FontWeight: =FontWeight.Bold
         Height: =46
         Size: =16
@@ -313,7 +313,7 @@
         ZIndex: =61
 
     Label2_157 As label:
-        Color: =RGBA(25, 135, 8, 1)
+        Color: =RGBA(24, 84, 29, 1)
         FontWeight: =FontWeight.Bold
         Height: =46
         Size: =16
@@ -324,7 +324,7 @@
         ZIndex: =62
 
     Label2_159 As label:
-        Color: =RGBA(25, 135, 8, 1)
+        Color: =RGBA(24, 84, 29, 1)
         FontWeight: =FontWeight.Bold
         Height: =46
         Size: =16
@@ -335,7 +335,7 @@
         ZIndex: =63
 
     Label2_153 As label:
-        Color: =RGBA(25, 135, 8, 1)
+        Color: =RGBA(24, 84, 29, 1)
         FontWeight: =FontWeight.Bold
         Height: =46
         Size: =16
@@ -357,7 +357,7 @@
         ZIndex: =65
 
     Label2_161 As label:
-        Color: =RGBA(25, 135, 8, 1)
+        Color: =RGBA(24, 84, 29, 1)
         Height: =33
         Size: =18
         Text: ="Monthly Installment Amount"
@@ -367,7 +367,7 @@
         ZIndex: =67
 
     Label2_164 As label:
-        Color: =RGBA(25, 135, 8, 1)
+        Color: =RGBA(24, 84, 29, 1)
         Height: =34
         Size: =18
         Text: ="Loan Reason Category"
@@ -377,7 +377,7 @@
         ZIndex: =68
 
     Label2_168 As label:
-        Color: =RGBA(25, 135, 8, 1)
+        Color: =RGBA(24, 84, 29, 1)
         Height: =31
         Size: =18
         Text: ="Remarks"
@@ -387,7 +387,7 @@
         ZIndex: =70
 
     Label2_162 As label:
-        Color: =RGBA(25, 135, 8, 1)
+        Color: =RGBA(24, 84, 29, 1)
         FontWeight: =FontWeight.Bold
         Height: =30
         Size: =18
@@ -398,7 +398,7 @@
         ZIndex: =73
 
     Label4_1 As label:
-        Color: =RGBA(25, 135, 8, 1)
+        Color: =RGBA(24, 84, 29, 1)
         FontWeight: =FontWeight.Semibold
         Height: =41
         Size: =18
@@ -770,7 +770,7 @@
         ZIndex: =105
 
     Label2_176 As label:
-        Color: =RGBA(25, 135, 8, 1)
+        Color: =RGBA(24, 84, 29, 1)
         Height: =37
         Size: =18
         Text: ="Personal Loan Preview"
@@ -780,7 +780,7 @@
         ZIndex: =106
 
     Label2_173 As label:
-        Color: =RGBA(25, 135, 8, 1)
+        Color: =RGBA(24, 84, 29, 1)
         Height: =31
         Size: =18
         Text: ="Request Date"
@@ -790,7 +790,7 @@
         ZIndex: =107
 
     Label2_177 As label:
-        Color: =RGBA(25, 135, 8, 1)
+        Color: =RGBA(24, 84, 29, 1)
         FontWeight: =FontWeight.Bold
         Height: =46
         Size: =16
@@ -801,7 +801,7 @@
         ZIndex: =108
 
     Label2_178 As label:
-        Color: =RGBA(25, 135, 8, 1)
+        Color: =RGBA(24, 84, 29, 1)
         FontWeight: =FontWeight.Bold
         Height: =46
         Size: =16
@@ -812,7 +812,7 @@
         ZIndex: =109
 
     Label2_179 As label:
-        Color: =RGBA(25, 135, 8, 1)
+        Color: =RGBA(24, 84, 29, 1)
         FontWeight: =FontWeight.Bold
         Height: =39
         Size: =18
@@ -829,25 +829,25 @@
         Text: ="Attachments "
         Width: =560
         X: =29
-        Y: =737
+        Y: =719
         ZIndex: =111
 
     Label8_1 As label:
-        Height: =49
+        Height: =66
+        Size: =15
         Text: ="To help approvers understand the request, you can attach supporting documents, images, or links to this action"
         Width: =582
-        X: =29
-        Y: =796
+        X: =25
+        Y: =767
         ZIndex: =112
 
     "'Upload Button_1' As button":
         Fill: =RGBA(24, 84, 29, 1)
-        Height: =41
         HoverFill: =ColorFade(RGBA(28, 97, 34, 100), -20%)
         Size: =20
         Text: ="Upload"
-        Width: =156
+        Width: =176
         X: =29
-        Y: =864
+        Y: =847
         ZIndex: =113
 
