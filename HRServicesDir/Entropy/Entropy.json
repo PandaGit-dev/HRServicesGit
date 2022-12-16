@@ -682,7 +682,9 @@
     "Label5": 636,
     "Label6": 641,
     "Label7": 656,
+    "Label7_1": 842,
     "Label8": 661,
+    "Label8_1": 843,
     "Label9": 126,
     "Label9_1": 148,
     "Landing Page": 40,
@@ -822,11 +824,12 @@
     "Title1_3": 705,
     "Title1_4": 706,
     "Title1_5": 710,
-    "Upload Button": 665
+    "Upload Button": 665,
+    "Upload Button_1": 844
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "12/16/2022 05:55:21",
+  "HeaderLastSavedDateTimeUTC": "12/16/2022 05:56:43",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "2b58d8da-c59b-4c25-aed9-077e7b45187a": "\"/providers/microsoft.powerapps/apis/shared_oracle/connections/978df53e11b74f2f840d3efef65f7faf\"",
@@ -2182,7 +2185,9 @@
     "Label5": 455,
     "Label6": 460,
     "Label7": 475,
+    "Label7_1": 475,
     "Label8": 480,
+    "Label8_1": 480,
     "Label9": 524,
     "Label9_1": 552,
     "Landing Page": 0,
@@ -2322,7 +2327,8 @@
     "Title1_3": 589,
     "Title1_4": 590,
     "Title1_5": 594,
-    "Upload Button": 484
+    "Upload Button": 484,
+    "Upload Button_1": 484
   },
   "ResourcesJsonIndices": {
     "Image-Background": 4,
@@ -2354,7 +2360,7 @@
     "AnalysisLoadTime": 3.386558,
     "ControlCount": {
       "attachments": 1,
-      "button": 14,
+      "button": 15,
       "circle": 29,
       "dataTable": 1,
       "dataTableColumn": 3,
@@ -2366,7 +2372,7 @@
       "group": 49,
       "icon": 212,
       "image": 118,
-      "label": 287,
+      "label": 289,
       "radio": 2,
       "rectangle": 66,
       "screen": 15,
