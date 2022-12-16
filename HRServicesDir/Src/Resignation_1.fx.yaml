@@ -323,6 +323,7 @@ Resignation_1 As screen:
             ZIndex: =54
 
         "'Remarks Input_1' As text":
+            BorderColor: =RGBA(112, 188, 31, 1)
             Color: =RGBA(24, 84, 29, 1)
             Default: =""
             Height: =68
@@ -712,6 +713,7 @@ Resignation_1 As screen:
         ZIndex: =92
 
     "'Remarks Input_2' As text":
+        BorderColor: =RGBA(112, 188, 31, 1)
         Default: =""
         Height: =59
         Size: =21
@@ -757,6 +759,7 @@ Resignation_1 As screen:
         ZIndex: =96
 
     "'Remarks Input_3' As text":
+        BorderColor: =RGBA(112, 188, 31, 1)
         Default: =""
         Height: =71
         Size: =21

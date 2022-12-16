@@ -319,7 +319,7 @@
             Size: =20
             Text: ="Cancel"
             Width: =205
-            X: =52
+            X: =38
             Y: =992
             ZIndex: =52
 
@@ -345,6 +345,7 @@
             ZIndex: =54
 
         "'Remarks Input' As text":
+            BorderColor: =RGBA(112, 188, 31, 1)
             Default: =""
             Height: =83
             Size: =21

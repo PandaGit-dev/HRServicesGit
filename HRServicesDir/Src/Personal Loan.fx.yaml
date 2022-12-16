@@ -347,6 +347,7 @@
         ZIndex: =64
 
     Label2_84 As label:
+        Color: =RGBA(24, 84, 29, 1)
         FontWeight: =FontWeight.Semibold
         Height: =56
         Size: =20
@@ -357,6 +358,7 @@
         ZIndex: =65
 
     Label2_85 As label:
+        Color: =RGBA(24, 84, 29, 1)
         FontWeight: =FontWeight.Semibold
         Height: =63
         Size: =20
@@ -367,6 +369,7 @@
         ZIndex: =67
 
     Label2_86 As label:
+        Color: =RGBA(24, 84, 29, 1)
         FontWeight: =FontWeight.Semibold
         Height: =48
         Size: =20
@@ -394,6 +397,7 @@
         ZIndex: =69
 
     Label2_87 As label:
+        Color: =RGBA(24, 84, 29, 1)
         FontWeight: =FontWeight.Semibold
         Height: =20
         Size: =20
@@ -404,6 +408,7 @@
         ZIndex: =70
 
     Label2_88 As label:
+        Color: =RGBA(24, 84, 29, 1)
         FontWeight: =FontWeight.Semibold
         Size: =20
         Text: ="Request Date"
@@ -455,8 +460,8 @@
 
     Label9 As label:
         BorderColor: =RGBA(112, 188, 31, 1)
-        BorderThickness: =3
-        Fill: =RGBA(112, 188, 31, 0.38)
+        BorderThickness: =2
+        Fill: =RGBA(112, 188, 31, 0.17)
         Height: =52
         Size: =20
         Text: =""
@@ -467,8 +472,8 @@
 
     Label9_1 As label:
         BorderColor: =RGBA(112, 188, 31, 1)
-        BorderThickness: =3
-        Fill: =RGBA(112, 188, 31, 0.38)
+        BorderThickness: =2
+        Fill: =RGBA(112, 188, 31, 0.15)
         Height: =45
         Size: =20
         Text: =""
