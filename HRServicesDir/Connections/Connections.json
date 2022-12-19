@@ -18,9 +18,50 @@
     "dataSources": [],
     "dependencies": {},
     "dependents": [
-      "bef30ea4-cecc-4bac-92de-866c07b4518e"
+      "bef30ea4-cecc-4bac-92de-866c07b4518e",
+      "2c0fe11f-32a9-40e0-8d65-5a3e647cc0cf"
     ],
     "id": "2b58d8da-c59b-4c25-aed9-077e7b45187a"
+  },
+  "2c0fe11f-32a9-40e0-8d65-5a3e647cc0cf": {
+    "connectionParameters": {
+      "workFlowCallbackUri": "https://prod-27.westeurope.logic.azure.com:443/workflows/2b94628ecb4d4b7796188650f89bc230/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=KpRX5CMWiuBJDeuJO_4RwTkQS3eTG_y2KFA1K4EhoWU",
+      "workflowEndpoint": "/subscriptions/de199c31-4f16-4099-87e6-0b5042c8bada/resourceGroups/7f153fc22ac44be5aa5c2fb1b733713c-6b5c623260974317920798660e710f0e/providers/Microsoft.Logic/workflows/756b3beb-aa69-4198-aa03-177a62f8fccf",
+      "workflowName": "756b3beb-aa69-4198-aa03-177a62f8fccf",
+      "workflowPath": "/subscriptions/de199c31-4f16-4099-87e6-0b5042c8bada/resourceGroups/7f153fc22ac44be5aa5c2fb1b733713c-6b5c623260974317920798660e710f0e/providers/Microsoft.Logic/workflows/756b3beb-aa69-4198-aa03-177a62f8fccf"
+    },
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1534/1.0.1534.2605/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "2b58d8da-c59b-4c25-aed9-077e7b45187a": {
+          "value": "shared_oracle"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "756b3beb-aa69-4198-aa03-177a62f8fccf"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_oracle": {
+          "value": "2b58d8da-c59b-4c25-aed9-077e7b45187a"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "756b3beb-aa69-4198-aa03-177a62f8fccf"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "ReturnFromLeave"
+    ],
+    "dependencies": {
+      "shared_oracle": "2b58d8da-c59b-4c25-aed9-077e7b45187a"
+    },
+    "dependents": [],
+    "id": "2c0fe11f-32a9-40e0-8d65-5a3e647cc0cf"
   },
   "bef30ea4-cecc-4bac-92de-866c07b4518e": {
     "connectionParameters": {
