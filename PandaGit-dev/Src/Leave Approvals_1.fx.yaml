@@ -1,0 +1,874 @@
+"'Leave Approvals_1' As screen":
+    BackgroundImage: =
+    ImagePosition: =ImagePosition.Stretch
+    OnVisible: =Set(AccountDetailsVis,false); Set(MenuVis,false); Set(EMPVis,false)
+
+    Image5_10 As image:
+        Height: =650
+        Image: ='download screen'
+        ImagePosition: =ImagePosition.Stretch
+        Width: =640
+        Y: =486
+        ZIndex: =1
+
+    Rectangle1_48 As rectangle:
+        BorderColor: =RGBA(230, 230, 230, 1)
+        Fill: =RGBA(245, 245, 245, 1)
+        Height: =95
+        Width: =640
+        ZIndex: =3
+
+    Image2_10 As image:
+        Height: =70
+        Image: ='Panda Logo'
+        Width: =130
+        X: =12
+        Y: =12
+        ZIndex: =4
+
+    Rectangle1_49 As rectangle:
+        BorderColor: =RGBA(230, 230, 230, 1)
+        Fill: =RGBA(112, 188, 31, 1)
+        Height: =31
+        Width: =640
+        Y: =1063
+        ZIndex: =5
+
+    Rectangle1_51 As rectangle:
+        BorderColor: =RGBA(230, 230, 230, 1)
+        Fill: =RGBA(1, 74, 42, 1)
+        Height: =65
+        Width: =640
+        Y: =1071
+        ZIndex: =6
+
+    Image3_10 As image:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        BorderThickness: =3
+        Height: =70
+        Image: =User().Image
+        OnSelect: =If(AccountDetailsVis = false,Set(AccountDetailsVis,true),Set(AccountDetailsVis,false))
+        RadiusBottomLeft: =100
+        RadiusBottomRight: =100
+        RadiusTopLeft: =100
+        RadiusTopRight: =100
+        Width: =70
+        X: =548
+        Y: =12
+        ZIndex: =10
+
+    Group1_9 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =11
+
+        Circle1_19 As circle:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            BorderThickness: =4
+            Fill: =RGBA(112, 188, 31, 1)
+            Height: =70
+            OnSelect: =If(MenuVis = false, Set(MenuVis,true),Set(MenuVis,false))
+            Width: =70
+            X: =292
+            Y: =1035
+            ZIndex: =7
+
+        Icon1_21 As icon.Hamburger:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =48
+            Icon: =Icon.Hamburger
+            OnSelect: =If(MenuVis = false, Set(MenuVis,true),Set(MenuVis,false))
+            Width: =43
+            X: =305
+            Y: =1046
+            ZIndex: =8
+
+    Group2_10 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =17
+
+        Image6_10 As image:
+            Height: =150
+            Image: =Picture3
+            ImagePosition: =ImagePosition.Stretch
+            Visible: =AccountDetailsVis
+            Width: =200
+            X: =390
+            Y: =51
+            ZIndex: =9
+
+        Label1_40 As label:
+            Height: =31
+            Size: =9
+            Text: =User().FullName
+            Visible: =AccountDetailsVis
+            Width: =171
+            X: =404
+            Y: =64
+            ZIndex: =11
+
+        Label1_41 As label:
+            Height: =18
+            Italic: =true
+            Size: =9
+            Text: ="Reporting To"
+            Visible: =AccountDetailsVis
+            Width: =171
+            X: =404
+            Y: =105
+            ZIndex: =12
+
+        Icon3_105 As icon.HorizontalLine:
+            BorderThickness: =1
+            Color: =RGBA(230, 230, 230, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(230, 230, 230, 1)
+            Height: =1
+            Icon: =Icon.HorizontalLine
+            OnSelect: =
+            Visible: =AccountDetailsVis
+            Width: =150
+            X: =404
+            Y: =94
+            ZIndex: =13
+
+        Label1_42 As label:
+            Height: =31
+            Size: =9
+            Text: =User().FullName
+            Visible: =AccountDetailsVis
+            Width: =171
+            X: =404
+            Y: =128
+            ZIndex: =14
+
+        Label1_43 As label:
+            Align: =Align.Right
+            Color: =RGBA(127, 178, 57, 1)
+            Height: =31
+            Italic: =true
+            Size: =9
+            Text: ="See more.."
+            Underline: =true
+            Visible: =AccountDetailsVis
+            Width: =171
+            X: =404
+            Y: =154
+            ZIndex: =15
+
+    Menu_10 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =39
+
+        Rectangle1_50 As rectangle:
+            BorderColor: =RGBA(230, 230, 230, 1)
+            Fill: =RGBA(112, 188, 31, 1)
+            Height: =31
+            Visible: =MenuVis
+            Width: =640
+            Y: =1063
+            ZIndex: =16
+
+        Rectangle1_52 As rectangle:
+            BorderColor: =RGBA(230, 230, 230, 1)
+            Fill: =RGBA(1, 74, 42, 1)
+            Height: =65
+            Visible: =MenuVis
+            Width: =640
+            Y: =1071
+            ZIndex: =17
+
+        Circle1_20 As circle:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            BorderThickness: =4
+            Fill: =RGBA(112, 188, 31, 1)
+            Height: =70
+            OnSelect: =If(MenuVis = false, Set(MenuVis,true),Set(MenuVis,false))
+            Visible: =MenuVis
+            Width: =70
+            X: =292
+            Y: =1035
+            ZIndex: =18
+
+        Icon1_22 As icon.Hamburger:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =48
+            Icon: =Icon.Cancel
+            OnSelect: =If(MenuVis = false, Set(MenuVis,true),Set(MenuVis,false))
+            Visible: =MenuVis
+            Width: =43
+            X: =305
+            Y: =1046
+            ZIndex: =19
+
+        Image7_10 As image:
+            Height: =361
+            Image: =Picture1
+            ImagePosition: =ImagePosition.Stretch
+            Visible: =MenuVis
+            Width: =526
+            X: =63
+            Y: =674
+            ZIndex: =20
+
+        Label2_132 As label:
+            Font: =Font.'Courier New'
+            FontWeight: =FontWeight.Semibold
+            OnSelect: =Navigate('Leave Approvals_1')
+            Size: =16
+            Text: ="Home"
+            Visible: =MenuVis
+            Width: =384
+            X: =168
+            Y: =712
+            ZIndex: =21
+
+        Label2_134 As label:
+            Font: =Font.'Courier New'
+            FontWeight: =FontWeight.Semibold
+            OnSelect: =
+            Size: =16
+            Text: ="Leave"
+            Visible: =MenuVis
+            Width: =384
+            X: =168
+            Y: =763
+            ZIndex: =22
+
+        Label2_136 As label:
+            Font: =Font.'Courier New'
+            FontWeight: =FontWeight.Semibold
+            OnSelect: =
+            Size: =16
+            Text: ="Business Trip"
+            Visible: =MenuVis
+            Width: =384
+            X: =168
+            Y: =814
+            ZIndex: =23
+
+        Label2_137 As label:
+            Font: =Font.'Courier New'
+            FontWeight: =FontWeight.Semibold
+            OnSelect: =
+            Size: =16
+            Text: ="Personal Loan"
+            Visible: =MenuVis
+            Width: =384
+            X: =168
+            Y: =864
+            ZIndex: =24
+
+        Label2_138 As label:
+            Font: =Font.'Courier New'
+            FontWeight: =FontWeight.Semibold
+            OnSelect: =
+            Size: =16
+            Text: ="Identification Letter"
+            Visible: =MenuVis
+            Width: =384
+            X: =168
+            Y: =917
+            ZIndex: =25
+
+        Label2_139 As label:
+            Font: =Font.'Courier New'
+            FontWeight: =FontWeight.Semibold
+            OnSelect: =
+            Size: =16
+            Text: ="Transfer"
+            Visible: =MenuVis
+            Width: =384
+            X: =168
+            Y: =968
+            ZIndex: =26
+
+        Icon2_33 As icon.BackArrow:
+            Color: =RGBA(127, 178, 57, 1)
+            Height: =40
+            Icon: =Icon.Airplane
+            OnSelect: =
+            PaddingBottom: =8
+            PaddingLeft: =8
+            PaddingRight: =8
+            PaddingTop: =8
+            Visible: =MenuVis
+            Width: =54
+            X: =114
+            Y: =809
+            ZIndex: =27
+
+        Icon2_104 As icon.BackArrow:
+            Color: =RGBA(127, 178, 57, 1)
+            Height: =40
+            Icon: =Icon.Home
+            OnSelect: =Navigate('Leave Approvals_1')
+            PaddingBottom: =8
+            PaddingLeft: =8
+            PaddingRight: =8
+            PaddingTop: =8
+            Visible: =MenuVis
+            Width: =54
+            X: =114
+            Y: =708
+            ZIndex: =28
+
+        Icon2_105 As icon.BackArrow:
+            Color: =RGBA(127, 178, 57, 1)
+            Height: =40
+            Icon: =Icon.Leave
+            OnSelect: =
+            PaddingBottom: =8
+            PaddingLeft: =8
+            PaddingRight: =8
+            PaddingTop: =8
+            Visible: =MenuVis
+            Width: =54
+            X: =114
+            Y: =758
+            ZIndex: =29
+
+        Icon2_106 As icon.BackArrow:
+            Color: =RGBA(127, 178, 57, 1)
+            Height: =40
+            Icon: =Icon.Money
+            OnSelect: =
+            PaddingBottom: =8
+            PaddingLeft: =10
+            PaddingRight: =8
+            PaddingTop: =8
+            Visible: =MenuVis
+            Width: =54
+            X: =114
+            Y: =859
+            ZIndex: =30
+
+        Icon2_107 As icon.BackArrow:
+            Color: =RGBA(127, 178, 57, 1)
+            Height: =40
+            Icon: =Icon.Compose
+            OnSelect: =
+            PaddingBottom: =8
+            PaddingLeft: =8
+            PaddingRight: =8
+            PaddingTop: =8
+            Visible: =MenuVis
+            Width: =54
+            X: =114
+            Y: =912
+            ZIndex: =31
+
+        Icon2_108 As icon.BackArrow:
+            Color: =RGBA(127, 178, 57, 1)
+            Height: =40
+            Icon: =Icon.Sync
+            OnSelect: =
+            PaddingBottom: =8
+            PaddingLeft: =10
+            PaddingRight: =8
+            PaddingTop: =8
+            Visible: =MenuVis
+            Width: =54
+            X: =114
+            Y: =963
+            ZIndex: =32
+
+        Icon3_106 As icon.HorizontalLine:
+            BorderThickness: =1
+            Color: =RGBA(127, 178, 57, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(127, 178, 57, 1)
+            Height: =1
+            Icon: =Icon.HorizontalLine
+            OnSelect: =
+            Visible: =MenuVis
+            Width: =400
+            X: =129
+            Y: =752
+            ZIndex: =33
+
+        Icon3_107 As icon.HorizontalLine:
+            BorderThickness: =1
+            Color: =RGBA(127, 178, 57, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(127, 178, 57, 1)
+            Height: =1
+            Icon: =Icon.HorizontalLine
+            OnSelect: =
+            Visible: =MenuVis
+            Width: =400
+            X: =129
+            Y: =803
+            ZIndex: =34
+
+        Icon3_108 As icon.HorizontalLine:
+            BorderThickness: =1
+            Color: =RGBA(127, 178, 57, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(127, 178, 57, 1)
+            Height: =1
+            Icon: =Icon.HorizontalLine
+            OnSelect: =
+            Visible: =MenuVis
+            Width: =400
+            X: =129
+            Y: =853
+            ZIndex: =35
+
+        Icon3_109 As icon.HorizontalLine:
+            BorderThickness: =1
+            Color: =RGBA(127, 178, 57, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(127, 178, 57, 1)
+            Height: =1
+            Icon: =Icon.HorizontalLine
+            OnSelect: =
+            Visible: =MenuVis
+            Width: =400
+            X: =129
+            Y: =906
+            ZIndex: =36
+
+        Icon3_110 As icon.HorizontalLine:
+            BorderThickness: =1
+            Color: =RGBA(127, 178, 57, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(127, 178, 57, 1)
+            Height: =1
+            Icon: =Icon.HorizontalLine
+            OnSelect: =
+            Visible: =MenuVis
+            Width: =400
+            X: =129
+            Y: =957
+            ZIndex: =37
+
+    Timer2_4 As timer:
+        Height: =70
+        Visible: =false
+        Width: =280
+        X: =308
+        Y: =204
+        ZIndex: =53
+
+    "'Eligibility Messgae Popup_7' As group":
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =53
+
+        Image10_13 As image:
+            Height: =348
+            Image: =Picture3
+            ImagePosition: =ImagePosition.Stretch
+            Visible: =EMPVis
+            Width: =603
+            X: =15
+            Y: =660
+            ZIndex: =47
+
+        Label2_131 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Height: =54
+            Size: =20
+            Text: ="Leave Eligibility"
+            Visible: =EMPVis
+            Width: =534
+            X: =48
+            Y: =686
+            ZIndex: =49
+
+        Label2_133 As label:
+            Align: =Align.Center
+            Color: =If(Trim(First(FirstN(Split(limitValue,"@"),1)).Result) = "FAILED",Red,Black)
+            FontWeight: =FontWeight.Bold
+            Height: =54
+            Size: =20
+            Text: =Trim(First(FirstN(Split(limitValue,"@"),1)).Result)
+            Visible: =EMPVis
+            Width: =534
+            X: =48
+            Y: =756
+            ZIndex: =50
+
+        Image8_7 As image:
+            Height: =28
+            Image: ='cancel icon p'
+            OnSelect: =Set(EMPVis,false)
+            Visible: =EMPVis
+            Width: =28
+            X: =557
+            Y: =686
+            ZIndex: =51
+
+        Label2_135 As label:
+            Align: =Align.Center
+            Height: =172
+            Size: =15
+            Text: =Trim(Last(FirstN(Split(limitValue,"@"),2)).Result)
+            Visible: =EMPVis
+            Width: =534
+            X: =49
+            Y: =810
+            ZIndex: =52
+
+    Label3_4 As label:
+        Align: =Align.Center
+        Size: =18
+        Text: ="Leave Management"
+        Width: =390
+        X: =134
+        Y: =102
+        ZIndex: =56
+
+    Icon2_5 As icon.BackArrow:
+        Color: =RGBA(112, 188, 31, 1)
+        Height: =40
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate('Leave Page')
+        Width: =40
+        X: =35
+        Y: =102
+        ZIndex: =57
+
+    Image10_14 As image:
+        Height: =504
+        Image: =Picture3
+        ImagePosition: =ImagePosition.Stretch
+        Width: =603
+        X: =15
+        Y: =213
+        ZIndex: =58
+
+    Form2 As form:
+        DataSource: =Filter(LeaveManagements,'Reference No'=Gallery1_1.Selected.L_REQUEST_ID)
+        Height: =672
+        Width: =570
+        X: =48
+        Y: =240
+        ZIndex: =59
+
+        "'Employee Name_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ds_employeename"
+            Default: =ThisItem.'Employee Name'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@LeaveManagements],DataSourceInfo.DisplayName,"ds_employeename")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@LeaveManagements], DataSourceInfo.MaxLength, "ds_employeename")
+            Required: =false
+            Update: =DataCardValue3.Text
+            Width: =570
+            X: =0
+            Y: =1
+            ZIndex: =1
+
+            DataCardKey3 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue3 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey3.Y + DataCardKey3.Height + 5
+                ZIndex: =2
+
+            ErrorMessage2 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue3.Y + DataCardValue3.Height
+                ZIndex: =3
+
+            StarVisible2 As label:
+                Align: =Align.Center
+                Height: =DataCardKey3.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey3.Y
+                ZIndex: =4
+
+        "'Leave Type_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="crbd0_leavetype"
+            Default: =ThisItem.'Leave Type'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@LeaveManagements],DataSourceInfo.DisplayName,"crbd0_leavetype")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@LeaveManagements], DataSourceInfo.MaxLength, "crbd0_leavetype")
+            Required: =false
+            Update: =DataCardValue4.Text
+            Width: =570
+            X: =0
+            Y: =2
+            ZIndex: =1
+
+            DataCardKey4 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue4 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey4.Y + DataCardKey4.Height + 5
+                ZIndex: =2
+
+            ErrorMessage3 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue4.Y + DataCardValue4.Height
+                ZIndex: =3
+
+            StarVisible3 As label:
+                Align: =Align.Center
+                Height: =DataCardKey4.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey4.Y
+                ZIndex: =4
+
+        "'No of Days_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ds_noofdays"
+            Default: =ThisItem.'No of Days'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@LeaveManagements],DataSourceInfo.DisplayName,"ds_noofdays")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@LeaveManagements], DataSourceInfo.MaxLength, "ds_noofdays")
+            Required: =false
+            Update: =DataCardValue5.Text
+            Width: =570
+            X: =0
+            Y: =3
+            ZIndex: =1
+
+            DataCardKey5 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue5 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey5.Y + DataCardKey5.Height + 5
+                ZIndex: =2
+
+            ErrorMessage4 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue5.Y + DataCardValue5.Height
+                ZIndex: =3
+
+            StarVisible4 As label:
+                Align: =Align.Center
+                Height: =DataCardKey5.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey5.Y
+                ZIndex: =4
+
+        "'Employee ID_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ds_employeeid"
+            Default: =ThisItem.'Employee ID'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@LeaveManagements],DataSourceInfo.DisplayName,"ds_employeeid")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@LeaveManagements], DataSourceInfo.MaxLength, "ds_employeeid")
+            Required: =true
+            Update: =DataCardValue1.Text
+            Width: =570
+            X: =0
+            Y: =0
+            ZIndex: =60
+
+            DataCardKey1 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue1 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey1.Y + DataCardKey1.Height + 5
+                ZIndex: =2
+
+            ErrorMessage1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue1.Y + DataCardValue1.Height
+                ZIndex: =3
+
+            StarVisible1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey1.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey1.Y
+                ZIndex: =4
+
+    "'Cancel Button_2' As button":
+        Fill: =RGBA(225, 0, 0, 1)
+        Height: =44
+        HoverFill: =ColorFade(RGBA(217, 37, 37, 100), -20%)
+        Size: =20
+        Text: ="Reject"
+        Width: =205
+        X: =49
+        Y: =928
+        ZIndex: =60
+
+    "'Submit Button_2' As button":
+        Fill: =RGBA(112, 188, 31, 1)
+        Height: =44
+        HoverFill: =ColorFade(RGBA(135, 212, 53, 100), -20%)
+        Size: =20
+        Text: ="Approve"
+        Width: =205
+        X: =387
+        Y: =928
+        ZIndex: =61
+

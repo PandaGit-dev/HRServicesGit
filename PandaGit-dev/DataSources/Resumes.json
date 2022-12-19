@@ -1,0 +1,142 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "crbd0_returnfromleaves",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "crbd0_returnfromleave",
+    "MaxGetRowsCount": 500,
+    "Name": "Resumes",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "crbd0_name": "Name",
+      "crbd0_resume": "Resume",
+      "crbd0_returnfromleave_AsyncOperations": "System Jobs",
+      "crbd0_returnfromleave_BulkDeleteFailures": "Bulk Delete Failures",
+      "crbd0_returnfromleave_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "crbd0_returnfromleave_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "crbd0_returnfromleave_ProcessSession": "Process Sessions",
+      "crbd0_returnfromleave_SyncErrors": "Sync Errors",
+      "crbd0_returnfromleaveid": "ReturnFromLeave",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Resumes",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Resumes (Views)",
+    "Name": "_crbd0_returnfromleave_views",
+    "RelatedEntityName": "Resumes",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "051d7eb1-80db-4d68-be14-48701f2fe977": "Active ReturnFromLeaves",
+      "4fb2bf14-3304-401e-89ca-c6a294eddd10": "ReturnFromLeave Advanced Find View",
+      "67a8fb69-26c2-4dfe-b101-e2b7dea8c9cb": "ReturnFromLeave Lookup View",
+      "7c02a643-cf74-4f39-8e9c-acb88dbd73aa": "Inactive ReturnFromLeaves",
+      "c8099dfe-fe25-4ec1-8b74-94c8a09acf31": "ReturnFromLeave Associated View"
+    }
+  },
+  {
+    "DisplayName": "Resume",
+    "Name": "crbd0_resume",
+    "OptionSetInfoNameMapping": {
+      "551940000": "As Planned",
+      "551940001": "Before Planned",
+      "551940002": "Later than planned "
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "crbd0_resume",
+        "OptionSetReferenceEntityName": "Resumes"
+      },
+      "OptionSetReferenceItem1": {
+        "OptionSetReferenceColumnName": "crbd0_resume_1",
+        "OptionSetReferenceEntityName": "Resumes"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "crbd0_resume",
+    "RelatedEntityName": "Resumes",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Resume_1",
+    "Name": "crbd0_resume_1",
+    "OptionSetInfoNameMapping": {
+      "551940000": "As Planned",
+      "551940001": "Before Planned",
+      "551940002": "Later than Planned"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "crbd0_resume",
+        "OptionSetReferenceEntityName": "Resumes"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "crbd0_resume",
+    "RelatedEntityName": "Resumes",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Resumes)",
+    "Name": "crbd0_returnfromleave_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Resumes"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Resumes",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Resumes)",
+    "Name": "crbd0_returnfromleave_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Resumes"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Resumes",
+    "Type": "OptionSetInfo"
+  }
+]

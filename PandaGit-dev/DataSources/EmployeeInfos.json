@@ -1,0 +1,114 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "crbd0_employeeinfos",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "crbd0_employeeinfo",
+    "MaxGetRowsCount": 500,
+    "Name": "EmployeeInfos",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "crbd0_approver": "Approver",
+      "crbd0_assignment_id": "assignment_id",
+      "crbd0_business_group_id": "business_group_id",
+      "crbd0_email_address": "EMAIL_ADDRESS",
+      "crbd0_employee_code": "EMPLOYEE_CODE",
+      "crbd0_employee_name": "EMPLOYEE_NAME",
+      "crbd0_employee_type": "EMPLOYEE_TYPE",
+      "crbd0_employeeinfo_AsyncOperations": "System Jobs",
+      "crbd0_employeeinfo_BulkDeleteFailures": "Bulk Delete Failures",
+      "crbd0_employeeinfo_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "crbd0_employeeinfo_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "crbd0_employeeinfo_ProcessSession": "Process Sessions",
+      "crbd0_employeeinfo_SyncErrors": "Sync Errors",
+      "crbd0_employeeinfoid": "EmployeeInfo",
+      "crbd0_first_name": "FIRST_NAME",
+      "crbd0_job_name": "JOB_NAME",
+      "crbd0_last_name": "LAST_NAME",
+      "crbd0_middle_name": "MIDDLE_NAME",
+      "crbd0_organization_name": "ORGANIZATION_NAME",
+      "crbd0_payroll_id": "payroll_id",
+      "crbd0_person_id": "person_id",
+      "crbd0_plan_id": "plan_id",
+      "crbd0_position_title": "POSITION_TITLE",
+      "crbd0_reporting_to_name": "REPORTING_TO_NAME",
+      "crbd0_sponsor_name": "SPONSOR_NAME",
+      "crbd0_transactionid": "TransactionID",
+      "crbd0_user_name": "USER_NAME",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "EmployeeInfos",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "EmployeeInfos (Views)",
+    "Name": "_crbd0_employeeinfo_views",
+    "RelatedEntityName": "EmployeeInfos",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "22d58c16-8d7f-461a-b36d-405769df19aa": "EmployeeInfo Associated View",
+      "42f23c25-cb98-4972-8694-19ea884a9263": "EmployeeInfo Lookup View",
+      "9da5065d-c76f-4687-9f06-274f14d39c7a": "Inactive EmployeeInfos",
+      "a0204dfc-bf5e-4ff2-9559-1e3029e48856": "Active EmployeeInfos",
+      "f05b7799-61f3-4d31-bb3b-ada6728c5229": "EmployeeInfo Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status (EmployeeInfos)",
+    "Name": "crbd0_employeeinfo_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "EmployeeInfos"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "EmployeeInfos",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (EmployeeInfos)",
+    "Name": "crbd0_employeeinfo_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "EmployeeInfos"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "EmployeeInfos",
+    "Type": "OptionSetInfo"
+  }
+]

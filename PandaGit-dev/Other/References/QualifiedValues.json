@@ -1,0 +1,51 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_crbd0_leavetypemaster_forms",
+      "Namespace": "LeaveTypeMasters (Forms)",
+      "Values": {
+        "Information": "66f9f818-33b5-4842-a189-e50f6f021be7"
+      }
+    },
+    {
+      "Kind": "default.cds_crbd0_employeeinfo_forms",
+      "Namespace": "EmployeeInfos (Forms)",
+      "Values": {
+        "Information": "e1a1e447-935b-48df-a633-7d5bc51a3016"
+      }
+    },
+    {
+      "Kind": "default.cds_ds_leavemanagement_forms",
+      "Namespace": "LeaveManagements (Forms)",
+      "Values": {
+        "Information": "5b23e06a-b3b7-4e6a-b358-91fc60c7c372"
+      }
+    },
+    {
+      "Kind": "default.cds_crbd0_xxwipwf_forms",
+      "Namespace": "XXWIPWFs (Forms)",
+      "Values": {
+        "Information": "9555c667-1b67-4ea8-b471-f74f8fc52de9"
+      }
+    },
+    {
+      "Kind": "default.cds_crbd0_leavetype_forms",
+      "Namespace": "Leave Types (Forms)",
+      "Values": {
+        "Information": "1722421b-07a0-413e-be9b-e218a92902d0"
+      }
+    },
+    {
+      "Kind": "default.cds_msdyn_dataflow_forms",
+      "Namespace": "Dataflows (Forms)",
+      "Values": {}
+    },
+    {
+      "Kind": "default.cds_crbd0_returnfromleave_forms",
+      "Namespace": "Resumes (Forms)",
+      "Values": {
+        "Information": "62dd95ad-2a1a-4490-9552-a0fff92bfb46"
+      }
+    }
+  ]
+}

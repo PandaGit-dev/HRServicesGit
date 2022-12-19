@@ -1,0 +1,640 @@
+"'Home Page' As screen":
+    BackgroundImage: =
+    ImagePosition: =ImagePosition.Stretch
+    OnVisible: =Set(AccountDetailsVis,false); Set(MenuVis,false)
+
+    Image5 As image:
+        Height: =650
+        Image: ='download screen'
+        ImagePosition: =ImagePosition.Stretch
+        Width: =640
+        Y: =486
+        ZIndex: =1
+
+    Rectangle1 As rectangle:
+        BorderColor: =RGBA(230, 230, 230, 1)
+        Fill: =RGBA(245, 245, 245, 1)
+        Height: =95
+        Width: =640
+        ZIndex: =2
+
+    Image2 As image:
+        Height: =70
+        Image: ='Panda Logo'
+        Width: =130
+        X: =12
+        Y: =12
+        ZIndex: =3
+
+    Image4 As image:
+        Height: =463
+        Image: =Background
+        ImagePosition: =ImagePosition.Fill
+        Width: =582
+        X: =36
+        Y: =160
+        ZIndex: =4
+
+    Rectangle1_2 As rectangle:
+        BorderColor: =RGBA(230, 230, 230, 1)
+        Fill: =RGBA(112, 188, 31, 1)
+        Height: =31
+        Width: =640
+        Y: =1063
+        ZIndex: =5
+
+    Rectangle1_1 As rectangle:
+        BorderColor: =RGBA(230, 230, 230, 1)
+        Fill: =RGBA(1, 74, 42, 1)
+        Height: =65
+        Width: =640
+        Y: =1071
+        ZIndex: =6
+
+    Image3 As image:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        BorderThickness: =3
+        Height: =70
+        Image: =User().Image
+        OnSelect: =If(AccountDetailsVis = false,Set(AccountDetailsVis,true),Set(AccountDetailsVis,false))
+        RadiusBottomLeft: =100
+        RadiusBottomRight: =100
+        RadiusTopLeft: =100
+        RadiusTopRight: =100
+        Width: =70
+        X: =548
+        Y: =12
+        ZIndex: =10
+
+    Group1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =11
+
+        Circle1 As circle:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            BorderThickness: =4
+            Fill: =RGBA(112, 188, 31, 1)
+            Height: =70
+            OnSelect: =If(MenuVis = false, Set(MenuVis,true),Set(MenuVis,false))
+            Width: =70
+            X: =292
+            Y: =1035
+            ZIndex: =7
+
+        Icon1 As icon.Hamburger:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =48
+            Icon: =Icon.Hamburger
+            OnSelect: =If(MenuVis = false, Set(MenuVis,true),Set(MenuVis,false))
+            Width: =43
+            X: =305
+            Y: =1046
+            ZIndex: =8
+
+    Image11 As image:
+        Height: =155
+        Image: =Picture3
+        ImagePosition: =ImagePosition.Stretch
+        Width: =280
+        X: =41
+        Y: =648
+        ZIndex: =16
+
+    Image11_1 As image:
+        Height: =155
+        Image: =Picture3
+        ImagePosition: =ImagePosition.Stretch
+        Width: =280
+        X: =340
+        Y: =648
+        ZIndex: =17
+
+    Group2 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =17
+
+        Image6 As image:
+            Height: =150
+            Image: =Picture3
+            ImagePosition: =ImagePosition.Stretch
+            Visible: =AccountDetailsVis
+            Width: =200
+            X: =390
+            Y: =51
+            ZIndex: =9
+
+        Label1 As label:
+            Height: =31
+            Size: =9
+            Text: =User().FullName
+            Visible: =AccountDetailsVis
+            Width: =171
+            X: =404
+            Y: =64
+            ZIndex: =11
+
+        Label1_1 As label:
+            Height: =18
+            Italic: =true
+            Size: =9
+            Text: ="Reporting To"
+            Visible: =AccountDetailsVis
+            Width: =171
+            X: =404
+            Y: =105
+            ZIndex: =12
+
+        Icon3_41 As icon.HorizontalLine:
+            BorderThickness: =1
+            Color: =RGBA(230, 230, 230, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(230, 230, 230, 1)
+            Height: =1
+            Icon: =Icon.HorizontalLine
+            OnSelect: =
+            Visible: =AccountDetailsVis
+            Width: =150
+            X: =404
+            Y: =94
+            ZIndex: =13
+
+        Label1_2 As label:
+            Height: =31
+            Size: =9
+            Text: =First(Info).crbd0_reporting_to_name
+            Visible: =AccountDetailsVis
+            Width: =171
+            X: =404
+            Y: =128
+            ZIndex: =14
+
+        Label1_3 As label:
+            Align: =Align.Right
+            Color: =RGBA(127, 178, 57, 1)
+            Height: =31
+            Italic: =true
+            Size: =9
+            Text: ="See more.."
+            Underline: =true
+            Visible: =AccountDetailsVis
+            Width: =171
+            X: =404
+            Y: =154
+            ZIndex: =15
+
+    Image11_2 As image:
+        Height: =155
+        Image: =Picture3
+        ImagePosition: =ImagePosition.Stretch
+        Width: =280
+        X: =37
+        Y: =817
+        ZIndex: =18
+
+    Image11_3 As image:
+        Height: =155
+        Image: =Picture3
+        ImagePosition: =ImagePosition.Stretch
+        Width: =280
+        X: =336
+        Y: =817
+        ZIndex: =19
+
+    Label2_18 As label:
+        Color: =RGBA(79, 110, 37, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =44
+        Size: =16
+        Text: ="Leave Requests"
+        Width: =226
+        X: =364
+        Y: =664
+        ZIndex: =20
+
+    Circle2 As circle:
+        Fill: =RGBA(209, 232, 178, 1)
+        Height: =70
+        Width: =70
+        X: =364
+        Y: =710
+        ZIndex: =21
+
+    Label2_22 As label:
+        Color: =RGBA(99, 139, 44, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =44
+        Size: =16
+        Text: ="Leave Entitlement"
+        Width: =242
+        X: =63
+        Y: =664
+        ZIndex: =22
+
+    Circle2_1 As circle:
+        Fill: =RGBA(209, 232, 178, 1)
+        Height: =70
+        Width: =70
+        X: =63
+        Y: =710
+        ZIndex: =23
+
+    Label2_23 As label:
+        Color: =RGBA(99, 139, 44, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =44
+        Size: =16
+        Text: ="Lorem ipsum"
+        Width: =168
+        X: =63
+        Y: =839
+        ZIndex: =24
+
+    Circle2_2 As circle:
+        Fill: =RGBA(209, 232, 178, 1)
+        Height: =70
+        Width: =70
+        X: =63
+        Y: =885
+        ZIndex: =25
+
+    Label2_24 As label:
+        Color: =RGBA(99, 139, 44, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =44
+        Size: =16
+        Text: ="Lorem ipsum"
+        Width: =168
+        X: =364
+        Y: =836
+        ZIndex: =26
+
+    Circle2_3 As circle:
+        Fill: =RGBA(209, 232, 178, 1)
+        Height: =70
+        Width: =70
+        X: =364
+        Y: =882
+        ZIndex: =27
+
+    Label2_25 As label:
+        Align: =Align.Center
+        Color: =RGBA(79, 110, 37, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =72
+        Size: =18
+        Text: =CountRows(Filter(LeaveManagements,'Employee Email' = User().Email,'Leave Status'="Pending"))
+        Width: =70
+        X: =364
+        Y: =708
+        ZIndex: =28
+
+    Label2_26 As label:
+        Align: =Align.Center
+        Color: =RGBA(79, 110, 37, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =72
+        Size: =18
+        Text: =45
+        Visible: =false
+        Width: =70
+        X: =63
+        Y: =708
+        ZIndex: =29
+
+    Menu As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =55
+
+        Rectangle1_6 As rectangle:
+            BorderColor: =RGBA(230, 230, 230, 1)
+            Fill: =RGBA(112, 188, 31, 1)
+            Height: =31
+            Visible: =MenuVis
+            Width: =640
+            Y: =1063
+            ZIndex: =30
+
+        Rectangle1_7 As rectangle:
+            BorderColor: =RGBA(230, 230, 230, 1)
+            Fill: =RGBA(1, 74, 42, 1)
+            Height: =65
+            Visible: =MenuVis
+            Width: =640
+            Y: =1071
+            ZIndex: =31
+
+        Circle1_2 As circle:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            BorderThickness: =4
+            Fill: =RGBA(112, 188, 31, 1)
+            Height: =70
+            OnSelect: =If(MenuVis = false, Set(MenuVis,true),Set(MenuVis,false))
+            Visible: =MenuVis
+            Width: =70
+            X: =292
+            Y: =1035
+            ZIndex: =32
+
+        Icon1_2 As icon.Hamburger:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =48
+            Icon: =Icon.Cancel
+            OnSelect: =If(MenuVis = false, Set(MenuVis,true),Set(MenuVis,false))
+            Visible: =MenuVis
+            Width: =43
+            X: =305
+            Y: =1046
+            ZIndex: =33
+
+        Image7_1 As image:
+            Height: =438
+            Image: =Picture1
+            ImagePosition: =ImagePosition.Stretch
+            Visible: =MenuVis
+            Width: =526
+            X: =63
+            Y: =596
+            ZIndex: =34
+
+        Label2_36 As label:
+            Font: =Font.'Courier New'
+            FontWeight: =FontWeight.Semibold
+            OnSelect: =Navigate('Home Page')
+            Size: =16
+            Text: ="Home"
+            Visible: =MenuVis
+            Width: =384
+            X: =168
+            Y: =632
+            ZIndex: =35
+
+        Label2_37 As label:
+            Font: =Font.'Courier New'
+            FontWeight: =FontWeight.Semibold
+            OnSelect: =Navigate('Leave Page')
+            Size: =16
+            Text: ="Leave Management"
+            Visible: =MenuVis
+            Width: =384
+            X: =168
+            Y: =679
+            ZIndex: =36
+
+        Label2_38 As label:
+            Font: =Font.'Courier New'
+            FontWeight: =FontWeight.Semibold
+            OnSelect: =
+            Size: =16
+            Text: ="Business Trip"
+            Visible: =MenuVis
+            Width: =384
+            X: =168
+            Y: =730
+            ZIndex: =37
+
+        Label2_39 As label:
+            Font: =Font.'Courier New'
+            FontWeight: =FontWeight.Semibold
+            OnSelect: =
+            Size: =16
+            Text: ="Personal Loan"
+            Visible: =MenuVis
+            Width: =384
+            X: =168
+            Y: =780
+            ZIndex: =38
+
+        Label2_40 As label:
+            Font: =Font.'Courier New'
+            FontWeight: =FontWeight.Semibold
+            OnSelect: =
+            Size: =16
+            Text: ="Identification Letter"
+            Visible: =MenuVis
+            Width: =384
+            X: =168
+            Y: =833
+            ZIndex: =39
+
+        Label2_41 As label:
+            Font: =Font.'Courier New'
+            FontWeight: =FontWeight.Semibold
+            OnSelect: =
+            Size: =16
+            Text: ="Return From Leave"
+            Visible: =MenuVis
+            Width: =384
+            X: =168
+            Y: =884
+            ZIndex: =40
+
+        Icon2_24 As icon.BackArrow:
+            Color: =RGBA(127, 178, 57, 1)
+            Height: =40
+            Icon: =Icon.Airplane
+            OnSelect: =
+            PaddingBottom: =8
+            PaddingLeft: =8
+            PaddingRight: =8
+            PaddingTop: =8
+            Visible: =MenuVis
+            Width: =54
+            X: =114
+            Y: =729
+            ZIndex: =41
+
+        Icon2_50 As icon.BackArrow:
+            Color: =RGBA(127, 178, 57, 1)
+            Height: =40
+            Icon: =Icon.Home
+            OnSelect: =Navigate('Home Page')
+            PaddingBottom: =8
+            PaddingLeft: =8
+            PaddingRight: =8
+            PaddingTop: =8
+            Visible: =MenuVis
+            Width: =54
+            X: =114
+            Y: =628
+            ZIndex: =42
+
+        Icon2_51 As icon.BackArrow:
+            Color: =RGBA(127, 178, 57, 1)
+            Height: =40
+            Icon: =Icon.Leave
+            OnSelect: =Navigate('Leave Page')
+            PaddingBottom: =8
+            PaddingLeft: =8
+            PaddingRight: =8
+            PaddingTop: =8
+            Visible: =MenuVis
+            Width: =54
+            X: =114
+            Y: =678
+            ZIndex: =43
+
+        Icon2_52 As icon.BackArrow:
+            Color: =RGBA(127, 178, 57, 1)
+            Height: =40
+            Icon: =Icon.Money
+            OnSelect: =
+            PaddingBottom: =8
+            PaddingLeft: =10
+            PaddingRight: =8
+            PaddingTop: =8
+            Visible: =MenuVis
+            Width: =54
+            X: =114
+            Y: =779
+            ZIndex: =44
+
+        Icon2_53 As icon.BackArrow:
+            Color: =RGBA(127, 178, 57, 1)
+            Height: =40
+            Icon: =Icon.Compose
+            OnSelect: =
+            PaddingBottom: =8
+            PaddingLeft: =8
+            PaddingRight: =8
+            PaddingTop: =8
+            Visible: =MenuVis
+            Width: =54
+            X: =114
+            Y: =832
+            ZIndex: =45
+
+        Icon2_54 As icon.BackArrow:
+            Color: =RGBA(127, 178, 57, 1)
+            Height: =40
+            Icon: =Icon.ClearDrawing
+            OnSelect: =
+            PaddingBottom: =8
+            PaddingLeft: =10
+            PaddingRight: =8
+            PaddingTop: =8
+            Visible: =MenuVis
+            Width: =54
+            X: =114
+            Y: =883
+            ZIndex: =46
+
+        Icon3_43 As icon.HorizontalLine:
+            BorderThickness: =1
+            Color: =RGBA(127, 178, 57, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(127, 178, 57, 1)
+            Height: =1
+            Icon: =Icon.HorizontalLine
+            OnSelect: =
+            Visible: =MenuVis
+            Width: =400
+            X: =129
+            Y: =672
+            ZIndex: =47
+
+        Icon3_44 As icon.HorizontalLine:
+            BorderThickness: =1
+            Color: =RGBA(127, 178, 57, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(127, 178, 57, 1)
+            Height: =1
+            Icon: =Icon.HorizontalLine
+            OnSelect: =
+            Visible: =MenuVis
+            Width: =400
+            X: =129
+            Y: =723
+            ZIndex: =48
+
+        Icon3_45 As icon.HorizontalLine:
+            BorderThickness: =1
+            Color: =RGBA(127, 178, 57, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(127, 178, 57, 1)
+            Height: =1
+            Icon: =Icon.HorizontalLine
+            OnSelect: =
+            Visible: =MenuVis
+            Width: =400
+            X: =129
+            Y: =773
+            ZIndex: =49
+
+        Icon3_46 As icon.HorizontalLine:
+            BorderThickness: =1
+            Color: =RGBA(127, 178, 57, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(127, 178, 57, 1)
+            Height: =1
+            Icon: =Icon.HorizontalLine
+            OnSelect: =
+            Visible: =MenuVis
+            Width: =400
+            X: =129
+            Y: =826
+            ZIndex: =50
+
+        Icon3_47 As icon.HorizontalLine:
+            BorderThickness: =1
+            Color: =RGBA(127, 178, 57, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(127, 178, 57, 1)
+            Height: =1
+            Icon: =Icon.HorizontalLine
+            OnSelect: =
+            Visible: =MenuVis
+            Width: =400
+            X: =129
+            Y: =877
+            ZIndex: =51
+
+        Label2_123 As label:
+            Font: =Font.'Courier New'
+            FontWeight: =FontWeight.Semibold
+            OnSelect: =
+            Size: =16
+            Text: ="Resignation"
+            Visible: =MenuVis
+            Width: =384
+            X: =168
+            Y: =935
+            ZIndex: =52
+
+        Icon2_96 As icon.BackArrow:
+            Color: =RGBA(127, 178, 57, 1)
+            Height: =40
+            Icon: =Icon.Error
+            OnSelect: =
+            PaddingBottom: =8
+            PaddingLeft: =10
+            PaddingRight: =8
+            PaddingTop: =8
+            Visible: =MenuVis
+            Width: =54
+            X: =114
+            Y: =934
+            ZIndex: =53
+
+        Icon3_97 As icon.HorizontalLine:
+            BorderThickness: =1
+            Color: =RGBA(127, 178, 57, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(127, 178, 57, 1)
+            Height: =1
+            Icon: =Icon.HorizontalLine
+            OnSelect: =
+            Visible: =MenuVis
+            Width: =400
+            X: =129
+            Y: =928
+            ZIndex: =54
+

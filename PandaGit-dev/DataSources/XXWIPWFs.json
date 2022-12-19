@@ -1,0 +1,101 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "crbd0_xxwipwfs",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "crbd0_xxwipwf",
+    "MaxGetRowsCount": 500,
+    "Name": "XXWIPWFs",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "crbd0_email_address": "EMAIL_ADDRESS",
+      "crbd0_full_name": "FULL_NAME",
+      "crbd0_item_key": "ITEM_KEY",
+      "crbd0_l_request_id": "L_REQUEST_ID",
+      "crbd0_name": "Name",
+      "crbd0_subject": "SUBJECT",
+      "crbd0_user_name": "USER_NAME",
+      "crbd0_xxwipwf_AsyncOperations": "System Jobs",
+      "crbd0_xxwipwf_BulkDeleteFailures": "Bulk Delete Failures",
+      "crbd0_xxwipwf_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "crbd0_xxwipwf_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "crbd0_xxwipwf_ProcessSession": "Process Sessions",
+      "crbd0_xxwipwf_SyncErrors": "Sync Errors",
+      "crbd0_xxwipwfid": "XXWIPWF",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "XXWIPWFs",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "XXWIPWFs (Views)",
+    "Name": "_crbd0_xxwipwf_views",
+    "RelatedEntityName": "XXWIPWFs",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "13659902-715d-4bb9-8807-5368cf52b671": "Inactive XXWIPWFs",
+      "157db6d9-ceea-4765-ac22-5d71961eff90": "XXWIPWF Advanced Find View",
+      "4a8993da-2fae-4ae9-871f-bc14513d2be2": "XXWIPWF Associated View",
+      "5699a4dd-c19f-4e19-9410-93d71afa4813": "Active XXWIPWFs",
+      "aa84ed59-0b62-4018-8304-8f14de0b205a": "XXWIPWF Lookup View"
+    }
+  },
+  {
+    "DisplayName": "Status (XXWIPWFs)",
+    "Name": "crbd0_xxwipwf_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "XXWIPWFs"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "XXWIPWFs",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (XXWIPWFs)",
+    "Name": "crbd0_xxwipwf_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "XXWIPWFs"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "XXWIPWFs",
+    "Type": "OptionSetInfo"
+  }
+]
