@@ -29,6 +29,13 @@
       }
     },
     {
+      "Kind": "default.cds_crbd0_returnfromleave_forms",
+      "Namespace": "Resumes (Forms)",
+      "Values": {
+        "Information": "62dd95ad-2a1a-4490-9552-a0fff92bfb46"
+      }
+    },
+    {
       "Kind": "default.cds_crbd0_leavetype_forms",
       "Namespace": "Leave Types (Forms)",
       "Values": {
@@ -39,13 +46,6 @@
       "Kind": "default.cds_msdyn_dataflow_forms",
       "Namespace": "Dataflows (Forms)",
       "Values": {}
-    },
-    {
-      "Kind": "default.cds_crbd0_returnfromleave_forms",
-      "Namespace": "Resumes (Forms)",
-      "Values": {
-        "Information": "62dd95ad-2a1a-4490-9552-a0fff92bfb46"
-      }
     }
   ]
 }

@@ -763,7 +763,7 @@
         Default: =""
         Fill: =RGBA(241, 244, 249, 1)
         Height: =46
-        Items: =Choices('Resume')
+        Items: =Choices(Resume)
         PressedFill: =RGBA(112, 188, 31, 1)
         SelectionFill: =RGBA(112, 188, 31, 1)
         Size: =21

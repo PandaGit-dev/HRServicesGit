@@ -54,31 +54,6 @@
     }
   },
   {
-    "DisplayName": "Resume",
-    "Name": "crbd0_resume",
-    "OptionSetInfoNameMapping": {
-      "551940000": "As Planned",
-      "551940001": "Before Planned",
-      "551940002": "Later than planned "
-    },
-    "OptionSetIsBooleanValued": false,
-    "OptionSetIsGlobal": true,
-    "OptionSetReference": {
-      "OptionSetReferenceItem0": {
-        "OptionSetReferenceColumnName": "crbd0_resume",
-        "OptionSetReferenceEntityName": "Resumes"
-      },
-      "OptionSetReferenceItem1": {
-        "OptionSetReferenceColumnName": "crbd0_resume_1",
-        "OptionSetReferenceEntityName": "Resumes"
-      }
-    },
-    "OptionSetTypeKey": "PicklistType",
-    "RelatedColumnInvariantName": "crbd0_resume",
-    "RelatedEntityName": "Resumes",
-    "Type": "OptionSetInfo"
-  },
-  {
     "DisplayName": "Resume_1",
     "Name": "crbd0_resume_1",
     "OptionSetInfoNameMapping": {
