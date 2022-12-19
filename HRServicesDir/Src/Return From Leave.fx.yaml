@@ -211,7 +211,7 @@
         Default: =""
         Fill: =RGBA(241, 244, 249, 1)
         Height: =46
-        Items: =DropDownSample
+        Items: =LeaveTypeMasters
         PressedFill: =RGBA(112, 188, 31, 1)
         SelectionFill: =RGBA(112, 188, 31, 1)
         Size: =21
@@ -744,23 +744,6 @@
         Y: =466
         ZIndex: =89
 
-    Dropdown1_1 As dropdown:
-        BorderColor: =RGBA(112, 188, 31, 1)
-        ChevronBackground: =RGBA(0, 0, 0, 0)
-        ChevronFill: =RGBA(128, 128, 128, 1)
-        ChevronHoverBackground: =ColorFade(Self.BorderColor, 15%)
-        Default: =""
-        Fill: =RGBA(241, 244, 249, 1)
-        Height: =46
-        Items: =DropDownSample
-        PressedFill: =RGBA(112, 188, 31, 1)
-        SelectionFill: =RGBA(112, 188, 31, 1)
-        Size: =21
-        Width: =557
-        X: =50
-        Y: =357
-        ZIndex: =90
-
     Label2_180 As label:
         Color: =RGBA(24, 84, 29, 1)
         Height: =32
@@ -770,4 +753,21 @@
         X: =48
         Y: =203
         ZIndex: =91
+
+    Dropdown1_1 As dropdown:
+        BorderColor: =RGBA(112, 188, 31, 1)
+        ChevronBackground: =RGBA(0, 0, 0, 0)
+        ChevronFill: =RGBA(128, 128, 128, 1)
+        ChevronHoverBackground: =ColorFade(Self.BorderColor, 15%)
+        Default: =""
+        Fill: =RGBA(241, 244, 249, 1)
+        Height: =46
+        Items: =Choices('Resume')
+        PressedFill: =RGBA(112, 188, 31, 1)
+        SelectionFill: =RGBA(112, 188, 31, 1)
+        Size: =21
+        Width: =557
+        X: =50
+        Y: =365
+        ZIndex: =92
 
