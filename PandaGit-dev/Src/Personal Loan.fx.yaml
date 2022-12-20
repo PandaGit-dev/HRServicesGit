@@ -454,7 +454,7 @@
         OnSelect: |-
             =Navigate('Personal Loan Preview');
             
-            PersonalLoan.Run('Loan Input_4'.Text,'Loan RC'.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult','Remarks Input_5'.Text)
+            PersonalLoan.Run('Loan Input_4'.Text,'Loan RC'.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult','Remarks Input_5'.Text, First(Info).crbd0_business_group_id, First(Info).crbd0_person_id)
         Size: =20
         Text: ="Next"
         Width: =214
