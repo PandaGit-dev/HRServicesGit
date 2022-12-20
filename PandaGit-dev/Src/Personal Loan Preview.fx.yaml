@@ -408,17 +408,6 @@
         Y: =628
         ZIndex: =74
 
-    CancelBtn_1 As button:
-        Fill: =RGBA(225, 0, 0, 1)
-        Height: =50
-        HoverFill: =ColorFade(RGBA(217, 37, 37, 100), -20%)
-        Size: =20
-        Text: ="Cancel"
-        Width: =214
-        X: =36
-        Y: =980
-        ZIndex: =75
-
     SubmitBtn_1 As button:
         Fill: =RGBA(112, 188, 31, 1)
         Height: =50
@@ -426,8 +415,8 @@
         Size: =20
         Text: ="Submit"
         Width: =214
-        X: =383
-        Y: =980
+        X: =202
+        Y: =975
         ZIndex: =76
 
     Menu_11 As group:
@@ -842,7 +831,7 @@
         ZIndex: =112
 
     "'Upload Button_1' As button":
-        Fill: =RGBA(24, 84, 29, 1)
+        Fill: =RGBA(116, 116, 116, 1)
         HoverFill: =ColorFade(RGBA(28, 97, 34, 100), -20%)
         Size: =20
         Text: ="Upload"

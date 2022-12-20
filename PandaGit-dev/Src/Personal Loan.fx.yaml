@@ -436,19 +436,8 @@
         Y: =919
         ZIndex: =74
 
-    CancelBtn As button:
-        Fill: =RGBA(225, 0, 0, 1)
-        Height: =50
-        HoverFill: =ColorFade(RGBA(217, 37, 37, 100), -20%)
-        Size: =20
-        Text: ="Cancel"
-        Width: =214
-        X: =36
-        Y: =980
-        ZIndex: =75
-
     SubmitBtn As button:
-        Fill: =RGBA(112, 188, 31, 1)
+        Fill: =RGBA(116, 116, 116, 1)
         Height: =50
         HoverFill: =ColorFade(RGBA(135, 212, 53, 100), -20%)
         OnSelect: |-
@@ -458,8 +447,8 @@
         Size: =20
         Text: ="Next"
         Width: =214
-        X: =383
-        Y: =980
+        X: =207
+        Y: =972
         ZIndex: =76
 
     Image12 As image:
