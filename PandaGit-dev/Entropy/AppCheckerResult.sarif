@@ -954,19 +954,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Personal Loan'.AdvSalDrp_1.AccessibleLabel"
+                  "fullyQualifiedName": "'Personal Loan'.'Loan RC'.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Personal Loan'.AdvSalDrp_1.AccessibleLabel",
+                  "fullyQualifiedName": "'Personal Loan'.'Loan RC'.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Personal Loan",
-                "type": "'Personal Loan'.AdvSalDrp_1"
+                "type": "'Personal Loan'.'Loan RC'"
               }
             }
           ],

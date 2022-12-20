@@ -379,7 +379,7 @@
         Y: =685
         ZIndex: =68
 
-    AdvSalDrp_1 As dropdown:
+    "'Loan RC' As dropdown":
         BorderColor: =RGBA(112, 188, 31, 1)
         ChevronBackground: =RGBA(0, 0, 0, 0)
         ChevronFill: =RGBA(128, 128, 128, 1)
@@ -453,7 +453,8 @@
         HoverFill: =ColorFade(RGBA(135, 212, 53, 100), -20%)
         OnSelect: |-
             =Navigate('Personal Loan Preview');
-            PersonalLoan.Run('Loan Input_4'.Text,'Remarks Input_5'.Text)
+            
+            PersonalLoan.Run('Loan Input_4'.Text,'Loan RC'.SelectedText.'data-ADB4D7A662F548B49FAC2B986E348A1BResult','Remarks Input_5'.Text)
         Size: =20
         Text: ="Next"
         Width: =214
