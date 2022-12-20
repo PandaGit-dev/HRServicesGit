@@ -451,37 +451,15 @@
         Fill: =RGBA(112, 188, 31, 1)
         Height: =50
         HoverFill: =ColorFade(RGBA(135, 212, 53, 100), -20%)
-        OnSelect: =Navigate('Personal Loan Preview')
+        OnSelect: |-
+            =Navigate('Personal Loan Preview');
+            PersonalLoan.Run('Loan Input_4'.Text,'Remarks Input_5'.Text)
         Size: =20
         Text: ="Next"
         Width: =214
         X: =383
         Y: =980
         ZIndex: =76
-
-    Label9 As label:
-        BorderColor: =RGBA(112, 188, 31, 1)
-        BorderThickness: =2
-        Fill: =RGBA(112, 188, 31, 0.17)
-        Height: =52
-        Size: =20
-        Text: =""
-        Width: =564
-        X: =32
-        Y: =541
-        ZIndex: =77
-
-    Label9_1 As label:
-        BorderColor: =RGBA(112, 188, 31, 1)
-        BorderThickness: =2
-        Fill: =RGBA(112, 188, 31, 0.15)
-        Height: =45
-        Size: =20
-        Text: =""
-        Width: =568
-        X: =32
-        Y: =852
-        ZIndex: =78
 
     Image12 As image:
         Height: =61
@@ -830,4 +808,24 @@
         X: =250
         Y: =139
         ZIndex: =105
+
+    "'Loan Input_4' As text":
+        BorderColor: =RGBA(112, 188, 31, 1)
+        Default: =""
+        Height: =49
+        Size: =21
+        Width: =555
+        X: =37
+        Y: =534
+        ZIndex: =106
+
+    "'Remarks Input_5' As text":
+        BorderColor: =RGBA(112, 188, 31, 1)
+        Default: =""
+        Height: =49
+        Size: =21
+        Width: =555
+        X: =42
+        Y: =856
+        ZIndex: =107
 
